@@ -14,6 +14,7 @@
 		ACB029832B462B360007372F /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029822B462B360007372F /* HermesTests.swift */; };
 		ACB0298D2B462B360007372F /* HermesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298C2B462B360007372F /* HermesUITests.swift */; };
 		ACB0298F2B462B360007372F /* HermesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */; };
+		ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD9A9F2B473F9100DC2CB1 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		ACB029882B462B360007372F /* HermesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0298C2B462B360007372F /* HermesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITests.swift; sourceTree = "<group>"; };
 		ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACFD9A9F2B473F9100DC2CB1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
 				ACB029712B462B350007372F /* ContentView.swift */,
+				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
 				ACB029772B462B360007372F /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
+				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
