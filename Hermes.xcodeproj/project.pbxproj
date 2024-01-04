@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ACB029702B462B350007372F /* HermesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0296F2B462B350007372F /* HermesApp.swift */; };
 		ACB029722B462B350007372F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029712B462B350007372F /* ContentView.swift */; };
-		ACB029742B462B350007372F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029732B462B350007372F /* Item.swift */; };
 		ACB029762B462B360007372F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB029752B462B360007372F /* Assets.xcassets */; };
 		ACB029792B462B360007372F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB029782B462B360007372F /* Preview Assets.xcassets */; };
 		ACB029832B462B360007372F /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029822B462B360007372F /* HermesTests.swift */; };
@@ -38,7 +37,6 @@
 		ACB0296C2B462B350007372F /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0296F2B462B350007372F /* HermesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesApp.swift; sourceTree = "<group>"; };
 		ACB029712B462B350007372F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		ACB029732B462B350007372F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		ACB029752B462B360007372F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB029782B462B360007372F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB0297E2B462B360007372F /* HermesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +96,6 @@
 			children = (
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
 				ACB029712B462B350007372F /* ContentView.swift */,
-				ACB029732B462B350007372F /* Item.swift */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
 				ACB029772B462B360007372F /* Preview Content */,
 			);
@@ -261,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
-				ACB029742B462B350007372F /* Item.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
