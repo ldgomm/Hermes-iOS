@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81152B484D6A00BE3D7C /* Electronic.swift */; };
+		ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* Phone.swift */; };
 		ACB029702B462B350007372F /* HermesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0296F2B462B350007372F /* HermesApp.swift */; };
 		ACB029722B462B350007372F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029712B462B350007372F /* ContentView.swift */; };
 		ACB029762B462B360007372F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB029752B462B360007372F /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACAC81152B484D6A00BE3D7C /* Electronic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electronic.swift; sourceTree = "<group>"; };
+		ACAC81172B485F6500BE3D7C /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		ACB0296C2B462B350007372F /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0296F2B462B350007372F /* HermesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesApp.swift; sourceTree = "<group>"; };
 		ACB029712B462B350007372F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACAC81142B484D4800BE3D7C /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				ACAC81172B485F6500BE3D7C /* Phone.swift */,
+				ACAC81152B484D6A00BE3D7C /* Electronic.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 		ACB029632B462B350007372F = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +112,7 @@
 			children = (
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
 				ACB029712B462B350007372F /* ContentView.swift */,
-				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				ACAC81142B484D4800BE3D7C /* entity */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
 				ACB029772B462B360007372F /* Preview Content */,
 			);
@@ -260,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
+				ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
