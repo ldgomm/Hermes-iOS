@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81152B484D6A00BE3D7C /* Electronic.swift */; };
 		ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* Phone.swift */; };
+		ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */; };
+		ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811F2B488D9A00BE3D7C /* Size.swift */; };
+		ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81222B488DBD00BE3D7C /* Charging.swift */; };
+		ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81242B488DCC00BE3D7C /* Control.swift */; };
+		ACAC81272B488DDC00BE3D7C /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81262B488DDC00BE3D7C /* Playback.swift */; };
+		ACAC81292B488E0100BE3D7C /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81282B488E0100BE3D7C /* Calling.swift */; };
+		ACAC812B2B488E1100BE3D7C /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC812A2B488E1100BE3D7C /* Battery.swift */; };
+		ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC812C2B488E4400BE3D7C /* Camera.swift */; };
+		ACAC812F2B488E5900BE3D7C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC812E2B488E5900BE3D7C /* Display.swift */; };
+		ACAC81312B488E6800BE3D7C /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81302B488E6800BE3D7C /* Power.swift */; };
+		ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */; };
+		ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */; };
 		ACB029702B462B350007372F /* HermesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0296F2B462B350007372F /* HermesApp.swift */; };
 		ACB029722B462B350007372F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029712B462B350007372F /* ContentView.swift */; };
 		ACB029762B462B360007372F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB029752B462B360007372F /* Assets.xcassets */; };
@@ -39,6 +51,18 @@
 /* Begin PBXFileReference section */
 		ACAC81152B484D6A00BE3D7C /* Electronic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electronic.swift; sourceTree = "<group>"; };
 		ACAC81172B485F6500BE3D7C /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		ACAC811F2B488D9A00BE3D7C /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		ACAC81222B488DBD00BE3D7C /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
+		ACAC81242B488DCC00BE3D7C /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		ACAC81262B488DDC00BE3D7C /* Playback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playback.swift; sourceTree = "<group>"; };
+		ACAC81282B488E0100BE3D7C /* Calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
+		ACAC812A2B488E1100BE3D7C /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
+		ACAC812C2B488E4400BE3D7C /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		ACAC812E2B488E5900BE3D7C /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		ACAC81302B488E6800BE3D7C /* Power.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFeatures.swift; sourceTree = "<group>"; };
+		ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControl.swift; sourceTree = "<group>"; };
 		ACB0296C2B462B350007372F /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0296F2B462B350007372F /* HermesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesApp.swift; sourceTree = "<group>"; };
 		ACB029712B462B350007372F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,11 +104,47 @@
 		ACAC81142B484D4800BE3D7C /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
-				ACAC81172B485F6500BE3D7C /* Phone.swift */,
-				ACAC81152B484D6A00BE3D7C /* Electronic.swift */,
+				ACAC81192B488D2800BE3D7C /* sales */,
 			);
 			path = entity;
+			sourceTree = "<group>";
+		};
+		ACAC81192B488D2800BE3D7C /* sales */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				ACAC811A2B488D3100BE3D7C /* electronic */,
+			);
+			path = sales;
+			sourceTree = "<group>";
+		};
+		ACAC811A2B488D3100BE3D7C /* electronic */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC812A2B488E1100BE3D7C /* Battery.swift */,
+				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
+				ACAC81222B488DBD00BE3D7C /* Charging.swift */,
+				ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */,
+				ACAC81242B488DCC00BE3D7C /* Control.swift */,
+				ACAC812E2B488E5900BE3D7C /* Display.swift */,
+				ACAC81152B484D6A00BE3D7C /* Electronic.swift */,
+				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
+				ACAC81302B488E6800BE3D7C /* Power.swift */,
+				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
+				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
+				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
+				ACAC811B2B488D5E00BE3D7C /* phone */,
+			);
+			path = electronic;
+			sourceTree = "<group>";
+		};
+		ACAC811B2B488D5E00BE3D7C /* phone */ = {
+			isa = PBXGroup;
+			children = (
+				ACAC81282B488E0100BE3D7C /* Calling.swift */,
+				ACAC81172B485F6500BE3D7C /* Phone.swift */,
+			);
+			path = phone;
 			sourceTree = "<group>";
 		};
 		ACB029632B462B350007372F = {
@@ -274,9 +334,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */,
+				ACAC81272B488DDC00BE3D7C /* Playback.swift in Sources */,
 				ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */,
+				ACAC812F2B488E5900BE3D7C /* Display.swift in Sources */,
+				ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */,
+				ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */,
+				ACAC812B2B488E1100BE3D7C /* Battery.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
+				ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */,
+				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,
+				ACAC81292B488E0100BE3D7C /* Calling.swift in Sources */,
+				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
+				ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
+				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
 				ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */,
 			);
