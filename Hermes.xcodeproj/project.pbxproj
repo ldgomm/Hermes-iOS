@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC37381E2B49DB8900B5193E /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381D2B49DB8900B5193E /* Price.swift */; };
 		AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F72B48EBB000704F7C /* Storage.swift */; };
 		AC5AA1FA2B48EC9900704F7C /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F92B48EC9900704F7C /* Memory.swift */; };
 		AC792DB12B48B2950079FBCD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB02B48B2950079FBCD /* Offer.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC37381D2B49DB8900B5193E /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		AC5AA1F72B48EBB000704F7C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AC5AA1F92B48EC9900704F7C /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		AC792DB02B48B2950079FBCD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				AC37381D2B49DB8900B5193E /* Price.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC792DB42B48B2E50079FBCD /* MainImages.swift */,
 				AC792DB22B48B2A60079FBCD /* BoxImages.swift */,
@@ -373,6 +376,7 @@
 				AC5AA1FA2B48EC9900704F7C /* Memory.swift in Sources */,
 				AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */,
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
+				AC37381E2B49DB8900B5193E /* Price.swift in Sources */,
 				ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,

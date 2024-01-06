@@ -18,7 +18,7 @@ class Product: Codable, Hashable, Identifiable {
     
     var id: String
     var name: String
-    var price: Double
+    var price: Price
     var origin: String
     var offer: Offer
     var images: Images
@@ -42,7 +42,7 @@ class Product: Codable, Hashable, Identifiable {
         case subcategory
     }
     
-    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]?, keywords: [String], category: String, subcategory: String) {
+    init(id: String, name: String, price: Price, origin: String = "Ecuador", offer: Offer, images: Images, stock: Int = 1, colours: [String]? = ["Negro"], keywords: [String], category: String, subcategory: String) {
         self.id = id
         self.name = name
         self.price = price
@@ -60,7 +60,7 @@ class Product: Codable, Hashable, Identifiable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(String.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
-        self.price = try container.decode(Double.self, forKey: .price)
+        self.price = try container.decode(Price.self, forKey: .price)
         self.origin = try container.decode(String.self, forKey: .origin)
         self.offer = try container.decode(Offer.self, forKey: .offer)
         self.images = try container.decode(Images.self, forKey: .images)

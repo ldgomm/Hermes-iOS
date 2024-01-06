@@ -26,7 +26,7 @@ class Playback: Codable, Hashable {
         case videoPlayback
     }
     
-    init(audioPlayback: [String], videoPlayback: [String]?) {
+    init(audioPlayback: [String], videoPlayback: [String]? = nil) {
         self.audioPlayback = audioPlayback
         self.videoPlayback = videoPlayback
     }

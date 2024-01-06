@@ -2,7 +2,9 @@
     {
       "id": "1",
       "name": "iPhone Pro",
-      "price": 899.99,
+      "price": {
+          "cash": 999.99
+      },
       "origin": "USA",
       "offer": {
         "isInOffer": true,
@@ -95,7 +97,7 @@
       },
       "model": "Pro 2023",
       "dataStorage": ["UFS 3.1"],
-      "memory": "8GB RAM",
+      "inBox": ["Charging Cable", "EarPods"],
       "os": "iOS 15",
       "chip": "A16 Bionic",
       "authentication": ["Face ID", "Fingerprint Sensor"],
@@ -115,7 +117,9 @@
     {
       "id": "2",
       "name": "SmartPhone Max",
-      "price": 899.99,
+      "price": {
+          "cash": 999.99
+      },
       "origin": "USA",
       "offer": {
         "isInOffer": true,
@@ -208,7 +212,7 @@
       },
       "model": "Pro 2023",
       "dataStorage": ["UFS 3.1"],
-      "memory": "8GB RAM",
+      "inBox": ["Charging Cable", "EarPods"],
       "os": "iOS 15",
       "chip": "A16 Bionic",
       "authentication": ["Face ID", "Fingerprint Sensor"],
@@ -222,7 +226,6 @@
       },
       "accessibility": ["VoiceOver", "Magnifier"],
       "simCard": ["eSIM", "Nano SIM"],
-      "builtInApps": ["Messages", "Photos"],
-      "inBox": ["Charging Cable", "EarPods"]
+      "builtInApps": ["Messages", "Photos"]
     }
 ]

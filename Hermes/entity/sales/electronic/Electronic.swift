@@ -25,7 +25,9 @@ class Electronic: Product {
             lhs.smartFeatures == rhs.smartFeatures &&
             lhs.smartFeatures == rhs.smartFeatures &&
             lhs.storage == rhs.storage &&
-            lhs.memory == rhs.memory
+            lhs.memory == rhs.memory &&
+            lhs.model == rhs.model &&
+        lhs.inBox == rhs.inBox
         
     }
     
@@ -47,6 +49,8 @@ class Electronic: Product {
         hasher.combine(remoteControl)
         hasher.combine(storage)
         hasher.combine(memory)
+        hasher.combine(model)
+        hasher.combine(inBox)
     }
     
     var brand: String
@@ -65,6 +69,8 @@ class Electronic: Product {
     var remoteControl: RemoteControl?
     var storage: Storage?
     var memory: Memory?
+    var model: String
+    var inBox: [String]
     
     private enum CodingKeys: String, CodingKey {
         case brand
@@ -83,9 +89,11 @@ class Electronic: Product {
         case remoteControl
         case storage
         case memory
+        case model
+        case inBox
     }
     
-    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]?, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera?, control: Control, display: Display?, playback: Playback?, softwareUpdates: Bool?, sensors: [String]?, smartFeatures: SmartFeatures?, remoteControl: RemoteControl?, storage: Storage?, memory: Memory?) {
+    init(id: String, name: String, price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String]) {
         self.brand = brand
         self.connectivity = connectivity
         self.finish = finish
@@ -102,6 +110,8 @@ class Electronic: Product {
         self.remoteControl = remoteControl
         self.storage = storage
         self.memory = memory
+        self.model = model
+        self.inBox = inBox
         
         super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory)
     }
@@ -125,6 +135,8 @@ class Electronic: Product {
         remoteControl = try container.decodeIfPresent(RemoteControl.self, forKey: .remoteControl)
         storage = try container.decodeIfPresent(Storage.self, forKey: .storage)
         memory = try container.decodeIfPresent(Memory.self, forKey: .memory)
+        model = try container.decode(String.self, forKey: .model)
+        inBox = try container.decode([String].self, forKey: .inBox)
 
         try super.init(from: decoder)
     }
@@ -148,6 +160,8 @@ class Electronic: Product {
         try container.encodeIfPresent(remoteControl, forKey: .remoteControl)
         try container.encodeIfPresent(storage, forKey: .storage)
         try container.encodeIfPresent(memory, forKey: .memory)
+        try container.encode(model, forKey: .model)
+        try container.encode(inBox, forKey: .inBox)
 
         try super.encode(to: encoder)
     }

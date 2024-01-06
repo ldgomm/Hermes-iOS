@@ -28,7 +28,7 @@ class Power: Codable, Hashable {
         case battery
     }
     
-    init(isRechargeable: Bool, charging: Charging?, battery: Battery?) {
+    init(isRechargeable: Bool, charging: Charging? = nil, battery: Battery? = nil) {
         self.isRechargeable = isRechargeable
         self.charging = charging
         self.battery = battery

@@ -30,7 +30,7 @@ class Storage: Codable, Hashable {
         case externalCapacity
     }
     
-    init(internalCapacity: [Int], hasExternalCapacity: Bool?, externalCapacity: [Int]) {
+    init(internalCapacity: [Int], hasExternalCapacity: Bool? = nil, externalCapacity: [Int]) {
         self.internalCapacity = internalCapacity
         self.hasExternalCapacity = hasExternalCapacity
         self.externalCapacity = externalCapacity

@@ -42,7 +42,7 @@ class MainImages: Codable, Hashable {
         case down
     }
     
-    init(front: String, back: String, left: String?, right: String?, up: String?, down: String?) {
+    init(front: String, back: String, left: String? = nil, right: String? = nil, up: String? = nil, down: String? = nil) {
         self.front = front
         self.back = back
         self.left = left
