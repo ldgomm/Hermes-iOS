@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    let phones: [Phone] = Bundle.main.decode("phones.json")
     
     var body: some View {
-        Text("Hello")
+        NavigationStack {
+            VStack {
+                List {
+                    ForEach(phones) { phone in
+                        Text(phone.name)
+                    }
+                }
+            }
+            .navigationTitle("Phones")
+        }
     }
 }
 

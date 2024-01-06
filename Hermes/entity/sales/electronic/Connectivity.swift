@@ -24,6 +24,12 @@ class Connectivity: Codable, Hashable {
     var cellular: [String]
     var wireless: [String]
     
+    private enum CodingKeys: CodingKey {
+        case ports
+        case cellular
+        case wireless
+    }
+    
     init(ports: [String], cellular: [String], wireless: [String]) {
         self.ports = ports
         self.cellular = cellular
@@ -35,12 +41,6 @@ class Connectivity: Codable, Hashable {
         self.ports = try container.decode([String].self, forKey: .ports)
         self.cellular = try container.decode([String].self, forKey: .cellular)
         self.wireless = try container.decode([String].self, forKey: .wireless)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case ports
-        case cellular
-        case wireless
     }
     
     func encode(to encoder: Encoder) throws {

@@ -63,6 +63,24 @@ class Electronic: Product {
     var smartFeatures: SmartFeatures?
     var remoteControl: RemoteControl?
     
+    private enum CodingKeys: String, CodingKey {
+        case brand
+        case connectivity
+        case finish
+        case capacity
+        case weight
+        case size
+        case power
+        case camera
+        case control
+        case display
+        case playback
+        case softwareUpdates
+        case sensors
+        case smartFeatures
+        case remoteControl
+    }
+    
     init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, keywords: [String],
          brand: String, connectivity: Connectivity, finish: String, capacity: Int?, weight: Int, size: Size, power: Power, camera:Camera?, control: Control, display: Display?, playback: Playback?, softwareUpdates: Bool?, sensors: [String]?, smartFeatures: SmartFeatures?, remoteControl: RemoteControl?) {
         self.brand = brand
@@ -104,24 +122,6 @@ class Electronic: Product {
         remoteControl = try container.decodeIfPresent(RemoteControl.self, forKey: .remoteControl)
 
         try super.init(from: decoder)
-    }
-    
-    private enum CodingKeys: String, CodingKey {
-        case brand
-        case connectivity
-        case finish
-        case capacity
-        case weight
-        case size
-        case power
-        case camera
-        case control
-        case display
-        case playback
-        case softwareUpdates
-        case sensors
-        case smartFeatures
-        case remoteControl
     }
     
     override func encode(to encoder: Encoder) throws {

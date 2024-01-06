@@ -21,6 +21,11 @@ class Playback: Codable, Hashable {
     var audioPlayback: [String]
     var videoPlayback: [String]
     
+    private enum CodingKeys: CodingKey {
+        case audioPlayback
+        case videoPlayback
+    }
+    
     init(audioPlayback: [String], videoPlayback: [String]) {
         self.audioPlayback = audioPlayback
         self.videoPlayback = videoPlayback
@@ -30,11 +35,6 @@ class Playback: Codable, Hashable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.audioPlayback = try container.decode([String].self, forKey: .audioPlayback)
         self.videoPlayback = try container.decode([String].self, forKey: .videoPlayback)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case audioPlayback
-        case videoPlayback
     }
     
     func encode(to encoder: Encoder) throws {

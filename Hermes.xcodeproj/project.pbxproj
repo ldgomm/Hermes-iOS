@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC792DB12B48B2950079FBCD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB02B48B2950079FBCD /* Offer.swift */; };
+		AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB22B48B2A60079FBCD /* BoxImages.swift */; };
+		AC792DB52B48B2E50079FBCD /* MainImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB42B48B2E50079FBCD /* MainImages.swift */; };
+		AC792DB72B48B3410079FBCD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB62B48B3410079FBCD /* Images.swift */; };
+		AC792DB92B48B4E50079FBCD /* phones.json in Resources */ = {isa = PBXBuildFile; fileRef = AC792DB82B48B4E50079FBCD /* phones.json */; };
 		ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81152B484D6A00BE3D7C /* Electronic.swift */; };
 		ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* Phone.swift */; };
 		ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */; };
@@ -49,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC792DB02B48B2950079FBCD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		AC792DB22B48B2A60079FBCD /* BoxImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxImages.swift; sourceTree = "<group>"; };
+		AC792DB42B48B2E50079FBCD /* MainImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImages.swift; sourceTree = "<group>"; };
+		AC792DB62B48B3410079FBCD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		AC792DB82B48B4E50079FBCD /* phones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phones.json; sourceTree = "<group>"; };
 		ACAC81152B484D6A00BE3D7C /* Electronic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electronic.swift; sourceTree = "<group>"; };
 		ACAC81172B485F6500BE3D7C /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
@@ -113,6 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				AC792DB62B48B3410079FBCD /* Images.swift */,
+				AC792DB42B48B2E50079FBCD /* MainImages.swift */,
+				AC792DB22B48B2A60079FBCD /* BoxImages.swift */,
+				AC792DB02B48B2950079FBCD /* Offer.swift */,
 				ACAC811A2B488D3100BE3D7C /* electronic */,
 			);
 			path = sales;
@@ -171,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
+				AC792DB82B48B4E50079FBCD /* phones.json */,
 				ACB029712B462B350007372F /* ContentView.swift */,
 				ACAC81142B484D4800BE3D7C /* entity */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
@@ -310,6 +325,7 @@
 			files = (
 				ACB029792B462B360007372F /* Preview Assets.xcassets in Resources */,
 				ACB029762B462B360007372F /* Assets.xcassets in Resources */,
+				AC792DB92B48B4E50079FBCD /* phones.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,16 +356,20 @@
 				ACAC812F2B488E5900BE3D7C /* Display.swift in Sources */,
 				ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */,
 				ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */,
+				AC792DB12B48B2950079FBCD /* Offer.swift in Sources */,
+				AC792DB72B48B3410079FBCD /* Images.swift in Sources */,
 				ACAC812B2B488E1100BE3D7C /* Battery.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
 				ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */,
 				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,
 				ACAC81292B488E0100BE3D7C /* Calling.swift in Sources */,
+				AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */,
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
 				ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
+				AC792DB52B48B2E50079FBCD /* MainImages.swift in Sources */,
 				ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

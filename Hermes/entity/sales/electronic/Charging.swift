@@ -18,6 +18,10 @@ class Charging: Codable, Hashable {
     
     var chargingModes: [String]
     
+    private enum CodingKeys: CodingKey {
+        case chargingModes
+    }
+    
     init(chargingModes: [String]) {
         self.chargingModes = chargingModes
     }
@@ -25,10 +29,6 @@ class Charging: Codable, Hashable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.chargingModes = try container.decode([String].self, forKey: .chargingModes)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case chargingModes
     }
     
     func encode(to encoder: Encoder) throws {

@@ -39,6 +39,16 @@ class Display: Codable, Hashable {
     var features: [String]
     var extraFeatures: [String]
     
+    private enum CodingKeys: CodingKey {
+        case technology
+        case diagonal
+        case updateFrequency
+        case glow
+        case isTouch
+        case resolution
+        case features
+        case extraFeatures
+    }
     init(technology: String, diagonal: String, updateFrequency: Int, glow: Int, isTouch: Bool, resolution: String, features: [String], extraFeatures: [String]) {
         self.technology = technology
         self.diagonal = diagonal
@@ -60,17 +70,6 @@ class Display: Codable, Hashable {
         self.resolution = try container.decode(String.self, forKey: .resolution)
         self.features = try container.decode([String].self, forKey: .features)
         self.extraFeatures = try container.decode([String].self, forKey: .extraFeatures)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case technology
-        case diagonal
-        case updateFrequency
-        case glow
-        case isTouch
-        case resolution
-        case features
-        case extraFeatures
     }
     
     func encode(to encoder: Encoder) throws {

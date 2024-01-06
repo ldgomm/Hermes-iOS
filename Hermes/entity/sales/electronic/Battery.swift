@@ -24,6 +24,12 @@ class Battery: Codable, Hashable {
     var approximateDuration: Int
     var capacity: Int
     
+    private enum CodingKeys: CodingKey {
+        case isFastCharging
+        case approximateDuration
+        case capacity
+    }
+    
     init(hasBattery: Bool, isFastCharging: Bool, approximateDuration: Int, capacity: Int) {
         self.isFastCharging = isFastCharging
         self.approximateDuration = approximateDuration
@@ -35,12 +41,6 @@ class Battery: Codable, Hashable {
         self.isFastCharging = try container.decode(Bool.self, forKey: .isFastCharging)
         self.approximateDuration = try container.decode(Int.self, forKey: .approximateDuration)
         self.capacity = try container.decode(Int.self, forKey: .capacity)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case isFastCharging
-        case approximateDuration
-        case capacity
     }
     
     func encode(to encoder: Encoder) throws {

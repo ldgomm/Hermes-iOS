@@ -1,0 +1,206 @@
+[
+    {
+      "id": "1",
+      "name": "SmartPhone Pro",
+      "price": 899.99,
+      "origin": "USA",
+      "offer": {
+        "isInOffer": true,
+        "percentage": 15
+      },
+      "images": {
+        "main": {
+          "front": "front_image_url.jpg",
+          "back": "back_image_url.jpg",
+          "left": "left_image_url.jpg",
+          "right": "right_image_url.jpg",
+          "up": "up_image_url.jpg",
+          "down": "down_image_url.jpg"
+        },
+        "box": {
+          "front": "box_front_image_url.jpg",
+          "back": "box_back_image_url.jpg"
+        }
+      },
+      "keywords": ["Smartphone", "Flagship", "iOS", "5G"],
+      "brand": "TechCo",
+      "connectivity": {
+        "ports": ["USB-C"],
+        "cellular": ["5G", "LTE"],
+        "wireless": ["Wi-Fi 6", "Bluetooth 5.2"]
+      },
+      "finish": "Matte Black",
+      "capacity": 128,
+      "weight": 165,
+      "size": {
+        "height": 6.2,
+        "width": 3.0,
+        "deep": 0.35
+      },
+      "power": {
+        "isRechargeable": true,
+        "charging": {
+          "chargingModes": ["Fast Charging", "Wireless Charging"]
+        },
+        "battery": {
+          "hasBattery": true,
+          "isFastCharging": true,
+          "approximateDuration": 12,
+          "capacity": 4000
+        }
+      },
+      "camera": {
+        "system": "Triple Camera",
+        "features": ["Night Mode", "Portrait Mode"],
+        "extraFeatures": ["Wide Angle", "Telephoto"],
+        "videoRecording": ["4K", "1080p"]
+      },
+      "control": {
+        "externalButtons": ["Volume Up", "Volume Down"]
+      },
+      "display": {
+        "technology": "Super Retina XDR",
+        "diagonal": "6.7 inches",
+        "updateFrequency": 120,
+        "glow": 600,
+        "isTouch": true,
+        "resolution": "2778x1284",
+        "features": ["HDR10", "Dolby Vision"],
+        "extraFeatures": ["ProMotion"]
+      },
+      "playback": {
+        "audioPlayback": ["AAC", "Dolby Atmos"],
+        "videoPlayback": ["H.264", "H.265"]
+      },
+      "softwareUpdates": true,
+      "sensors": ["Face ID", "Accelerometer", "Gyroscope"],
+      "smartFeatures": {
+        "aiAssistant": "",
+        "extraFeatures": [""]
+      },
+      "remoteControl": {
+        "type": "",
+        "voiceControl": true
+      },
+      "model": "Pro 2023",
+      "dataStorage": ["UFS 3.1"],
+      "memory": "8GB RAM",
+      "os": "iOS 15",
+      "chip": "A16 Bionic",
+      "authentication": ["Face ID", "Fingerprint Sensor"],
+      "paymentMethod": "Apple Pay",
+      "safety": ["Face Recognition", "Touch ID"],
+      "carriers": ["Verizon", "AT&T"],
+      "location": ["GPS", "Galileo"],
+      "calling": {
+        "videoCalling": ["FaceTime", "Zoom"],
+        "audioCalling": ["Phone", "WhatsApp"]
+      },
+      "accessibility": ["VoiceOver", "Magnifier"],
+      "simCard": ["eSIM", "Nano SIM"],
+      "builtInApps": ["Messages", "Photos"],
+      "inBox": ["Charging Cable", "EarPods"]
+    },
+    {
+      "id": "2",
+      "name": "SmartPhone Max",
+      "price": 899.99,
+      "origin": "USA",
+      "offer": {
+        "isInOffer": true,
+        "percentage": 15
+      },
+      "images": {
+        "main": {
+          "front": "front_image_url.jpg",
+          "back": "back_image_url.jpg",
+          "left": "left_image_url.jpg",
+          "right": "right_image_url.jpg",
+          "up": "up_image_url.jpg",
+          "down": "down_image_url.jpg"
+        },
+        "box": {
+          "front": "box_front_image_url.jpg",
+          "back": "box_back_image_url.jpg"
+        }
+      },
+      "keywords": ["Smartphone", "Flagship", "iOS", "5G"],
+      "brand": "TechCo",
+      "connectivity": {
+        "ports": ["USB-C"],
+        "cellular": ["5G", "LTE"],
+        "wireless": ["Wi-Fi 6", "Bluetooth 5.2"]
+      },
+      "finish": "Matte Black",
+      "capacity": 128,
+      "weight": 165,
+      "size": {
+        "height": 6.2,
+        "width": 3.0,
+        "deep": 0.35
+      },
+      "power": {
+        "isRechargeable": true,
+        "charging": {
+          "chargingModes": ["Fast Charging", "Wireless Charging"]
+        },
+        "battery": {
+          "hasBattery": true,
+          "isFastCharging": true,
+          "approximateDuration": 12,
+          "capacity": 4000
+        }
+      },
+      "camera": {
+        "system": "Triple Camera",
+        "features": ["Night Mode", "Portrait Mode"],
+        "extraFeatures": ["Wide Angle", "Telephoto"],
+        "videoRecording": ["4K", "1080p"]
+      },
+      "control": {
+        "externalButtons": ["Volume Up", "Volume Down"]
+      },
+      "display": {
+        "technology": "Super Retina XDR",
+        "diagonal": "6.7 inches",
+        "updateFrequency": 120,
+        "glow": 600,
+        "isTouch": true,
+        "resolution": "2778x1284",
+        "features": ["HDR10", "Dolby Vision"],
+        "extraFeatures": ["ProMotion"]
+      },
+      "playback": {
+        "audioPlayback": ["AAC", "Dolby Atmos"],
+        "videoPlayback": ["H.264", "H.265"]
+      },
+      "softwareUpdates": true,
+      "sensors": ["Face ID", "Accelerometer", "Gyroscope"],
+      "smartFeatures": {
+        "aiAssistant": "",
+        "extraFeatures": [""]
+      },
+      "remoteControl": {
+        "type": "",
+        "voiceControl": true
+      },
+      "model": "Pro 2023",
+      "dataStorage": ["UFS 3.1"],
+      "memory": "8GB RAM",
+      "os": "iOS 15",
+      "chip": "A16 Bionic",
+      "authentication": ["Face ID", "Fingerprint Sensor"],
+      "paymentMethod": "Apple Pay",
+      "safety": ["Face Recognition", "Touch ID"],
+      "carriers": ["Verizon", "AT&T"],
+      "location": ["GPS", "Galileo"],
+      "calling": {
+        "videoCalling": ["FaceTime", "Zoom"],
+        "audioCalling": ["Phone", "WhatsApp"]
+      },
+      "accessibility": ["VoiceOver", "Magnifier"],
+      "simCard": ["eSIM", "Nano SIM"],
+      "builtInApps": ["Messages", "Photos"],
+      "inBox": ["Charging Cable", "EarPods"]
+    }
+]

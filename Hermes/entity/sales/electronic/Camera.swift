@@ -22,6 +22,13 @@ class Camera: Codable, Hashable {
         hasher.combine(videoRecording)
     }
     
+    private enum CodingKeys: CodingKey {
+        case system
+        case features
+        case extraFeatures
+        case videoRecording
+    }
+    
     var system: String
     var features: [String]
     var extraFeatures: [String]
@@ -40,13 +47,6 @@ class Camera: Codable, Hashable {
         self.features = try container.decode([String].self, forKey: .features)
         self.extraFeatures = try container.decode([String].self, forKey: .extraFeatures)
         self.videoRecording = try container.decode([String].self, forKey: .videoRecording)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case system
-        case features
-        case extraFeatures
-        case videoRecording
     }
     
     func encode(to encoder: Encoder) throws {

@@ -18,6 +18,10 @@ class Control: Codable, Hashable {
     
     var externalButtons: [String]
     
+    private enum CodingKeys: CodingKey {
+        case externalButtons
+    }
+    
     init(externalButtons: [String]) {
         self.externalButtons = externalButtons
     }
@@ -25,10 +29,6 @@ class Control: Codable, Hashable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.externalButtons = try container.decode([String].self, forKey: .externalButtons)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case externalButtons
     }
     
     func encode(to encoder: Encoder) throws {

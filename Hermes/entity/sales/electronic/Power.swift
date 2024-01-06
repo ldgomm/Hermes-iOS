@@ -22,6 +22,12 @@ class Power: Codable, Hashable {
     var charging: Charging?
     var battery: Battery?
     
+    private enum CodingKeys: CodingKey {
+        case isRechargeable
+        case charging
+        case battery
+    }
+    
     init(isRechargeable: Bool, charging: Charging?, battery: Battery?) {
         self.isRechargeable = isRechargeable
         self.charging = charging
@@ -33,12 +39,6 @@ class Power: Codable, Hashable {
         self.isRechargeable = try container.decode(Bool.self, forKey: .isRechargeable)
         self.charging = try container.decodeIfPresent(Charging.self, forKey: .charging)
         self.battery = try container.decodeIfPresent(Battery.self, forKey: .battery)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case isRechargeable
-        case charging
-        case battery
     }
     
     func encode(to encoder: Encoder) throws {
