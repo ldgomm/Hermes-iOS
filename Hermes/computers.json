@@ -1,7 +1,7 @@
 [
     {
       "id": "1",
-      "name": "SmartPhone Pro",
+      "name": "iPhone Pro",
       "price": 899.99,
       "origin": "USA",
       "offer": {
@@ -22,7 +22,10 @@
           "back": "box_back_image_url.jpg"
         }
       },
+      "stock": 10,
       "keywords": ["Smartphone", "Flagship", "iOS", "5G"],
+      "category": "...",
+      "subcategory": "",
       "brand": "TechCo",
       "connectivity": {
         "ports": ["USB-C"],
@@ -81,6 +84,14 @@
       "remoteControl": {
         "type": "",
         "voiceControl": true
+      },
+      "storage": {
+          "internalCapacity": [1, 2],
+          "hasExternalCapacity": false,
+          "externalCapacity": [1, 2],
+      },
+      "memory": {
+          "capacity": [1, 2]
       },
       "model": "Pro 2023",
       "dataStorage": ["UFS 3.1"],
@@ -124,7 +135,10 @@
           "back": "box_back_image_url.jpg"
         }
       },
+      "stock": 10,
       "keywords": ["Smartphone", "Flagship", "iOS", "5G"],
+      "category": "...",
+      "subcategory": "",
       "brand": "TechCo",
       "connectivity": {
         "ports": ["USB-C"],
@@ -183,6 +197,14 @@
       "remoteControl": {
         "type": "",
         "voiceControl": true
+      },
+      "storage": {
+          "internalCapacity": [1, 2],
+          "hasExternalCapacity": true,
+          "externalCapacity": [1, 2],
+      },
+      "memory": {
+          "capacity": [1, 2]
       },
       "model": "Pro 2023",
       "dataStorage": ["UFS 3.1"],

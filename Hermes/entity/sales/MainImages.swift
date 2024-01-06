@@ -28,10 +28,10 @@ class MainImages: Codable, Hashable {
     
     var front: String
     var back: String
-    var left: String
-    var right: String
-    var up: String
-    var down: String
+    var left: String?
+    var right: String?
+    var up: String?
+    var down: String?
     
     private enum CodingKeys: CodingKey {
         case front
@@ -42,7 +42,7 @@ class MainImages: Codable, Hashable {
         case down
     }
     
-    init(front: String, back: String, left: String, right: String, up: String, down: String) {
+    init(front: String, back: String, left: String?, right: String?, up: String?, down: String?) {
         self.front = front
         self.back = back
         self.left = left
@@ -55,19 +55,19 @@ class MainImages: Codable, Hashable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.front = try container.decode(String.self, forKey: .front)
         self.back = try container.decode(String.self, forKey: .back)
-        self.left = try container.decode(String.self, forKey: .left)
-        self.right = try container.decode(String.self, forKey: .right)
-        self.up = try container.decode(String.self, forKey: .up)
-        self.down = try container.decode(String.self, forKey: .down)
+        self.left = try container.decodeIfPresent(String.self, forKey: .left)
+        self.right = try container.decodeIfPresent(String.self, forKey: .right)
+        self.up = try container.decodeIfPresent(String.self, forKey: .up)
+        self.down = try container.decodeIfPresent(String.self, forKey: .down)
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.front, forKey: .front)
         try container.encode(self.back, forKey: .back)
-        try container.encode(self.left, forKey: .left)
-        try container.encode(self.right, forKey: .right)
-        try container.encode(self.up, forKey: .up)
-        try container.encode(self.down, forKey: .down)
+        try container.encodeIfPresent(self.left, forKey: .left)
+        try container.encodeIfPresent(self.right, forKey: .right)
+        try container.encodeIfPresent(self.up, forKey: .up)
+        try container.encodeIfPresent(self.down, forKey: .down)
     }
 }

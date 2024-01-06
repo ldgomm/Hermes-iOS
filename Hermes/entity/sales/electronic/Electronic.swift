@@ -13,7 +13,6 @@ class Electronic: Product {
             lhs.brand == rhs.brand &&
             lhs.connectivity == rhs.connectivity &&
             lhs.finish == rhs.finish &&
-            lhs.capacity == rhs.capacity &&
             lhs.weight == rhs.weight &&
             lhs.size == rhs.size &&
             lhs.power == rhs.power &&
@@ -24,7 +23,9 @@ class Electronic: Product {
             lhs.softwareUpdates == rhs.softwareUpdates &&
             lhs.sensors == rhs.sensors &&
             lhs.smartFeatures == rhs.smartFeatures &&
-            lhs.remoteControl == rhs.remoteControl
+            lhs.smartFeatures == rhs.smartFeatures &&
+            lhs.storage == rhs.storage &&
+            lhs.memory == rhs.memory
         
     }
     
@@ -33,7 +34,6 @@ class Electronic: Product {
         hasher.combine(brand)
         hasher.combine(connectivity)
         hasher.combine(finish)
-        hasher.combine(capacity)
         hasher.combine(weight)
         hasher.combine(size)
         hasher.combine(power)
@@ -45,12 +45,13 @@ class Electronic: Product {
         hasher.combine(sensors)
         hasher.combine(smartFeatures)
         hasher.combine(remoteControl)
+        hasher.combine(storage)
+        hasher.combine(memory)
     }
     
     var brand: String
     var connectivity: Connectivity?
     var finish: String
-    var capacity: Int?
     var weight: Int
     var size: Size
     var power: Power
@@ -62,12 +63,13 @@ class Electronic: Product {
     var sensors: [String]?
     var smartFeatures: SmartFeatures?
     var remoteControl: RemoteControl?
+    var storage: Storage?
+    var memory: Memory?
     
     private enum CodingKeys: String, CodingKey {
         case brand
         case connectivity
         case finish
-        case capacity
         case weight
         case size
         case power
@@ -79,14 +81,14 @@ class Electronic: Product {
         case sensors
         case smartFeatures
         case remoteControl
+        case storage
+        case memory
     }
     
-    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, keywords: [String],
-         brand: String, connectivity: Connectivity, finish: String, capacity: Int?, weight: Int, size: Size, power: Power, camera:Camera?, control: Control, display: Display?, playback: Playback?, softwareUpdates: Bool?, sensors: [String]?, smartFeatures: SmartFeatures?, remoteControl: RemoteControl?) {
+    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]?, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera?, control: Control, display: Display?, playback: Playback?, softwareUpdates: Bool?, sensors: [String]?, smartFeatures: SmartFeatures?, remoteControl: RemoteControl?, storage: Storage?, memory: Memory?) {
         self.brand = brand
         self.connectivity = connectivity
         self.finish = finish
-        self.capacity = capacity
         self.weight = weight
         self.size = size
         self.power = power
@@ -98,8 +100,10 @@ class Electronic: Product {
         self.sensors = sensors
         self.smartFeatures = smartFeatures
         self.remoteControl = remoteControl
+        self.storage = storage
+        self.memory = memory
         
-        super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, keywords: keywords)
+        super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory)
     }
     
     required init(from decoder: Decoder) throws {
@@ -108,7 +112,6 @@ class Electronic: Product {
         brand = try container.decode(String.self, forKey: .brand)
         connectivity = try container.decodeIfPresent(Connectivity.self, forKey: .connectivity)
         finish = try container.decode(String.self, forKey: .finish)
-        capacity = try container.decodeIfPresent(Int.self, forKey: .capacity)
         weight = try container.decode(Int.self, forKey: .weight)
         size = try container.decode(Size.self, forKey: .size)
         power = try container.decode(Power.self, forKey: .power)
@@ -120,6 +123,8 @@ class Electronic: Product {
         sensors = try container.decodeIfPresent([String].self, forKey: .sensors)
         smartFeatures = try container.decodeIfPresent(SmartFeatures.self, forKey: .smartFeatures)
         remoteControl = try container.decodeIfPresent(RemoteControl.self, forKey: .remoteControl)
+        storage = try container.decodeIfPresent(Storage.self, forKey: .storage)
+        memory = try container.decodeIfPresent(Memory.self, forKey: .memory)
 
         try super.init(from: decoder)
     }
@@ -127,22 +132,22 @@ class Electronic: Product {
     override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
 
-        // Encode the properties specific to Electronic class
         try container.encode(brand, forKey: .brand)
-        try container.encode(connectivity, forKey: .connectivity)
+        try container.encodeIfPresent(connectivity, forKey: .connectivity)
         try container.encode(finish, forKey: .finish)
-        try container.encode(capacity, forKey: .capacity)
         try container.encode(weight, forKey: .weight)
         try container.encode(size, forKey: .size)
         try container.encode(power, forKey: .power)
-        try container.encode(camera, forKey: .camera)
+        try container.encodeIfPresent(camera, forKey: .camera)
         try container.encode(control, forKey: .control)
-        try container.encode(display, forKey: .display)
-        try container.encode(playback, forKey: .playback)
-        try container.encode(softwareUpdates, forKey: .softwareUpdates)
-        try container.encode(sensors, forKey: .sensors)
-        try container.encode(smartFeatures, forKey: .smartFeatures)
-        try container.encode(remoteControl, forKey: .remoteControl)
+        try container.encodeIfPresent(display, forKey: .display)
+        try container.encodeIfPresent(playback, forKey: .playback)
+        try container.encodeIfPresent(softwareUpdates, forKey: .softwareUpdates)
+        try container.encodeIfPresent(sensors, forKey: .sensors)
+        try container.encodeIfPresent(smartFeatures, forKey: .smartFeatures)
+        try container.encodeIfPresent(remoteControl, forKey: .remoteControl)
+        try container.encodeIfPresent(storage, forKey: .storage)
+        try container.encodeIfPresent(memory, forKey: .memory)
 
         try super.encode(to: encoder)
     }

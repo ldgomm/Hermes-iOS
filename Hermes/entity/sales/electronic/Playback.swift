@@ -19,14 +19,14 @@ class Playback: Codable, Hashable {
     }
     
     var audioPlayback: [String]
-    var videoPlayback: [String]
+    var videoPlayback: [String]?
     
     private enum CodingKeys: CodingKey {
         case audioPlayback
         case videoPlayback
     }
     
-    init(audioPlayback: [String], videoPlayback: [String]) {
+    init(audioPlayback: [String], videoPlayback: [String]?) {
         self.audioPlayback = audioPlayback
         self.videoPlayback = videoPlayback
     }
@@ -34,12 +34,12 @@ class Playback: Codable, Hashable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.audioPlayback = try container.decode([String].self, forKey: .audioPlayback)
-        self.videoPlayback = try container.decode([String].self, forKey: .videoPlayback)
+        self.videoPlayback = try container.decodeIfPresent([String].self, forKey: .videoPlayback)
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.audioPlayback, forKey: .audioPlayback)
-        try container.encode(self.videoPlayback, forKey: .videoPlayback)
+        try container.encodeIfPresent(self.videoPlayback, forKey: .videoPlayback)
     }
 }

@@ -7,11 +7,9 @@
 
 import Foundation
 
-class Phone: Electronic {
-    static func == (lhs: Phone, rhs: Phone) -> Bool {
+class Computer: Electronic {
+    static func == (lhs: Computer, rhs: Computer) -> Bool {
         return lhs.model == rhs.model &&
-        lhs.dataStorage == rhs.dataStorage &&
-        lhs.memory == rhs.memory &&
         lhs.display == rhs.display &&
         lhs.os == rhs.os &&
         lhs.chip == rhs.chip &&
@@ -31,8 +29,6 @@ class Phone: Electronic {
     
     override func hash(into hasher: inout Hasher) {
         hasher.combine(model)
-        hasher.combine(dataStorage)
-        hasher.combine(memory)
         hasher.combine(display)
         hasher.combine(os)
         hasher.combine(chip)
@@ -51,18 +47,16 @@ class Phone: Electronic {
     }
     
     var model: String
-    var dataStorage: [String]
-    var memory: String
     var os: String
     var chip: String
     var authentication: [String]
     var paymentMethod: String
     var safety: [String]
-    var carriers: [String]
+    var carriers: [String]?
     var location: [String]
-    var calling: Calling
+    var calling: Calling?
     var accessibility: [String]
-    var simCard: [String]
+    var simCard: [String]?
     var builtInApps: [String]
     var inBox: [String]
     
@@ -84,11 +78,8 @@ class Phone: Electronic {
         case inBox
     }
     
-    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, keywords: [String],
-         brand: String, connectivity: Connectivity, finish: String, capacity: Int?, weight: Int, size: Size, power: Power, camera:Camera?, control: Control, display: Display?, playback: Playback?, softwareUpdates: Bool?, sensors: [String]?, smartFeatures: SmartFeatures?, remoteControl: RemoteControl?, model: String, dataStorage: [String], memory: String, os: String, chip: String, authentication: [String], paymentMethod: String, safety: [String], carriers: [String], location: [String], calling: Calling, accessibility: [String], simCard: [String], builtInApps: [String], inBox: [String]) {
+    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]?, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera?, control: Control, display: Display?, playback: Playback?, softwareUpdates: Bool?, sensors: [String]?, smartFeatures: SmartFeatures?, remoteControl: RemoteControl?, storage: Storage?, memory: Memory?, model: String, os: String, chip: String, authentication: [String], paymentMethod: String, safety: [String], carriers: [String]?, location: [String], calling: Calling?, accessibility: [String], simCard: [String]?, builtInApps: [String], inBox: [String]) {
         self.model = model
-        self.dataStorage = dataStorage
-        self.memory = memory
         self.os = os
         self.chip = chip
         self.authentication = authentication
@@ -102,25 +93,23 @@ class Phone: Electronic {
         self.builtInApps = builtInApps
         self.inBox = inBox
         
-        super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, keywords: keywords, brand: brand, connectivity: connectivity, finish: finish, capacity: capacity, weight: weight, size: size, power: power, camera: camera, control: control, display: display, playback: playback, softwareUpdates: softwareUpdates, sensors: sensors, smartFeatures: smartFeatures, remoteControl: remoteControl)
+        super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, camera: camera, control: control, display: display, playback: playback, softwareUpdates: softwareUpdates, sensors: sensors, smartFeatures: smartFeatures, remoteControl: remoteControl, storage: storage, memory: memory)
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         model = try container.decode(String.self, forKey: .model)
-        dataStorage = try container.decode([String].self, forKey: .dataStorage)
-        memory = try container.decode(String.self, forKey: .memory)
         os = try container.decode(String.self, forKey: .os)
         chip = try container.decode(String.self, forKey: .chip)
         authentication = try container.decode([String].self, forKey: .authentication)
         paymentMethod = try container.decode(String.self, forKey: .paymentMethod)
         safety = try container.decode([String].self, forKey: .safety)
-        carriers = try container.decode([String].self, forKey: .carriers)
+        carriers = try container.decodeIfPresent([String].self, forKey: .carriers)
         location = try container.decode([String].self, forKey: .location)
-        calling = try container.decode(Calling.self, forKey: .calling)
+        calling = try container.decodeIfPresent(Calling.self, forKey: .calling)
         accessibility = try container.decode([String].self, forKey: .accessibility)
-        simCard = try container.decode([String].self, forKey: .simCard)
+        simCard = try container.decodeIfPresent([String].self, forKey: .simCard)
         builtInApps = try container.decode([String].self, forKey: .builtInApps)
         inBox = try container.decode([String].self, forKey: .inBox)
         
@@ -131,18 +120,16 @@ class Phone: Electronic {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(model, forKey: .model)
-        try container.encode(dataStorage, forKey: .dataStorage)
-        try container.encode(memory, forKey: .memory)
         try container.encode(os, forKey: .os)
         try container.encode(chip, forKey: .chip)
         try container.encode(authentication, forKey: .authentication)
         try container.encode(paymentMethod, forKey: .paymentMethod)
         try container.encode(safety, forKey: .safety)
-        try container.encode(carriers, forKey: .carriers)
+        try container.encodeIfPresent(carriers, forKey: .carriers)
         try container.encode(location, forKey: .location)
-        try container.encode(calling, forKey: .calling)
+        try container.encodeIfPresent(calling, forKey: .calling)
         try container.encode(accessibility, forKey: .accessibility)
-        try container.encode(simCard, forKey: .simCard)
+        try container.encodeIfPresent(simCard, forKey: .simCard)
         try container.encode(builtInApps, forKey: .builtInApps)
         try container.encode(inBox, forKey: .inBox)
         
@@ -150,7 +137,7 @@ class Phone: Electronic {
     }
 }
 
-let phone: Phone = .init(
+let phone: Computer = .init(
     id: "12345",
     name: "SmartPhone Pro",
     price: 899.99,
@@ -170,7 +157,10 @@ let phone: Phone = .init(
             back: "box_back_image_url.jpg"
         )
     ),
+    stock: 10,
+    colours: nil,
     keywords: ["Smartphone", "Flagship", "iOS", "5G"],
+    category: " ", subcategory: "String",
     brand: "TechCo",
     connectivity: Connectivity(
         ports: ["USB-C"],
@@ -178,7 +168,6 @@ let phone: Phone = .init(
         wireless: ["Wi-Fi 6", "Bluetooth 5.2"]
     ),
     finish: "Matte Black",
-    capacity: 128,
     weight: 165,
     size: Size(height: 6.2, width: 3.0, deep: 0.35),
     power: Power(
@@ -216,9 +205,9 @@ let phone: Phone = .init(
     sensors: ["Face ID", "Accelerometer", "Gyroscope"],
     smartFeatures: SmartFeatures(aiAssistant: "", extraFeatures: [""]),
     remoteControl: RemoteControl(type: "", voiceControl: true),
+    storage: Storage(internalCapacity: [0], hasExternalCapacity: nil, externalCapacity: [1]),
+    memory: Memory(capacity: [1]),
     model: "Pro 2023",
-    dataStorage: ["UFS 3.1"],
-    memory: "8GB RAM",
     os: "iOS 15",
     chip: "A16 Bionic",
     authentication: ["Face ID", "Fingerprint Sensor"],
@@ -245,9 +234,7 @@ extension Bundle {
         guard let data = try? Data (contentsOf: url) else {
             fatalError("Failed to load \(file) from bundle.")
         }
-        let decoder = JSONDecoder ()
-        
-        guard let loaded = try? decoder.decode (T.self, from: data) else {
+        guard let loaded = try? JSONDecoder().decode (T.self, from: data) else {
         fatalError("Failed to decode \(file) from bundle.")
         }
         return loaded

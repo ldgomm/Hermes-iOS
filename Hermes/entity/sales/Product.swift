@@ -22,7 +22,11 @@ class Product: Codable, Hashable, Identifiable {
     var origin: String
     var offer: Offer
     var images: Images
+    var stock: Int
+    var colours: [String]?
     var keywords: [String]
+    var category: String
+    var subcategory: String
     
     private enum CodingKeys: CodingKey {
         case id
@@ -31,17 +35,25 @@ class Product: Codable, Hashable, Identifiable {
         case origin
         case offer
         case images
+        case stock
+        case colours
         case keywords
+        case category
+        case subcategory
     }
     
-    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, keywords: [String]) {
+    init(id: String, name: String, price: Double, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]?, keywords: [String], category: String, subcategory: String) {
         self.id = id
         self.name = name
         self.price = price
         self.origin = origin
         self.offer = offer
         self.images = images
+        self.stock = stock
+        self.colours = colours
         self.keywords = keywords
+        self.category = category
+        self.subcategory = subcategory
     }
     
     required init(from decoder: Decoder) throws {
@@ -52,7 +64,11 @@ class Product: Codable, Hashable, Identifiable {
         self.origin = try container.decode(String.self, forKey: .origin)
         self.offer = try container.decode(Offer.self, forKey: .offer)
         self.images = try container.decode(Images.self, forKey: .images)
+        self.stock = try container.decode(Int.self, forKey: .stock)
+        self.colours = try container.decodeIfPresent([String].self, forKey: .colours)
         self.keywords = try container.decode([String].self, forKey: .keywords)
+        self.category = try container.decode(String.self, forKey: .category)
+        self.subcategory = try container.decode(String.self, forKey: .subcategory)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -63,6 +79,10 @@ class Product: Codable, Hashable, Identifiable {
         try container.encode(self.origin, forKey: .origin)
         try container.encode(self.offer, forKey: .offer)
         try container.encode(self.images, forKey: .images)
+        try container.encode(self.stock, forKey: .stock)
+        try container.encodeIfPresent(self.colours, forKey: .colours)
         try container.encode(self.keywords, forKey: .keywords)
+        try container.encode(self.category, forKey: .category)
+        try container.encode(self.subcategory, forKey: .subcategory)
     }
 }

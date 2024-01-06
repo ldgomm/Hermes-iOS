@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F72B48EBB000704F7C /* Storage.swift */; };
+		AC5AA1FA2B48EC9900704F7C /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F92B48EC9900704F7C /* Memory.swift */; };
 		AC792DB12B48B2950079FBCD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB02B48B2950079FBCD /* Offer.swift */; };
 		AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB22B48B2A60079FBCD /* BoxImages.swift */; };
 		AC792DB52B48B2E50079FBCD /* MainImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB42B48B2E50079FBCD /* MainImages.swift */; };
 		AC792DB72B48B3410079FBCD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB62B48B3410079FBCD /* Images.swift */; };
-		AC792DB92B48B4E50079FBCD /* phones.json in Resources */ = {isa = PBXBuildFile; fileRef = AC792DB82B48B4E50079FBCD /* phones.json */; };
+		AC792DB92B48B4E50079FBCD /* computers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC792DB82B48B4E50079FBCD /* computers.json */; };
 		ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81152B484D6A00BE3D7C /* Electronic.swift */; };
-		ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* Phone.swift */; };
+		ACAC81182B485F6500BE3D7C /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* Computer.swift */; };
 		ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */; };
 		ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811F2B488D9A00BE3D7C /* Size.swift */; };
 		ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81222B488DBD00BE3D7C /* Charging.swift */; };
@@ -54,13 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC5AA1F72B48EBB000704F7C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		AC5AA1F92B48EC9900704F7C /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		AC792DB02B48B2950079FBCD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		AC792DB22B48B2A60079FBCD /* BoxImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxImages.swift; sourceTree = "<group>"; };
 		AC792DB42B48B2E50079FBCD /* MainImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImages.swift; sourceTree = "<group>"; };
 		AC792DB62B48B3410079FBCD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		AC792DB82B48B4E50079FBCD /* phones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phones.json; sourceTree = "<group>"; };
+		AC792DB82B48B4E50079FBCD /* computers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = computers.json; sourceTree = "<group>"; };
 		ACAC81152B484D6A00BE3D7C /* Electronic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electronic.swift; sourceTree = "<group>"; };
-		ACAC81172B485F6500BE3D7C /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		ACAC81172B485F6500BE3D7C /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 		ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		ACAC811F2B488D9A00BE3D7C /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		ACAC81222B488DBD00BE3D7C /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
@@ -142,23 +146,25 @@
 				ACAC81242B488DCC00BE3D7C /* Control.swift */,
 				ACAC812E2B488E5900BE3D7C /* Display.swift */,
 				ACAC81152B484D6A00BE3D7C /* Electronic.swift */,
+				AC5AA1F92B48EC9900704F7C /* Memory.swift */,
 				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
 				ACAC81302B488E6800BE3D7C /* Power.swift */,
 				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
 				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
-				ACAC811B2B488D5E00BE3D7C /* phone */,
+				AC5AA1F72B48EBB000704F7C /* Storage.swift */,
+				ACAC811B2B488D5E00BE3D7C /* computer */,
 			);
 			path = electronic;
 			sourceTree = "<group>";
 		};
-		ACAC811B2B488D5E00BE3D7C /* phone */ = {
+		ACAC811B2B488D5E00BE3D7C /* computer */ = {
 			isa = PBXGroup;
 			children = (
 				ACAC81282B488E0100BE3D7C /* Calling.swift */,
-				ACAC81172B485F6500BE3D7C /* Phone.swift */,
+				ACAC81172B485F6500BE3D7C /* Computer.swift */,
 			);
-			path = phone;
+			path = computer;
 			sourceTree = "<group>";
 		};
 		ACB029632B462B350007372F = {
@@ -185,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
-				AC792DB82B48B4E50079FBCD /* phones.json */,
+				AC792DB82B48B4E50079FBCD /* computers.json */,
 				ACB029712B462B350007372F /* ContentView.swift */,
 				ACAC81142B484D4800BE3D7C /* entity */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
@@ -325,7 +331,7 @@
 			files = (
 				ACB029792B462B360007372F /* Preview Assets.xcassets in Resources */,
 				ACB029762B462B360007372F /* Assets.xcassets in Resources */,
-				AC792DB92B48B4E50079FBCD /* phones.json in Resources */,
+				AC792DB92B48B4E50079FBCD /* computers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,8 +357,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */,
+				AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */,
 				ACAC81272B488DDC00BE3D7C /* Playback.swift in Sources */,
-				ACAC81182B485F6500BE3D7C /* Phone.swift in Sources */,
+				ACAC81182B485F6500BE3D7C /* Computer.swift in Sources */,
 				ACAC812F2B488E5900BE3D7C /* Display.swift in Sources */,
 				ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */,
 				ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */,
@@ -363,6 +370,7 @@
 				ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */,
 				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,
 				ACAC81292B488E0100BE3D7C /* Calling.swift in Sources */,
+				AC5AA1FA2B48EC9900704F7C /* Memory.swift in Sources */,
 				AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */,
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
 				ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */,
