@@ -18,6 +18,7 @@ class Product: Codable, Hashable, Identifiable {
     
     var id: String
     var name: String
+    var overviews: [Overview]
     var price: Price
     var origin: String
     var offer: Offer
@@ -31,6 +32,7 @@ class Product: Codable, Hashable, Identifiable {
     private enum CodingKeys: CodingKey {
         case id
         case name
+        case overviews
         case price
         case origin
         case offer
@@ -42,9 +44,10 @@ class Product: Codable, Hashable, Identifiable {
         case subcategory
     }
     
-    init(id: String, name: String, price: Price, origin: String = "Ecuador", offer: Offer, images: Images, stock: Int = 1, colours: [String]? = ["Negro"], keywords: [String], category: String, subcategory: String) {
+    init(id: String, name: String, overviews: [Overview], price: Price, origin: String = "Ecuador", offer: Offer, images: Images, stock: Int = 1, colours: [String]? = ["Negro"], keywords: [String], category: String, subcategory: String) {
         self.id = id
         self.name = name
+        self.overviews = overviews
         self.price = price
         self.origin = origin
         self.offer = offer
@@ -60,6 +63,7 @@ class Product: Codable, Hashable, Identifiable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(String.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
+        self.overviews = try container.decode([Overview].self, forKey: .overviews)
         self.price = try container.decode(Price.self, forKey: .price)
         self.origin = try container.decode(String.self, forKey: .origin)
         self.offer = try container.decode(Offer.self, forKey: .offer)
@@ -75,6 +79,7 @@ class Product: Codable, Hashable, Identifiable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.id, forKey: .id)
         try container.encode(self.name, forKey: .name)
+        try container.encode(self.overviews, forKey: .overviews)
         try container.encode(self.price, forKey: .price)
         try container.encode(self.origin, forKey: .origin)
         try container.encode(self.offer, forKey: .offer)

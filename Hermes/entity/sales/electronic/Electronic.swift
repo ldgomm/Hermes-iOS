@@ -10,23 +10,24 @@ import Foundation
 class Electronic: Product {
     static func == (lhs: Electronic, rhs: Electronic) -> Bool {
         return lhs.id == rhs.id &&
-            lhs.brand == rhs.brand &&
-            lhs.connectivity == rhs.connectivity &&
-            lhs.finish == rhs.finish &&
-            lhs.weight == rhs.weight &&
-            lhs.size == rhs.size &&
-            lhs.power == rhs.power &&
-            lhs.camera == rhs.camera &&
-            lhs.control == rhs.control &&
-            lhs.display == rhs.display &&
-            lhs.playback == rhs.playback &&
-            lhs.softwareUpdates == rhs.softwareUpdates &&
-            lhs.sensors == rhs.sensors &&
-            lhs.smartFeatures == rhs.smartFeatures &&
-            lhs.smartFeatures == rhs.smartFeatures &&
-            lhs.storage == rhs.storage &&
-            lhs.memory == rhs.memory &&
-            lhs.model == rhs.model &&
+        lhs.brand == rhs.brand &&
+        lhs.connectivity == rhs.connectivity &&
+        lhs.finish == rhs.finish &&
+        lhs.weight == rhs.weight &&
+        lhs.size == rhs.size &&
+        lhs.power == rhs.power &&
+        lhs.camera == rhs.camera &&
+        lhs.control == rhs.control &&
+        lhs.display == rhs.display &&
+        lhs.playback == rhs.playback &&
+        lhs.softwareUpdates == rhs.softwareUpdates &&
+        lhs.sensors == rhs.sensors &&
+        lhs.smartFeatures == rhs.smartFeatures &&
+        lhs.smartFeatures == rhs.smartFeatures &&
+        lhs.storage == rhs.storage &&
+        lhs.chip == rhs.chip &&
+        lhs.memory == rhs.memory &&
+        lhs.model == rhs.model &&
         lhs.inBox == rhs.inBox
         
     }
@@ -47,6 +48,7 @@ class Electronic: Product {
         hasher.combine(sensors)
         hasher.combine(smartFeatures)
         hasher.combine(remoteControl)
+        hasher.combine(chip)
         hasher.combine(storage)
         hasher.combine(memory)
         hasher.combine(model)
@@ -67,6 +69,7 @@ class Electronic: Product {
     var sensors: [String]?
     var smartFeatures: SmartFeatures?
     var remoteControl: RemoteControl?
+    var chip: Chip?
     var storage: Storage?
     var memory: Memory?
     var model: String
@@ -87,13 +90,14 @@ class Electronic: Product {
         case sensors
         case smartFeatures
         case remoteControl
+        case chip
         case storage
         case memory
         case model
         case inBox
     }
     
-    init(id: String, name: String, price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String]) {
+    init(id: String, name: String, overviews: [Overview], price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, chip: Chip? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String]) {
         self.brand = brand
         self.connectivity = connectivity
         self.finish = finish
@@ -108,17 +112,18 @@ class Electronic: Product {
         self.sensors = sensors
         self.smartFeatures = smartFeatures
         self.remoteControl = remoteControl
+        self.chip = chip
         self.storage = storage
         self.memory = memory
         self.model = model
         self.inBox = inBox
         
-        super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory)
+        super.init(id: id, name: name, overviews: overviews, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory)
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-
+        
         brand = try container.decode(String.self, forKey: .brand)
         connectivity = try container.decodeIfPresent(Connectivity.self, forKey: .connectivity)
         finish = try container.decode(String.self, forKey: .finish)
@@ -133,17 +138,18 @@ class Electronic: Product {
         sensors = try container.decodeIfPresent([String].self, forKey: .sensors)
         smartFeatures = try container.decodeIfPresent(SmartFeatures.self, forKey: .smartFeatures)
         remoteControl = try container.decodeIfPresent(RemoteControl.self, forKey: .remoteControl)
+        chip = try container.decodeIfPresent(Chip.self, forKey: .chip)
         storage = try container.decodeIfPresent(Storage.self, forKey: .storage)
         memory = try container.decodeIfPresent(Memory.self, forKey: .memory)
         model = try container.decode(String.self, forKey: .model)
         inBox = try container.decode([String].self, forKey: .inBox)
-
+        
         try super.init(from: decoder)
     }
     
     override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-
+        
         try container.encode(brand, forKey: .brand)
         try container.encodeIfPresent(connectivity, forKey: .connectivity)
         try container.encode(finish, forKey: .finish)
@@ -158,11 +164,12 @@ class Electronic: Product {
         try container.encodeIfPresent(sensors, forKey: .sensors)
         try container.encodeIfPresent(smartFeatures, forKey: .smartFeatures)
         try container.encodeIfPresent(remoteControl, forKey: .remoteControl)
+        try container.encodeIfPresent(chip, forKey: .chip)
         try container.encodeIfPresent(storage, forKey: .storage)
         try container.encodeIfPresent(memory, forKey: .memory)
         try container.encode(model, forKey: .model)
         try container.encode(inBox, forKey: .inBox)
-
+        
         try super.encode(to: encoder)
     }
 }

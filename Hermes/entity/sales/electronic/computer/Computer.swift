@@ -11,7 +11,6 @@ class Computer: Electronic {
     static func == (lhs: Computer, rhs: Computer) -> Bool {
         lhs.display == rhs.display &&
         lhs.os == rhs.os &&
-        lhs.chip == rhs.chip &&
         lhs.camera == rhs.camera &&
         lhs.authentication == rhs.authentication &&
         lhs.paymentMethod == rhs.paymentMethod &&
@@ -28,7 +27,6 @@ class Computer: Electronic {
     override func hash(into hasher: inout Hasher) {
         hasher.combine(display)
         hasher.combine(os)
-        hasher.combine(chip)
         hasher.combine(camera)
         hasher.combine(authentication)
         hasher.combine(paymentMethod)
@@ -43,7 +41,6 @@ class Computer: Electronic {
     }
     
     var os: String
-    var chip: String
     var authentication: [String]
     var paymentMethod: String
     var safety: [String]
@@ -59,7 +56,6 @@ class Computer: Electronic {
         case dataStorage
         case memory
         case os
-        case chip
         case authentication
         case paymentMethod
         case safety
@@ -71,9 +67,8 @@ class Computer: Electronic {
         case builtInApps
     }
     
-    init(id: String, name: String, price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String], os: String, chip: String, authentication: [String], paymentMethod: String, safety: [String], carriers: [String]? = nil, location: [String], calling: Calling? = nil, accessibility: [String], simCard: [String]? = nil, builtInApps: [String]) {
+    init(id: String, name: String, overviews: [Overview], price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, chip: Chip? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String], os: String, authentication: [String], paymentMethod: String, safety: [String], carriers: [String]? = nil, location: [String], calling: Calling? = nil, accessibility: [String], simCard: [String]? = nil, builtInApps: [String]) {
         self.os = os
-        self.chip = chip
         self.authentication = authentication
         self.paymentMethod = paymentMethod
         self.safety = safety
@@ -84,14 +79,13 @@ class Computer: Electronic {
         self.simCard = simCard
         self.builtInApps = builtInApps
         
-        super.init(id: id, name: name, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, camera: camera, control: control, display: display, playback: playback, softwareUpdates: softwareUpdates, sensors: sensors, smartFeatures: smartFeatures, remoteControl: remoteControl, storage: storage, memory: memory, model: model, inBox: inBox)
+        super.init(id: id, name: name, overviews: overviews, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, camera: camera, control: control, display: display, playback: playback, softwareUpdates: softwareUpdates, sensors: sensors, smartFeatures: smartFeatures, remoteControl: remoteControl, chip: chip, storage: storage, memory: memory, model: model, inBox: inBox)
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         os = try container.decode(String.self, forKey: .os)
-        chip = try container.decode(String.self, forKey: .chip)
         authentication = try container.decode([String].self, forKey: .authentication)
         paymentMethod = try container.decode(String.self, forKey: .paymentMethod)
         safety = try container.decode([String].self, forKey: .safety)
@@ -109,7 +103,6 @@ class Computer: Electronic {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(os, forKey: .os)
-        try container.encode(chip, forKey: .chip)
         try container.encode(authentication, forKey: .authentication)
         try container.encode(paymentMethod, forKey: .paymentMethod)
         try container.encode(safety, forKey: .safety)
@@ -127,6 +120,7 @@ class Computer: Electronic {
 let phone: Computer = .init(
     id: "12345",
     name: "SmartPhone Pro",
+    overviews: [Overview(title: "", subtitle: "", body: "", image: "")],
     price: Price(cash: 999.99),
     origin: "USA",
     offer: Offer(isInOffer: true, percentage: 15),
@@ -196,7 +190,6 @@ let phone: Computer = .init(
     model: "Pro 2023",
     inBox: ["Charger"],
     os: "iOS 15",
-    chip: "A16 Bionic",
     authentication: ["Face ID", "Fingerprint Sensor"],
     paymentMethod: "Apple Pay",
     safety: ["Face Recognition", "Touch ID"],

@@ -2,6 +2,14 @@
     {
       "id": "1",
       "name": "iPhone Pro",
+      "overviews": [
+          {
+              "title": "",
+              "subtitle": "",
+              "body": "",
+              "image": ""
+          }
+      ],
       "price": {
           "cash": 999.99
       },
@@ -99,7 +107,6 @@
       "dataStorage": ["UFS 3.1"],
       "inBox": ["Charging Cable", "EarPods"],
       "os": "iOS 15",
-      "chip": "A16 Bionic",
       "authentication": ["Face ID", "Fingerprint Sensor"],
       "paymentMethod": "Apple Pay",
       "safety": ["Face Recognition", "Touch ID"],
@@ -117,6 +124,14 @@
     {
       "id": "2",
       "name": "SmartPhone Max",
+      "overviews": [
+          {
+              "title": "",
+              "subtitle": "",
+              "body": "",
+              "image": ""
+          }
+      ],
       "price": {
           "cash": 999.99
       },
@@ -214,7 +229,6 @@
       "dataStorage": ["UFS 3.1"],
       "inBox": ["Charging Cable", "EarPods"],
       "os": "iOS 15",
-      "chip": "A16 Bionic",
       "authentication": ["Face ID", "Fingerprint Sensor"],
       "paymentMethod": "Apple Pay",
       "safety": ["Face Recognition", "Touch ID"],
