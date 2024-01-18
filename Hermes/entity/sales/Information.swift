@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Overview: Codable, Hashable {
-    static func == (lhs: Overview, rhs: Overview) -> Bool {
+class Information: Codable, Hashable {
+    static func == (lhs: Information, rhs: Information) -> Bool {
         return lhs.title == rhs.title &&
         lhs.subtitle == rhs.subtitle &&
         lhs.body == rhs.body &&

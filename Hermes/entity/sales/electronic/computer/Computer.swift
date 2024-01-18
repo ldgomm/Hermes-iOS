@@ -67,7 +67,7 @@ class Computer: Electronic {
         case builtInApps
     }
     
-    init(id: String, name: String, overviews: [Overview], price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, chip: Chip? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String], os: String, authentication: [String], paymentMethod: String, safety: [String], carriers: [String]? = nil, location: [String], calling: Calling? = nil, accessibility: [String], simCard: [String]? = nil, builtInApps: [String]) {
+    init(id: String, name: String, overview: [Information], price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera:Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, chip: Chip? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String], os: String, authentication: [String], paymentMethod: String, safety: [String], carriers: [String]? = nil, location: [String], calling: Calling? = nil, accessibility: [String], simCard: [String]? = nil, builtInApps: [String]) {
         self.os = os
         self.authentication = authentication
         self.paymentMethod = paymentMethod
@@ -79,7 +79,7 @@ class Computer: Electronic {
         self.simCard = simCard
         self.builtInApps = builtInApps
         
-        super.init(id: id, name: name, overviews: overviews, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, camera: camera, control: control, display: display, playback: playback, softwareUpdates: softwareUpdates, sensors: sensors, smartFeatures: smartFeatures, remoteControl: remoteControl, chip: chip, storage: storage, memory: memory, model: model, inBox: inBox)
+        super.init(id: id, name: name, overview: overview, price: price, origin: origin, offer: offer, images: images, stock: stock, colours: colours, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, camera: camera, control: control, display: display, playback: playback, softwareUpdates: softwareUpdates, sensors: sensors, smartFeatures: smartFeatures, remoteControl: remoteControl, chip: chip, storage: storage, memory: memory, model: model, inBox: inBox)
     }
     
     required init(from decoder: Decoder) throws {
@@ -117,91 +117,90 @@ class Computer: Electronic {
     }
 }
 
-let phone: Computer = .init(
-    id: "12345",
-    name: "SmartPhone Pro",
-    overviews: [Overview(title: "", subtitle: "", body: "", image: "")],
-    price: Price(cash: 999.99),
-    origin: "USA",
-    offer: Offer(isInOffer: true, percentage: 15),
-    images: Images(
-        main: MainImages(
-            front: "front_image_url.jpg",
-            back: "back_image_url.jpg",
-            left: "left_image_url.jpg",
-            right: "right_image_url.jpg",
-            up: "up_image_url.jpg",
-            down: "down_image_url.jpg"
-        ),
-        box: BoxImages(
-            front: "box_front_image_url.jpg",
-            back: "box_back_image_url.jpg"
-        )
-    ),
-    stock: 10,
-    keywords: ["Smartphone", "Flagship", "iOS", "5G"],
-    category: " ", subcategory: "String",
-    brand: "TechCo",
-    connectivity: Connectivity(
-        ports: ["USB-C"],
-        cellular: ["5G", "LTE"],
-        wireless: ["Wi-Fi 6", "Bluetooth 5.2"]
-    ),
-    finish: "Matte Black",
-    weight: 165,
-    size: Size(height: 6.2, width: 3.0, deep: 0.35),
-    power: Power(
-        isRechargeable: true,
-        charging: Charging(chargingModes: ["Fast Charging", "Wireless Charging"]),
-        battery: Battery(
-            hasBattery: true,
-            isFastCharging: true,
-            approximateDuration: 12,
-            capacity: 4000
-        )
-    ),
-    camera: Camera(
-        system: "Triple Camera",
-        features: ["Night Mode", "Portrait Mode"],
-        extraFeatures: ["Wide Angle", "Telephoto"],
-        videoRecording: ["4K", "1080p"]
-    ),
-    control: Control(externalButtons: ["Volume Up", "Volume Down"]),
-    display: Display(
-        technology: "Super Retina XDR",
-        diagonal: "6.7 inches",
-        updateFrequency: 120,
-        glow: 600,
-        isTouch: true,
-        resolution: "2778x1284",
-        features: ["HDR10", "Dolby Vision"],
-        extraFeatures: ["ProMotion"]
-    ),
-    playback: Playback(
-        audioPlayback: ["AAC", "Dolby Atmos"],
-        videoPlayback: ["H.264", "H.265"]
-    ),
-    softwareUpdates: true,
-    sensors: ["Face ID", "Accelerometer", "Gyroscope"],
-    smartFeatures: SmartFeatures(aiAssistant: "", extraFeatures: [""]),
-    remoteControl: RemoteControl(type: "", voiceControl: true),
-    storage: Storage(internalCapacity: [0], hasExternalCapacity: nil, externalCapacity: [1]),
-    memory: Memory(capacity: [1]),
-    model: "Pro 2023",
-    inBox: ["Charger"],
-    os: "iOS 15",
-    authentication: ["Face ID", "Fingerprint Sensor"],
-    paymentMethod: "Apple Pay",
-    safety: ["Face Recognition", "Touch ID"],
-    carriers: ["Verizon", "AT&T"],
-    location: ["GPS", "Galileo"],
-    calling: Calling(
-        videoCalling: ["FaceTime", "Zoom"],
-        audioCalling: ["Phone", "WhatsApp"]
-    ),
-    accessibility: ["VoiceOver", "Magnifier"],
-    simCard: ["eSIM", "Nano SIM"],
-    builtInApps: ["Messages", "Photos"]
+let phone: Computer = .init(id: "12345",
+                            name: "SmartPhone Pro",
+                            overview: [Information(title: "", subtitle: "", body: "", image: "")],
+                            price: Price(cash: 999.99),
+                            origin: "USA",
+                            offer: Offer(isInOffer: true, percentage: 15),
+                            images: Images(
+                                main: MainImages(
+                                    front: "front_image_url.jpg",
+                                    back: "back_image_url.jpg",
+                                    left: "left_image_url.jpg",
+                                    right: "right_image_url.jpg",
+                                    up: "up_image_url.jpg",
+                                    down: "down_image_url.jpg"
+                                ),
+                                box: BoxImages(
+                                    front: "box_front_image_url.jpg",
+                                    back: "box_back_image_url.jpg"
+                                )
+                            ),
+                            stock: 10,
+                            keywords: ["Smartphone", "Flagship", "iOS", "5G"],
+                            category: " ", subcategory: "String",
+                            brand: "TechCo",
+                            connectivity: Connectivity(
+                                ports: ["USB-C"],
+                                cellular: ["5G", "LTE"],
+                                wireless: ["Wi-Fi 6", "Bluetooth 5.2"]
+                            ),
+                            finish: "Matte Black",
+                            weight: 165,
+                            size: Size(height: 6.2, width: 3.0, deep: 0.35),
+                            power: Power(
+                                isRechargeable: true,
+                                charging: Charging(chargingModes: ["Fast Charging", "Wireless Charging"]),
+                                battery: Battery(
+                                    hasBattery: true,
+                                    isFastCharging: true,
+                                    approximateDuration: 12,
+                                    capacity: 4000
+                                )
+                            ),
+                            camera: Camera(
+                                system: "Triple Camera",
+                                features: ["Night Mode", "Portrait Mode"],
+                                extraFeatures: ["Wide Angle", "Telephoto"],
+                                videoRecording: ["4K", "1080p"]
+                            ),
+                            control: Control(externalButtons: ["Volume Up", "Volume Down"]),
+                            display: Display(
+                                technology: "Super Retina XDR",
+                                diagonal: "6.7 inches",
+                                updateFrequency: 120,
+                                glow: 600,
+                                isTouch: true,
+                                resolution: "2778x1284",
+                                features: ["HDR10", "Dolby Vision"],
+                                extraFeatures: ["ProMotion"]
+                            ),
+                            playback: Playback(
+                                audioPlayback: ["AAC", "Dolby Atmos"],
+                                videoPlayback: ["H.264", "H.265"]
+                            ),
+                            softwareUpdates: true,
+                            sensors: ["Face ID", "Accelerometer", "Gyroscope"],
+                            smartFeatures: SmartFeatures(aiAssistant: "", extraFeatures: [""]),
+                            remoteControl: RemoteControl(type: "", voiceControl: true),
+                            storage: Storage(internalCapacity: [0], hasExternalCapacity: nil, externalCapacity: [1]),
+                            memory: Memory(capacity: [1]),
+                            model: "Pro 2023",
+                            inBox: ["Charger"],
+                            os: "iOS 15",
+                            authentication: ["Face ID", "Fingerprint Sensor"],
+                            paymentMethod: "Apple Pay",
+                            safety: ["Face Recognition", "Touch ID"],
+                            carriers: ["Verizon", "AT&T"],
+                            location: ["GPS", "Galileo"],
+                            calling: Calling(
+                                videoCalling: ["FaceTime", "Zoom"],
+                                audioCalling: ["Phone", "WhatsApp"]
+                            ),
+                            accessibility: ["VoiceOver", "Magnifier"],
+                            simCard: ["eSIM", "Nano SIM"],
+                            builtInApps: ["Messages", "Photos"]
 )
 
 extension Bundle {
@@ -213,7 +212,7 @@ extension Bundle {
             fatalError("Failed to load \(file) from bundle.")
         }
         guard let loaded = try? JSONDecoder().decode (T.self, from: data) else {
-        fatalError("Failed to decode \(file) from bundle.")
+            fatalError("Failed to decode \(file) from bundle.")
         }
         return loaded
     }

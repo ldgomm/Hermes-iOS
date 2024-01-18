@@ -35,14 +35,14 @@ class Console: Electronic {
         case firmware
     }
     
-    init(id: String, name: String, overviews: [Overview], price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera: Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, chip: Chip? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String], coolingSystem: String, opticalDrive: Bool, backwardCompatibility: [String],firmware: Bool?) {
+    init(id: String, name: String, overview: [Information], price: Price, origin: String, offer: Offer, images: Images, stock: Int, colours: [String]? = nil, keywords: [String], category: String, subcategory: String, brand: String, connectivity: Connectivity, finish: String, weight: Int, size: Size, power: Power, camera: Camera? = nil, control: Control, display: Display? = nil, playback: Playback? = nil, softwareUpdates: Bool? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, remoteControl: RemoteControl? = nil, chip: Chip? = nil, storage: Storage? = nil, memory: Memory? = nil, model: String, inBox: [String], coolingSystem: String, opticalDrive: Bool, backwardCompatibility: [String],firmware: Bool?) {
 
         self.coolingSystem = coolingSystem
         self.opticalDrive = opticalDrive
         self.backwardCompatibility = backwardCompatibility
         self.firmware = firmware
         
-        super.init(id: id, name: name, overviews: overviews, price: price, origin: origin, offer: offer, images: images, stock: stock, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, control: control, model: model, inBox: inBox)
+        super.init(id: id, name: name, overview: overview, price: price, origin: origin, offer: offer, images: images, stock: stock, keywords: keywords, category: category, subcategory: subcategory, brand: brand, connectivity: connectivity, finish: finish, weight: weight, size: size, power: power, control: control, model: model, inBox: inBox)
     }
     
     required init(from decoder: Decoder) throws {
