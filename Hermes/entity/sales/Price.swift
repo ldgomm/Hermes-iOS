@@ -7,46 +7,20 @@
 
 import Foundation
 
-class Price: Codable, Hashable {
-    static func == (lhs: Price, rhs: Price) -> Bool {
-        return lhs.cash == rhs.cash &&
-        lhs.card == rhs.card &&
-        lhs.months == rhs.months
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(cash)
-        hasher.combine(card)
-        hasher.combine(months)
-    }
-    
-    private enum CodingKeys: CodingKey {
-        case cash
-        case card
-        case months
-    }
-    
+class Price  {
     var cash: Double
-    var card: Double?
-    var months: Int?
+    var affiliate: Double? = nil
+    var creditCard: CreditCard? = nil 
     
-    init(cash: Double, card: Double? = nil, months: Int? = nil) {
+    init(cash: Double, affiliate: Double? = nil, creditCard: CreditCard? = nil) {
         self.cash = cash
-        self.card = card
-        self.months = months
+        self.affiliate = affiliate
+        self.creditCard = creditCard
     }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.cash = try container.decode(Double.self, forKey: .cash)
-        self.card = try container.decodeIfPresent(Double.self, forKey: .card)
-        self.months = try container.decodeIfPresent(Int.self, forKey: .months)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(self.cash, forKey: .cash)
-        try container.encodeIfPresent(self.card, forKey: .card)
-        try container.encodeIfPresent(self.months, forKey: .months)
-    }
+}
+
+class CreditCard {
+    var card: Double = 0.0
+    var withinterest: Int = 12
+    var withoutinterest: Int = 3
 }

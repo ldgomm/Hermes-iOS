@@ -7,28 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC12EFDF2B4C96E400ABF914 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12EFDE2B4C96E400ABF914 /* Chip.swift */; };
 		AC37381E2B49DB8900B5193E /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381D2B49DB8900B5193E /* Price.swift */; };
 		AC3738202B49F16400B5193E /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381F2B49F16400B5193E /* Information.swift */; };
-		AC3738242B49F3B700B5193E /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3738232B49F3B700B5193E /* Console.swift */; };
+		AC4A62552B68447E002C91B1 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A62542B68447E002C91B1 /* Specifications.swift */; };
 		AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F72B48EBB000704F7C /* Storage.swift */; };
-		AC5AA1FA2B48EC9900704F7C /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F92B48EC9900704F7C /* Memory.swift */; };
 		AC792DB12B48B2950079FBCD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB02B48B2950079FBCD /* Offer.swift */; };
-		AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB22B48B2A60079FBCD /* BoxImages.swift */; };
-		AC792DB52B48B2E50079FBCD /* MainImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB42B48B2E50079FBCD /* MainImages.swift */; };
 		AC792DB72B48B3410079FBCD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB62B48B3410079FBCD /* Images.swift */; };
 		AC792DB92B48B4E50079FBCD /* computers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC792DB82B48B4E50079FBCD /* computers.json */; };
-		ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81152B484D6A00BE3D7C /* Electronic.swift */; };
-		ACAC81182B485F6500BE3D7C /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* Computer.swift */; };
-		ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */; };
+		ACAC81182B485F6500BE3D7C /* ComputerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */; };
 		ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811F2B488D9A00BE3D7C /* Size.swift */; };
-		ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81222B488DBD00BE3D7C /* Charging.swift */; };
 		ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81242B488DCC00BE3D7C /* Control.swift */; };
 		ACAC81272B488DDC00BE3D7C /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81262B488DDC00BE3D7C /* Playback.swift */; };
-		ACAC81292B488E0100BE3D7C /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81282B488E0100BE3D7C /* Calling.swift */; };
-		ACAC812B2B488E1100BE3D7C /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC812A2B488E1100BE3D7C /* Battery.swift */; };
 		ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC812C2B488E4400BE3D7C /* Camera.swift */; };
-		ACAC812F2B488E5900BE3D7C /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC812E2B488E5900BE3D7C /* Display.swift */; };
 		ACAC81312B488E6800BE3D7C /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81302B488E6800BE3D7C /* Power.swift */; };
 		ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */; };
 		ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */; };
@@ -60,28 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC12EFDE2B4C96E400ABF914 /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
 		AC37381D2B49DB8900B5193E /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		AC37381F2B49F16400B5193E /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
-		AC3738232B49F3B700B5193E /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		AC4A62542B68447E002C91B1 /* Specifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
 		AC5AA1F72B48EBB000704F7C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		AC5AA1F92B48EC9900704F7C /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		AC792DB02B48B2950079FBCD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
-		AC792DB22B48B2A60079FBCD /* BoxImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxImages.swift; sourceTree = "<group>"; };
-		AC792DB42B48B2E50079FBCD /* MainImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImages.swift; sourceTree = "<group>"; };
 		AC792DB62B48B3410079FBCD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		AC792DB82B48B4E50079FBCD /* computers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = computers.json; sourceTree = "<group>"; };
-		ACAC81152B484D6A00BE3D7C /* Electronic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electronic.swift; sourceTree = "<group>"; };
-		ACAC81172B485F6500BE3D7C /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
-		ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerFeature.swift; sourceTree = "<group>"; };
 		ACAC811F2B488D9A00BE3D7C /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
-		ACAC81222B488DBD00BE3D7C /* Charging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charging.swift; sourceTree = "<group>"; };
 		ACAC81242B488DCC00BE3D7C /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		ACAC81262B488DDC00BE3D7C /* Playback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playback.swift; sourceTree = "<group>"; };
-		ACAC81282B488E0100BE3D7C /* Calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
-		ACAC812A2B488E1100BE3D7C /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		ACAC812C2B488E4400BE3D7C /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		ACAC812E2B488E5900BE3D7C /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 		ACAC81302B488E6800BE3D7C /* Power.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
 		ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFeatures.swift; sourceTree = "<group>"; };
 		ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControl.swift; sourceTree = "<group>"; };
@@ -123,14 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC3738222B49F39C00B5193E /* console */ = {
-			isa = PBXGroup;
-			children = (
-				AC3738232B49F3B700B5193E /* Console.swift */,
-			);
-			path = console;
-			sourceTree = "<group>";
-		};
 		ACAC81142B484D4800BE3D7C /* entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,48 +115,22 @@
 			isa = PBXGroup;
 			children = (
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				AC4A62542B68447E002C91B1 /* Specifications.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
 				AC37381D2B49DB8900B5193E /* Price.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
-				AC792DB42B48B2E50079FBCD /* MainImages.swift */,
-				AC792DB22B48B2A60079FBCD /* BoxImages.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
-				ACAC811A2B488D3100BE3D7C /* electronic */,
-			);
-			path = sales;
-			sourceTree = "<group>";
-		};
-		ACAC811A2B488D3100BE3D7C /* electronic */ = {
-			isa = PBXGroup;
-			children = (
-				ACAC812A2B488E1100BE3D7C /* Battery.swift */,
 				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
-				ACAC81222B488DBD00BE3D7C /* Charging.swift */,
-				AC12EFDE2B4C96E400ABF914 /* Chip.swift */,
-				ACAC811C2B488D7F00BE3D7C /* Connectivity.swift */,
-				ACAC81242B488DCC00BE3D7C /* Control.swift */,
-				ACAC812E2B488E5900BE3D7C /* Display.swift */,
-				ACAC81152B484D6A00BE3D7C /* Electronic.swift */,
-				AC5AA1F92B48EC9900704F7C /* Memory.swift */,
-				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
+				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
 				ACAC81302B488E6800BE3D7C /* Power.swift */,
-				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
 				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
 				AC5AA1F72B48EBB000704F7C /* Storage.swift */,
-				ACAC811B2B488D5E00BE3D7C /* computer */,
-				AC3738222B49F39C00B5193E /* console */,
+				ACAC81242B488DCC00BE3D7C /* Control.swift */,
+				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
+				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
 			);
-			path = electronic;
-			sourceTree = "<group>";
-		};
-		ACAC811B2B488D5E00BE3D7C /* computer */ = {
-			isa = PBXGroup;
-			children = (
-				ACAC81282B488E0100BE3D7C /* Calling.swift */,
-				ACAC81172B485F6500BE3D7C /* Computer.swift */,
-			);
-			path = computer;
+			path = sales;
 			sourceTree = "<group>";
 		};
 		ACB029632B462B350007372F = {
@@ -210,6 +156,7 @@
 		ACB0296E2B462B350007372F /* Hermes */ = {
 			isa = PBXGroup;
 			children = (
+				ACCFE5642B59AC4300431622 /* app */,
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
 				AC792DB82B48B4E50079FBCD /* computers.json */,
 				ACB029712B462B350007372F /* ContentView.swift */,
@@ -243,6 +190,69 @@
 				ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */,
 			);
 			path = HermesUITests;
+			sourceTree = "<group>";
+		};
+		ACCFE5642B59AC4300431622 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				ACCFE5662B59AC5A00431622 /* util */,
+				ACCFE5652B59AC5700431622 /* main */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		ACCFE5652B59AC5700431622 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				ACCFE5672B59AC6000431622 /* data */,
+				ACCFE56B2B59AC7900431622 /* domain */,
+				ACCFE56C2B59AC7E00431622 /* presentation */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		ACCFE5662B59AC5A00431622 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		ACCFE5672B59AC6000431622 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				ACCFE5692B59AC6A00431622 /* service */,
+				ACCFE5682B59AC6300431622 /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		ACCFE5682B59AC6300431622 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACCFE5692B59AC6A00431622 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		ACCFE56B2B59AC7900431622 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		ACCFE56C2B59AC7E00431622 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,29 +390,19 @@
 				ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */,
 				AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */,
 				ACAC81272B488DDC00BE3D7C /* Playback.swift in Sources */,
-				ACAC81182B485F6500BE3D7C /* Computer.swift in Sources */,
-				ACAC812F2B488E5900BE3D7C /* Display.swift in Sources */,
+				ACAC81182B485F6500BE3D7C /* ComputerFeature.swift in Sources */,
 				ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */,
 				ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */,
+				AC4A62552B68447E002C91B1 /* Specifications.swift in Sources */,
 				AC792DB12B48B2950079FBCD /* Offer.swift in Sources */,
 				AC792DB72B48B3410079FBCD /* Images.swift in Sources */,
-				ACAC812B2B488E1100BE3D7C /* Battery.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
-				ACAC811D2B488D7F00BE3D7C /* Connectivity.swift in Sources */,
-				AC12EFDF2B4C96E400ABF914 /* Chip.swift in Sources */,
 				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,
-				ACAC81292B488E0100BE3D7C /* Calling.swift in Sources */,
-				AC5AA1FA2B48EC9900704F7C /* Memory.swift in Sources */,
-				AC792DB32B48B2A60079FBCD /* BoxImages.swift in Sources */,
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
 				AC37381E2B49DB8900B5193E /* Price.swift in Sources */,
-				AC3738242B49F3B700B5193E /* Console.swift in Sources */,
-				ACAC81232B488DBD00BE3D7C /* Charging.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
-				AC792DB52B48B2E50079FBCD /* MainImages.swift in Sources */,
-				ACAC81162B484D6A00BE3D7C /* Electronic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
