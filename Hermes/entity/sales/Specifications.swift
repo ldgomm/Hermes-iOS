@@ -25,6 +25,25 @@ class Specifications {
     var softwareUpdates: Bool? = nil
     var size: Size? = nil
     var storage: Storage? = nil
+    
+    init(model: String, colours: [String]? = nil, camera: Camera? = nil, control: Control? = nil, coolingSystem: [String]? = nil, display: Display? = nil, inBox: [String]? = nil, memory: [Int]? = nil, playback: Playback? = nil, power: Power? = nil, remoteControl: RemoteControl? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, softwareUpdates: Bool? = nil, size: Size? = nil, storage: Storage? = nil) {
+        self.model = model
+        self.colours = colours
+        self.camera = camera
+        self.control = control
+        self.coolingSystem = coolingSystem
+        self.display = display
+        self.inBox = inBox
+        self.memory = memory
+        self.playback = playback
+        self.power = power
+        self.remoteControl = remoteControl
+        self.sensors = sensors
+        self.smartFeatures = smartFeatures
+        self.softwareUpdates = softwareUpdates
+        self.size = size
+        self.storage = storage
+    }
 }
 
 class Display: Codable, Hashable {
@@ -38,4 +57,14 @@ class Display: Codable, Hashable {
     var features: [String]
     var extraFeatures: [String]
   
+    init(technology: String, diagonal: String, updateFrequency: Int, glow: Int, isTouch: Bool, resolution: String, features: [String], extraFeatures: [String]) {
+        self.technology = technology
+        self.diagonal = diagonal
+        self.updateFrequency = updateFrequency
+        self.glow = glow
+        self.isTouch = isTouch
+        self.resolution = resolution
+        self.features = features
+        self.extraFeatures = extraFeatures
+    }
 }
