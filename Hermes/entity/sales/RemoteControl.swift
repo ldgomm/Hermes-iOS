@@ -8,8 +8,11 @@
 import Foundation
 
 class RemoteControl {
-   
     var type: [String]
     var voiceControl: Bool? = nil
 
+    init(type: [String], voiceControl: Bool? = nil) {
+        self.type = type
+        self.voiceControl = voiceControl
+    }
 }

@@ -8,19 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let computers: [Computer] = Bundle.main.decode("computers.json")
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                List {
-                    ForEach(computers) { copmuter in
-                        Text(copmuter.name)
-                    }
-                }
-            }
-            .navigationTitle("Computers")
-        }
+
+                        Text("copmuter")
+               
     }
 }
 

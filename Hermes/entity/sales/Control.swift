@@ -8,7 +8,9 @@
 import Foundation
 
 class Control {
-
     var externalButtons: [String]? = nil
    
+    init(externalButtons: [String]? = nil) {
+        self.externalButtons = externalButtons
+    }
 }

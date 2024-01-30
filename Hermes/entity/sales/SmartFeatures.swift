@@ -13,4 +13,9 @@ class SmartFeatures {
     var aiAssistant: String? = nil
     var extraFeatures: [String]? = nil
 
+    init(features: [String], aiAssistant: String? = nil, extraFeatures: [String]? = nil) {
+        self.features = features
+        self.aiAssistant = aiAssistant
+        self.extraFeatures = extraFeatures
+    }
 }

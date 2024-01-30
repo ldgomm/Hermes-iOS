@@ -14,4 +14,10 @@ class Camera {
     var extraFeatures: [String]? = nil
     var videoRecording: [String]? = nil
    
+    init(system: String, features: [String], extraFeatures: [String]? = nil, videoRecording: [String]? = nil) {
+        self.system = system
+        self.features = features
+        self.extraFeatures = extraFeatures
+        self.videoRecording = videoRecording
+    }
 }

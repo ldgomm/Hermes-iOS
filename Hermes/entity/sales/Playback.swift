@@ -8,8 +8,11 @@
 import Foundation
 
 class Playback {
-   
     var audioPlayback: [String]
     var videoPlayback: [String]? = nil
   
+    init(audioPlayback: [String], videoPlayback: [String]? = nil) {
+        self.audioPlayback = audioPlayback
+        self.videoPlayback = videoPlayback
+    }
 }

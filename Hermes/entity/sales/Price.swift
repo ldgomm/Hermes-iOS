@@ -23,4 +23,10 @@ class CreditCard {
     var card: Double
     var withinterest: Int? = nil
     var withoutinterest: Int? = nil
+    
+    init(card: Double, withinterest: Int? = nil, withoutinterest: Int? = nil) {
+        self.card = card
+        self.withinterest = withinterest
+        self.withoutinterest = withoutinterest
+    }
 }

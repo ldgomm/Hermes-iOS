@@ -14,6 +14,7 @@ class Product {
     var images: Images
     var name: String
     var overview: [Information]
+    var specifications: Specifications? = nil
     var offer: Offer
     var origin: String
     var price: Price
@@ -21,6 +22,22 @@ class Product {
     var category: Category
     var keywords: [String]
     var warranty: Warranty
+    
+    init(id: String, code: Code? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty) {
+        self.id = id
+        self.code = code
+        self.images = images
+        self.name = name
+        self.overview = overview
+        self.specifications = specifications
+        self.offer = offer
+        self.origin = origin
+        self.price = price
+        self.stock = stock
+        self.category = category
+        self.keywords = keywords
+        self.warranty = warranty
+    }
 }
 
 class Category {
@@ -38,9 +55,19 @@ class Category {
 class Code {
     var bar: String? = nil
     var qr: String? = nil
+    
+    init(bar: String? = nil, qr: String? = nil) {
+        self.bar = bar
+        self.qr = qr
+    }
 }
 
 class Warranty {
     var hasWarranty: Bool
     var months: Int? = nil
+    
+    init(hasWarranty: Bool, months: Int? = nil) {
+        self.hasWarranty = hasWarranty
+        self.months = months
+    }
 }
