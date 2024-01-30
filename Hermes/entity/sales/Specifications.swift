@@ -9,6 +9,7 @@ import Foundation
 
 class Specifications {
     var accessories: [String]? = nil
+    var applications: [String]? = nil
     var models: [String]? = nil
     var colours: [String]? = nil
     var camera: Camera? = nil
@@ -30,6 +31,7 @@ class Specifications {
     var softwareUpdates: Bool? = nil
     var size: Size? = nil
     var storage: Storage? = nil
+    var waterproof: Waterproof? = nil
     
 }
 
@@ -46,3 +48,7 @@ class Display{
   
 }
 
+class Waterproof {
+    var isWaterproof: Bool
+    var specification: String? = nil
+}

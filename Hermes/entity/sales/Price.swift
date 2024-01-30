@@ -21,6 +21,6 @@ class Price  {
 
 class CreditCard {
     var card: Double
-    var withinterest: Int
-    var withoutinterest: Int
+    var withinterest: Int? = nil
+    var withoutinterest: Int? = nil
 }

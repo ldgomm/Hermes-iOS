@@ -12,5 +12,5 @@ class Size {
     var height: Double
     var width: Double
     var deep: Double? = nil
-  
+    var unit: String
 }
