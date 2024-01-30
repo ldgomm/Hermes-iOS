@@ -10,28 +10,17 @@ import Foundation
 class Product {
     
     var id: String
+    var code: Code? = nil
+    var images: Images
     var name: String
     var overview: [Information]
-    var price: Price
-    var origin: String
     var offer: Offer
-    var images: Images
+    var origin: String
+    var price: Price
     var stock: Int
-    var keywords: [String]
     var category: Category
-    
-    init(id: String, name: String, overview: [Information], price: Price, origin: String, offer: Offer, images: Images, stock: Int, keywords: [String], category: Category) {
-        self.id = id
-        self.name = name
-        self.overview = overview
-        self.price = price
-        self.origin = origin
-        self.offer = offer
-        self.images = images
-        self.stock = stock
-        self.keywords = keywords
-        self.category = category
-    }
+    var keywords: [String]
+    var warranty: Warranty
 }
 
 class Category {
@@ -44,4 +33,14 @@ class Category {
         self.ni = ni
         self.xi = xi
     }
+}
+
+class Code {
+    var bar: String? = nil
+    var qr: String? = nil
+}
+
+class Warranty {
+    var hasWarranty: Bool
+    var months: Int? = nil
 }

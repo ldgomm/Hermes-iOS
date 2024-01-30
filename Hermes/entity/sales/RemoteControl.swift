@@ -10,6 +10,6 @@ import Foundation
 class RemoteControl {
    
     var type: [String]
-    var voiceControl: Bool
+    var voiceControl: Bool? = nil
 
 }

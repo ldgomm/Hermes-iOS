@@ -115,10 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
-				AC4A62542B68447E002C91B1 /* Specifications.swift */,
+				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
 				AC37381D2B49DB8900B5193E /* Price.swift */,
-				AC792DB62B48B3410079FBCD /* Images.swift */,
+				AC4A62542B68447E002C91B1 /* Specifications.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
 				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
 				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,

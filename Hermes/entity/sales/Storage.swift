@@ -10,7 +10,7 @@ import Foundation
 class Storage {
     
     var internalCapacity: [Int]
-    var hasExternalCapacity: Bool?
-    var externalCapacity: [Int]?
+    var hasExternalCapacity: Bool? = nil
+    var externalCapacity: [Int]? = nil
     
 }

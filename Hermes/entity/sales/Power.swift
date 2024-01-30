@@ -8,7 +8,7 @@
 import Foundation
 
 class Power {
-    
+    var voltage: Int
     var isRechargeable: Bool
     var charging: [String]? = nil
     var battery: Battery? = nil
@@ -16,9 +16,9 @@ class Power {
 }
 
 class Battery {
-
-    var capacity: Int
-    var approximateDuration: Int = nil
+    var type: String
+    var capacity: Int? = nil
+    var approximateDuration: Int? = nil
     var isFastCharging: Bool? = nil
     
 }

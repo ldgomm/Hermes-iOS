@@ -20,7 +20,7 @@ class Price  {
 }
 
 class CreditCard {
-    var card: Double = 0.0
-    var withinterest: Int = 12
-    var withoutinterest: Int = 3
+    var card: Double
+    var withinterest: Int
+    var withoutinterest: Int
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 class Images {
-    var main: Photos
+    var product: Photos
     var box: Photos? = nil
 }
 

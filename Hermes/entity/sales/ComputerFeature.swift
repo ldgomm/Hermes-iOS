@@ -18,6 +18,7 @@ class ComputerFeature {
     var location: [String]? = nil
     var os: String? = nil
     var paymentMethod: String? = nil
+    var ram: [String]? = nil
     var safety: [String]? = nil
     var simCard: [String]? = nil
 }
@@ -48,7 +49,7 @@ class GPU {
 
 class Calling {
     
-    var videoCalling: [String]
+    var videoCalling: [String]? = nil
     var audioCalling: [String]
   
 }
@@ -56,8 +57,8 @@ class Calling {
 class Connectivity {
 
     var ports: [String]
-    var cellular: [String]
-    var wireless: [String]
+    var cellular: [String]? = nil
+    var wireless: [String]? = nil
     
 }
 
