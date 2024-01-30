@@ -22,8 +22,10 @@ class Product {
     var category: Category
     var keywords: [String]
     var warranty: Warranty
+    var legal: String? = nil
+    var warning: String? = nil
     
-    init(id: String, code: Code? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty) {
+    init(id: String, code: Code? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty, legal: String? = nil, warning: String? = nil) {
         self.id = id
         self.code = code
         self.images = images
@@ -37,6 +39,8 @@ class Product {
         self.category = category
         self.keywords = keywords
         self.warranty = warranty
+        self.legal = legal
+        self.warning = warning
     }
 }
 

@@ -11,6 +11,8 @@
 		AC0D80262B694B2500EFB719 /* Waterprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D80252B694B2500EFB719 /* Waterprof.swift */; };
 		AC0D80282B694B9000EFB719 /* Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D80272B694B9000EFB719 /* Metal.swift */; };
 		AC0D802A2B694BAA00EFB719 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D80292B694BAA00EFB719 /* Food.swift */; };
+		AC0D802C2B69693F00EFB719 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D802B2B69693F00EFB719 /* Medicine.swift */; };
+		AC0D802E2B696AA000EFB719 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D802D2B696AA000EFB719 /* Drink.swift */; };
 		AC37381E2B49DB8900B5193E /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381D2B49DB8900B5193E /* Price.swift */; };
 		AC3738202B49F16400B5193E /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381F2B49F16400B5193E /* Information.swift */; };
 		AC4A62552B68447E002C91B1 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A62542B68447E002C91B1 /* Specifications.swift */; };
@@ -58,6 +60,8 @@
 		AC0D80252B694B2500EFB719 /* Waterprof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waterprof.swift; sourceTree = "<group>"; };
 		AC0D80272B694B9000EFB719 /* Metal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metal.swift; sourceTree = "<group>"; };
 		AC0D80292B694BAA00EFB719 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		AC0D802B2B69693F00EFB719 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		AC0D802D2B696AA000EFB719 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		AC37381D2B49DB8900B5193E /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		AC37381F2B49F16400B5193E /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AC4A62542B68447E002C91B1 /* Specifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
@@ -111,6 +115,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC0D802F2B696D3E00EFB719 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				ACCFE5672B59AC6000431622 /* data */,
+				ACCFE56B2B59AC7900431622 /* domain */,
+				ACCFE56C2B59AC7E00431622 /* presentation */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		AC0D80302B696DE200EFB719 /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D80272B694B9000EFB719 /* Metal.swift */,
+			);
+			path = metal;
+			sourceTree = "<group>";
+		};
+		AC0D80312B696DE600EFB719 /* food */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D80292B694BAA00EFB719 /* Food.swift */,
+			);
+			path = food;
+			sourceTree = "<group>";
+		};
+		AC0D80322B696DEB00EFB719 /* drink */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D802D2B696AA000EFB719 /* Drink.swift */,
+			);
+			path = drink;
+			sourceTree = "<group>";
+		};
+		AC0D80332B696DF000EFB719 /* medicine */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D802B2B69693F00EFB719 /* Medicine.swift */,
+			);
+			path = medicine;
+			sourceTree = "<group>";
+		};
 		ACAC81142B484D4800BE3D7C /* entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,25 +168,27 @@
 		ACAC81192B488D2800BE3D7C /* sales */ = {
 			isa = PBXGroup;
 			children = (
-				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
-				AC4A62542B68447E002C91B1 /* Specifications.swift */,
-				AC0D80272B694B9000EFB719 /* Metal.swift */,
-				AC0D80292B694BAA00EFB719 /* Food.swift */,
-				AC792DB62B48B3410079FBCD /* Images.swift */,
-				AC37381F2B49F16400B5193E /* Information.swift */,
-				AC37381D2B49DB8900B5193E /* Price.swift */,
-				AC0D80232B694A8300EFB719 /* Display.swift */,
-				AC792DB02B48B2950079FBCD /* Offer.swift */,
-				AC0D80252B694B2500EFB719 /* Waterprof.swift */,
 				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
 				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
+				ACAC81242B488DCC00BE3D7C /* Control.swift */,
+				AC0D80232B694A8300EFB719 /* Display.swift */,
+				AC792DB62B48B3410079FBCD /* Images.swift */,
+				AC37381F2B49F16400B5193E /* Information.swift */,
+				AC792DB02B48B2950079FBCD /* Offer.swift */,
+				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
 				ACAC81302B488E6800BE3D7C /* Power.swift */,
+				AC37381D2B49DB8900B5193E /* Price.swift */,
+				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
+				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
 				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
+				AC4A62542B68447E002C91B1 /* Specifications.swift */,
 				AC5AA1F72B48EBB000704F7C /* Storage.swift */,
-				ACAC81242B488DCC00BE3D7C /* Control.swift */,
-				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
-				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
+				AC0D80252B694B2500EFB719 /* Waterprof.swift */,
+				AC0D80322B696DEB00EFB719 /* drink */,
+				AC0D80312B696DE600EFB719 /* food */,
+				AC0D80332B696DF000EFB719 /* medicine */,
+				AC0D80302B696DE200EFB719 /* metal */,
 			);
 			path = sales;
 			sourceTree = "<group>";
@@ -172,7 +220,6 @@
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
 				AC792DB82B48B4E50079FBCD /* computers.json */,
 				ACB029712B462B350007372F /* ContentView.swift */,
-				ACAC81142B484D4800BE3D7C /* entity */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
 				ACB029772B462B360007372F /* Preview Content */,
 			);
@@ -208,19 +255,17 @@
 			isa = PBXGroup;
 			children = (
 				ACCFE5662B59AC5A00431622 /* util */,
-				ACCFE5652B59AC5700431622 /* main */,
+				ACCFE5652B59AC5700431622 /* features */,
 			);
 			path = app;
 			sourceTree = "<group>";
 		};
-		ACCFE5652B59AC5700431622 /* main */ = {
+		ACCFE5652B59AC5700431622 /* features */ = {
 			isa = PBXGroup;
 			children = (
-				ACCFE5672B59AC6000431622 /* data */,
-				ACCFE56B2B59AC7900431622 /* domain */,
-				ACCFE56C2B59AC7E00431622 /* presentation */,
+				AC0D802F2B696D3E00EFB719 /* main */,
 			);
-			path = main;
+			path = features;
 			sourceTree = "<group>";
 		};
 		ACCFE5662B59AC5A00431622 /* util */ = {
@@ -233,6 +278,7 @@
 		ACCFE5672B59AC6000431622 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				ACAC81142B484D4800BE3D7C /* entity */,
 				ACCFE5692B59AC6A00431622 /* service */,
 				ACCFE5682B59AC6300431622 /* model */,
 			);
@@ -413,8 +459,10 @@
 				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
 				AC0D802A2B694BAA00EFB719 /* Food.swift in Sources */,
+				AC0D802C2B69693F00EFB719 /* Medicine.swift in Sources */,
 				AC37381E2B49DB8900B5193E /* Price.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
+				AC0D802E2B696AA000EFB719 /* Drink.swift in Sources */,
 				AC0D80262B694B2500EFB719 /* Waterprof.swift in Sources */,
 				AC0D80282B694B9000EFB719 /* Metal.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,

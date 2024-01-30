@@ -48,5 +48,3 @@ class Metal: Product {
         super.init(id: id, code: code, images: images, name: name, overview: overview, specifications: specifications, offer: offer, origin: origin, price: price, stock: stock, category: category, keywords: keywords, warranty: warranty)
     }
 }
-
-let iphone = Metal(id: <#T##String#>, images: <#T##Images#>, name: <#T##String#>, overview: <#T##[Information]#>, offer: <#T##Offer#>, origin: <#T##String#>, price: <#T##Price#>, stock: <#T##Int#>, category: <#T##Category#>, keywords: <#T##[String]#>, warranty: <#T##Warranty#>, accessories: <#T##[String]?#>)
