@@ -8,7 +8,6 @@
 import Foundation
 
 class Codes: Codable {
-
     var store: String? = nil
     var bar: String? = nil
     var qr: String? = nil
