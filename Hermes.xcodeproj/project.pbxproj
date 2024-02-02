@@ -144,11 +144,13 @@
 			children = (
 				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
 				ACAC81242B488DCC00BE3D7C /* Control.swift */,
+				AC0D80232B694A8300EFB719 /* Display.swift */,
 				AC0D80272B694B9000EFB719 /* Metal.swift */,
 				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
 				ACAC81302B488E6800BE3D7C /* Power.swift */,
 				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
 				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
+				AC5AA1F72B48EBB000704F7C /* Storage.swift */,
 				AC0D80252B694B2500EFB719 /* Waterprof.swift */,
 			);
 			path = metal;
@@ -194,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
-				AC0D80232B694A8300EFB719 /* Display.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
@@ -205,7 +206,6 @@
 				AC5595372B698F940070B8EE /* Category.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
 				AC4A62542B68447E002C91B1 /* Specifications.swift */,
-				AC5AA1F72B48EBB000704F7C /* Storage.swift */,
 				AC0D80322B696DEB00EFB719 /* drink */,
 				AC0D80312B696DE600EFB719 /* food */,
 				AC0D80332B696DF000EFB719 /* medicine */,

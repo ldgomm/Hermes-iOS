@@ -9,6 +9,4 @@ import Foundation
 
 class Dink: Product {
     var degrees: Int? = nil
-    
-    
 }

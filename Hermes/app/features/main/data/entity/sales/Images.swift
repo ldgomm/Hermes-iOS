@@ -18,9 +18,9 @@ class Images {
 }
 
 class Photo {
-    var url: String? = nil
+    var url: String
     
-    init(url: String? = nil) {
+    init(url: String) {
         self.url = url
     }
 }
