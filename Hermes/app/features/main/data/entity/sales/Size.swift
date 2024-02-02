@@ -7,22 +7,7 @@
 
 import Foundation
 
-class Size: Codable, Hashable {
-    
-    static func == (lhs: Size, rhs: Size) -> Bool {
-        return lhs.width == rhs.width &&
-        lhs.height == rhs.height &&
-        lhs.deep == rhs.deep &&
-        lhs.unit == rhs.unit
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(width)
-        hasher.combine(height)
-        hasher.combine(deep)
-        hasher.combine(unit)
-    }
-    
+class Size: Codable {
     var width: Double
     var height: Double
     var deep: Double? = nil

@@ -143,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
+				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
 				ACAC81242B488DCC00BE3D7C /* Control.swift */,
 				AC0D80232B694A8300EFB719 /* Display.swift */,
 				AC0D80272B694B9000EFB719 /* Metal.swift */,
@@ -195,7 +196,6 @@
 		ACAC81192B488D2800BE3D7C /* sales */ = {
 			isa = PBXGroup;
 			children = (
-				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
