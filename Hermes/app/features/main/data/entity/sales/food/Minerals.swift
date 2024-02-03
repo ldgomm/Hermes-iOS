@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Minerals {
+class Minerals: Codable {
     var calcium: Int? = nil
     var iron: Int? = nil
     var potassium: Int? = nil
@@ -37,4 +37,43 @@ class Minerals {
         self.molybdenum = molybdenum
         self.chloride = chloride
     }
+        
+    private enum CodingKeys: String, CodingKey {
+        case calcium, iron, potassium, phosphorus, iodine, magnesium, zinc, selenium, copper, manganese, chromium, molybdenum, chloride
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        calcium = try container.decodeIfPresent(Int.self, forKey: .calcium)
+        iron = try container.decodeIfPresent(Int.self, forKey: .iron)
+        potassium = try container.decodeIfPresent(Int.self, forKey: .potassium)
+        phosphorus = try container.decodeIfPresent(Int.self, forKey: .phosphorus)
+        iodine = try container.decodeIfPresent(Int.self, forKey: .iodine)
+        magnesium = try container.decodeIfPresent(Int.self, forKey: .magnesium)
+        zinc = try container.decodeIfPresent(Int.self, forKey: .zinc)
+        selenium = try container.decodeIfPresent(Int.self, forKey: .selenium)
+        copper = try container.decodeIfPresent(Int.self, forKey: .copper)
+        manganese = try container.decodeIfPresent(Int.self, forKey: .manganese)
+        chromium = try container.decodeIfPresent(Int.self, forKey: .chromium)
+        molybdenum = try container.decodeIfPresent(Int.self, forKey: .molybdenum)
+        chloride = try container.decodeIfPresent(Int.self, forKey: .chloride)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(calcium, forKey: .calcium)
+        try container.encodeIfPresent(iron, forKey: .iron)
+        try container.encodeIfPresent(potassium, forKey: .potassium)
+        try container.encodeIfPresent(phosphorus, forKey: .phosphorus)
+        try container.encodeIfPresent(iodine, forKey: .iodine)
+        try container.encodeIfPresent(magnesium, forKey: .magnesium)
+        try container.encodeIfPresent(zinc, forKey: .zinc)
+        try container.encodeIfPresent(selenium, forKey: .selenium)
+        try container.encodeIfPresent(copper, forKey: .copper)
+        try container.encodeIfPresent(manganese, forKey: .manganese)
+        try container.encodeIfPresent(chromium, forKey: .chromium)
+        try container.encodeIfPresent(molybdenum, forKey: .molybdenum)
+        try container.encodeIfPresent(chloride, forKey: .chloride)
+    }
 }
+
