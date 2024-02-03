@@ -14,4 +14,15 @@ class Medicine: Product {
     var contraindications: String? = nil
     var activeIngredientContent: String? = nil
     var laboratory: String? = nil
+    
+    init(administration: String? = nil, dosage: String? = nil, sideEffects: String? = nil, contraindications: String? = nil, activeIngredientContent: String? = nil, laboratory: String? = nil) {
+        self.administration = administration
+        self.dosage = dosage
+        self.sideEffects = sideEffects
+        self.contraindications = contraindications
+        self.activeIngredientContent = activeIngredientContent
+        self.laboratory = laboratory
+    }
+    
+    
 }

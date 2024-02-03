@@ -54,9 +54,3 @@ class Food: Product {
         try super.encode(to: encoder)
     }
 }
-
-
-
-
-
-

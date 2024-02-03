@@ -185,6 +185,13 @@
 			path = medicine;
 			sourceTree = "<group>";
 		};
+		ACA438F12B741435004E5BDD /* computer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = computer;
+			sourceTree = "<group>";
+		};
 		ACAC81142B484D4800BE3D7C /* entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,16 +203,17 @@
 		ACAC81192B488D2800BE3D7C /* sales */ = {
 			isa = PBXGroup;
 			children = (
+				AC5595372B698F940070B8EE /* Category.swift */,
+				AC55953B2B698FB90070B8EE /* Code.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
 				AC37381D2B49DB8900B5193E /* Price.swift */,
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
-				AC55953B2B698FB90070B8EE /* Code.swift */,
-				AC5595392B698FA30070B8EE /* Warranty.swift */,
-				AC5595372B698F940070B8EE /* Category.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
 				AC4A62542B68447E002C91B1 /* Specifications.swift */,
+				AC5595392B698FA30070B8EE /* Warranty.swift */,
+				ACA438F12B741435004E5BDD /* computer */,
 				AC0D80322B696DEB00EFB719 /* drink */,
 				AC0D80312B696DE600EFB719 /* food */,
 				AC0D80332B696DF000EFB719 /* medicine */,
