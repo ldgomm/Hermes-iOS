@@ -18,13 +18,12 @@ class RemoteControl: Codable, Hashable {
         hasher.combine(voiceControl)
     }
     
+    private enum CodingKeys: CodingKey {
+        case type, voiceControl
+    }
+    
     var type: [String]
     var voiceControl: Bool? = nil
-
-    private enum CodingKeys: CodingKey {
-        case type
-        case voiceControl
-    }
     
     init(type: [String], voiceControl: Bool? = nil) {
         self.type = type
