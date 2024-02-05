@@ -16,6 +16,13 @@
 		AC37381E2B49DB8900B5193E /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381D2B49DB8900B5193E /* Price.swift */; };
 		AC3738202B49F16400B5193E /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381F2B49F16400B5193E /* Information.swift */; };
 		AC4A62552B68447E002C91B1 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A62542B68447E002C91B1 /* Specifications.swift */; };
+		AC5595302B698E5C0070B8EE /* Minerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55952F2B698E5C0070B8EE /* Minerals.swift */; };
+		AC5595322B698E700070B8EE /* Vitamins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595312B698E700070B8EE /* Vitamins.swift */; };
+		AC5595342B698E7D0070B8EE /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595332B698E7D0070B8EE /* Tuple.swift */; };
+		AC5595362B698E910070B8EE /* NutrientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595352B698E910070B8EE /* NutrientData.swift */; };
+		AC5595382B698F940070B8EE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595372B698F940070B8EE /* Category.swift */; };
+		AC55953A2B698FA30070B8EE /* Warranty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595392B698FA30070B8EE /* Warranty.swift */; };
+		AC55953C2B698FB90070B8EE /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55953B2B698FB90070B8EE /* Code.swift */; };
 		AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F72B48EBB000704F7C /* Storage.swift */; };
 		AC792DB12B48B2950079FBCD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB02B48B2950079FBCD /* Offer.swift */; };
 		AC792DB72B48B3410079FBCD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB62B48B3410079FBCD /* Images.swift */; };
@@ -65,6 +72,13 @@
 		AC37381D2B49DB8900B5193E /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		AC37381F2B49F16400B5193E /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		AC4A62542B68447E002C91B1 /* Specifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
+		AC55952F2B698E5C0070B8EE /* Minerals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minerals.swift; sourceTree = "<group>"; };
+		AC5595312B698E700070B8EE /* Vitamins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitamins.swift; sourceTree = "<group>"; };
+		AC5595332B698E7D0070B8EE /* Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
+		AC5595352B698E910070B8EE /* NutrientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientData.swift; sourceTree = "<group>"; };
+		AC5595372B698F940070B8EE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AC5595392B698FA30070B8EE /* Warranty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warranty.swift; sourceTree = "<group>"; };
+		AC55953B2B698FB90070B8EE /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		AC5AA1F72B48EBB000704F7C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AC792DB02B48B2950079FBCD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		AC792DB62B48B3410079FBCD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -128,7 +142,14 @@
 		AC0D80302B696DE200EFB719 /* metal */ = {
 			isa = PBXGroup;
 			children = (
+				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
+				ACAC81242B488DCC00BE3D7C /* Control.swift */,
 				AC0D80272B694B9000EFB719 /* Metal.swift */,
+				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
+				ACAC81302B488E6800BE3D7C /* Power.swift */,
+				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
+				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
+				AC0D80252B694B2500EFB719 /* Waterprof.swift */,
 			);
 			path = metal;
 			sourceTree = "<group>";
@@ -137,6 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				AC0D80292B694BAA00EFB719 /* Food.swift */,
+				AC55952F2B698E5C0070B8EE /* Minerals.swift */,
+				AC5595352B698E910070B8EE /* NutrientData.swift */,
+				AC5595332B698E7D0070B8EE /* Tuple.swift */,
+				AC5595312B698E700070B8EE /* Vitamins.swift */,
 			);
 			path = food;
 			sourceTree = "<group>";
@@ -168,23 +193,19 @@
 		ACAC81192B488D2800BE3D7C /* sales */ = {
 			isa = PBXGroup;
 			children = (
-				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
 				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
-				ACAC81242B488DCC00BE3D7C /* Control.swift */,
 				AC0D80232B694A8300EFB719 /* Display.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
-				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
-				ACAC81302B488E6800BE3D7C /* Power.swift */,
 				AC37381D2B49DB8900B5193E /* Price.swift */,
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
-				ACAC81342B48A13B00BE3D7C /* RemoteControl.swift */,
+				AC55953B2B698FB90070B8EE /* Code.swift */,
+				AC5595392B698FA30070B8EE /* Warranty.swift */,
+				AC5595372B698F940070B8EE /* Category.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
-				ACAC81322B48A12A00BE3D7C /* SmartFeatures.swift */,
 				AC4A62542B68447E002C91B1 /* Specifications.swift */,
 				AC5AA1F72B48EBB000704F7C /* Storage.swift */,
-				AC0D80252B694B2500EFB719 /* Waterprof.swift */,
 				AC0D80322B696DEB00EFB719 /* drink */,
 				AC0D80312B696DE600EFB719 /* food */,
 				AC0D80332B696DF000EFB719 /* medicine */,
@@ -445,8 +466,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3738202B49F16400B5193E /* Information.swift in Sources */,
+				AC5595322B698E700070B8EE /* Vitamins.swift in Sources */,
 				ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */,
 				AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */,
+				AC55953C2B698FB90070B8EE /* Code.swift in Sources */,
 				ACAC81272B488DDC00BE3D7C /* Playback.swift in Sources */,
 				AC0D80242B694A8300EFB719 /* Display.swift in Sources */,
 				ACAC81182B485F6500BE3D7C /* ComputerFeature.swift in Sources */,
@@ -460,13 +483,18 @@
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
 				AC0D802A2B694BAA00EFB719 /* Food.swift in Sources */,
 				AC0D802C2B69693F00EFB719 /* Medicine.swift in Sources */,
+				AC5595362B698E910070B8EE /* NutrientData.swift in Sources */,
+				AC55953A2B698FA30070B8EE /* Warranty.swift in Sources */,
 				AC37381E2B49DB8900B5193E /* Price.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
 				AC0D802E2B696AA000EFB719 /* Drink.swift in Sources */,
+				AC5595342B698E7D0070B8EE /* Tuple.swift in Sources */,
 				AC0D80262B694B2500EFB719 /* Waterprof.swift in Sources */,
+				AC5595302B698E5C0070B8EE /* Minerals.swift in Sources */,
 				AC0D80282B694B9000EFB719 /* Metal.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
+				AC5595382B698F940070B8EE /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

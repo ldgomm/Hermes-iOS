@@ -26,7 +26,7 @@ class Metal: Product {
     var storage: Storage? = nil
     var waterproof: Waterproof? = nil
     
-    init(id: String, code: Code? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty, accessories: [String]? = nil, applications: [String]? = nil, camera: Camera? = nil, control: Control? = nil, coolingSystem: [String]? = nil, display: Display? = nil, material: String? = nil, memory: [Int]? = nil, places: Int? = nil, playback: Playback? = nil, power: Power? = nil, remoteControl: RemoteControl? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, softwareUpdates: Bool? = nil, storage: Storage? = nil, waterproof: Waterproof? = nil) {
+    init(id: String, codes: Codes? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty, accessories: [String]? = nil, applications: [String]? = nil, camera: Camera? = nil, control: Control? = nil, coolingSystem: [String]? = nil, display: Display? = nil, material: String? = nil, memory: [Int]? = nil, places: Int? = nil, playback: Playback? = nil, power: Power? = nil, remoteControl: RemoteControl? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, softwareUpdates: Bool? = nil, storage: Storage? = nil, waterproof: Waterproof? = nil) {
         self.accessories = accessories
         self.applications = applications
         self.camera = camera
@@ -45,6 +45,6 @@ class Metal: Product {
         self.storage = storage
         self.waterproof = waterproof
         
-        super.init(id: id, code: code, images: images, name: name, overview: overview, specifications: specifications, offer: offer, origin: origin, price: price, stock: stock, category: category, keywords: keywords, warranty: warranty)
+        super.init(id: id, codes: codes, images: images, name: name, overview: overview, specifications: specifications, offer: offer, origin: origin, price: price, stock: stock, category: category, keywords: keywords, warranty: warranty)
     }
 }

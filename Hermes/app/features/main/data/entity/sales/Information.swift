@@ -11,12 +11,12 @@ class Information {
     var title: String
     var subtitle: String
     var body: String
-    var image: String
+    var photo: Photo
     
-    init(title: String, subtitle: String, body: String, image: String) {
+    init(title: String, subtitle: String, body: String, photo: Photo) {
         self.title = title
         self.subtitle = subtitle
         self.body = body
-        self.image = image
+        self.photo = photo
     }
 }
