@@ -22,7 +22,6 @@ class Product: Codable, Hashable, Identifiable {
     var images: Images
     var keywords: [String]
     var name: String
-    var offer: Offer
     var origin: String
     var overview: [Information]
     var price: Price
@@ -45,7 +44,6 @@ class Product: Codable, Hashable, Identifiable {
         case images
         case keywords
         case name
-        case offer
         case origin
         case overview
         case price
@@ -60,14 +58,13 @@ class Product: Codable, Hashable, Identifiable {
         case metalFeature
     }
     
-    init(id: String, category: Category, codes: Codes? = nil, images: Images, keywords: [String], name: String, offer: Offer, origin: String, overview: [Information], price: Price, specifications: Specifications, stock: Int, warranty: Warranty, legal: String? = nil, warning: String? = nil, drinkFeature: Drink? = nil, foodFeature: Food? = nil, medicineFeature: Medicine? = nil, metalFeature: Metal? = nil) {
+    init(id: String, category: Category, codes: Codes? = nil, images: Images, keywords: [String], name: String, origin: String, overview: [Information], price: Price, specifications: Specifications, stock: Int, warranty: Warranty, legal: String? = nil, warning: String? = nil, drinkFeature: Drink? = nil, foodFeature: Food? = nil, medicineFeature: Medicine? = nil, metalFeature: Metal? = nil) {
         self.id = id
         self.category = category
         self.codes = codes
         self.images = images
         self.keywords = keywords
         self.name = name
-        self.offer = offer
         self.origin = origin
         self.overview = overview
         self.price = price
@@ -90,7 +87,6 @@ class Product: Codable, Hashable, Identifiable {
         images = try container.decode(Images.self, forKey: .images)
         keywords = try container.decode([String].self, forKey: .keywords)
         name = try container.decode(String.self, forKey: .name)
-        offer = try container.decode(Offer.self, forKey: .offer)
         origin = try container.decode(String.self, forKey: .origin)
         overview = try container.decode([Information].self, forKey: .overview)
         price = try container.decode(Price.self, forKey: .price)
@@ -113,7 +109,6 @@ class Product: Codable, Hashable, Identifiable {
         try container.encode(images, forKey: .images)
         try container.encode(keywords, forKey: .keywords)
         try container.encode(name, forKey: .name)
-        try container.encode(offer, forKey: .offer)
         try container.encode(origin, forKey: .origin)
         try container.encode(overview, forKey: .overview)
         try container.encode(price, forKey: .price)
