@@ -15,6 +15,10 @@ class Food: Product {
     var vitamins: Vitamins? = nil
     var minerals: Minerals? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case flavors, instructions, precautions, nutrients, vitamins, minerals
+    }
+    
     init(id: String, codes: Codes? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty, flavors: [String]? = nil, instructions: [String]? = nil, precautions: [String]? = nil, nutrients: Nutrients? = nil, vitamins: Vitamins? = nil, minerals: Minerals? = nil) {
         self.flavors = flavors
         self.instructions = instructions
@@ -24,10 +28,6 @@ class Food: Product {
         self.minerals = minerals
         
         super.init(id: id, codes: codes, images: images, name: name, overview: overview, specifications: specifications, offer: offer, origin: origin, price: price, stock: stock, category: category, keywords: keywords, warranty: warranty)
-    }
-        
-    private enum CodingKeys: String, CodingKey {
-        case flavors, instructions, precautions, nutrients, vitamins, minerals
     }
     
     required init(from decoder: Decoder) throws {

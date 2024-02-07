@@ -13,9 +13,7 @@ class Codes: Codable {
     var qr: String? = nil
     
     private enum CodingKeys: CodingKey {
-        case store
-        case bar
-        case qr
+        case store, bar, qr
     }
     
     init(store: String? = nil, bar: String? = nil, qr: String? = nil) {

@@ -12,16 +12,16 @@ class Category: Codable {
     var ni: String
     var xi: String
     
+    private enum CodingKeys: String, CodingKey {
+        case mi, ni, xi
+    }
+    
     init(mi: String, ni: String, xi: String) {
         self.mi = mi
         self.ni = ni
         self.xi = xi
     }
-    
-    private enum CodingKeys: String, CodingKey {
-        case mi, ni, xi
-    }
-    
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         mi = try container.decode(String.self, forKey: .mi)

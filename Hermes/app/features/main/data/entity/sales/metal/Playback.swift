@@ -11,13 +11,13 @@ class Playback: Codable {
     var audioPlayback: [String]
     var videoPlayback: [String]? = nil
   
+    private enum CodingKeys: String, CodingKey {
+        case audioPlayback, videoPlayback
+    }
+    
     init(audioPlayback: [String], videoPlayback: [String]? = nil) {
         self.audioPlayback = audioPlayback
         self.videoPlayback = videoPlayback
-    }
-
-    private enum CodingKeys: String, CodingKey {
-        case audioPlayback, videoPlayback
     }
 
     required init(from decoder: Decoder) throws {

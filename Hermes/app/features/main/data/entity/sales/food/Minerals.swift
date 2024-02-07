@@ -22,6 +22,10 @@ class Minerals: Codable {
     var molybdenum: Int? = nil
     var chloride: Int? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case calcium, iron, potassium, phosphorus, iodine, magnesium, zinc, selenium, copper, manganese, chromium, molybdenum, chloride
+    }
+    
     init(calcium: Int? = nil, iron: Int? = nil, potassium: Int? = nil, phosphorus: Int? = nil, iodine: Int? = nil, magnesium: Int? = nil, zinc: Int? = nil, selenium: Int? = nil, copper: Int? = nil, manganese: Int? = nil, chromium: Int? = nil, molybdenum: Int? = nil, chloride: Int? = nil) {
         self.calcium = calcium
         self.iron = iron
@@ -36,10 +40,6 @@ class Minerals: Codable {
         self.chromium = chromium
         self.molybdenum = molybdenum
         self.chloride = chloride
-    }
-        
-    private enum CodingKeys: String, CodingKey {
-        case calcium, iron, potassium, phosphorus, iodine, magnesium, zinc, selenium, copper, manganese, chromium, molybdenum, chloride
     }
     
     required init(from decoder: Decoder) throws {

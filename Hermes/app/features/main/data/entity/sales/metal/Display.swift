@@ -17,6 +17,10 @@ class Display: Codable {
     var features: [String]? = nil
     var extraFeatures: [String]? = nil
   
+    private enum CodingKeys: String, CodingKey {
+        case technology, diagonal, updateFrequency, glow, isTouch, resolution, features, extraFeatures
+    }
+    
     init(technology: String, diagonal: String? = nil, updateFrequency: Int? = nil, glow: Int? = nil, isTouch: Bool? = nil, resolution: String? = nil, features: [String]? = nil, extraFeatures: [String]? = nil) {
         self.technology = technology
         self.diagonal = diagonal
@@ -26,12 +30,6 @@ class Display: Codable {
         self.resolution = resolution
         self.features = features
         self.extraFeatures = extraFeatures
-    }
-    
-    // MARK: - Codable
-    
-    private enum CodingKeys: String, CodingKey {
-        case technology, diagonal, updateFrequency, glow, isTouch, resolution, features, extraFeatures
     }
     
     required init(from decoder: Decoder) throws {

@@ -11,15 +11,13 @@ class Tuple: Codable {
     var amount: Int? = nil
     var value: Int? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case amount, value
+    }
+    
     init(amount: Int? = nil, value: Int? = nil) {
         self.amount = amount
         self.value = value
-    }
-    
-    // MARK: - Codable
-    
-    private enum CodingKeys: String, CodingKey {
-        case amount, value
     }
     
     required init(from decoder: Decoder) throws {

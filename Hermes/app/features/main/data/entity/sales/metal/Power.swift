@@ -47,15 +47,15 @@ class Battery: Codable {
     var approximateDuration: Int? = nil
     var isFastCharging: Bool? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case type, capacity, approximateDuration, isFastCharging
+    }
+    
     init(type: String, capacity: Int? = nil, approximateDuration: Int? = nil, isFastCharging: Bool? = nil) {
         self.type = type
         self.capacity = capacity
         self.approximateDuration = approximateDuration
         self.isFastCharging = isFastCharging
-    }
-
-    private enum CodingKeys: String, CodingKey {
-        case type, capacity, approximateDuration, isFastCharging
     }
 
     required init(from decoder: Decoder) throws {

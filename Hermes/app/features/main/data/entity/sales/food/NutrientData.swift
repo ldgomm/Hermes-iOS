@@ -20,6 +20,11 @@ class Nutrients: Codable {
     var addedSugars: Tuple? = nil
     var protein: Tuple? = nil
     
+    
+    private enum CodingKeys: String, CodingKey {
+        case calories, totalFat, saturatedFat, transFat, cholesterol, sodium, totalCarbohydrate, dietaryFiber, totalSugars, addedSugars, protein
+    }
+    
     init(calories: Int? = nil, totalFat: Tuple? = nil, saturatedFat: Tuple? = nil, transFat: Tuple? = nil, cholesterol: Tuple? = nil, sodium: Tuple? = nil, totalCarbohydrate: Tuple? = nil, dietaryFiber: Tuple? = nil, totalSugars: Int? = nil, addedSugars: Tuple? = nil, protein: Tuple? = nil) {
         self.calories = calories
         self.totalFat = totalFat
@@ -32,10 +37,6 @@ class Nutrients: Codable {
         self.totalSugars = totalSugars
         self.addedSugars = addedSugars
         self.protein = protein
-    }
-        
-    private enum CodingKeys: String, CodingKey {
-        case calories, totalFat, saturatedFat, transFat, cholesterol, sodium, totalCarbohydrate, dietaryFiber, totalSugars, addedSugars, protein
     }
     
     required init(from decoder: Decoder) throws {

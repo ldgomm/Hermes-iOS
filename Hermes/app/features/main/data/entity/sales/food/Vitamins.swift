@@ -24,6 +24,10 @@ class Vitamins: Codable {
     var pantothenicAcid: Int? = nil
     var choline: Int? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case vitaminD, vitaminA, vitaminC, vitaminE, vitaminK, thiamin, riboflavin, niacin, vitaminB6, folate, folicAcid, vitaminB12, biotin, pantothenicAcid, choline
+    }
+    
     init(vitaminD: Int? = nil, vitaminA: Int? = nil, vitaminC: Int? = nil, vitaminE: Int? = nil, vitaminK: Int? = nil, thiamin: Int? = nil, riboflavin: Int? = nil, niacin: Int? = nil, vitaminB6: Int? = nil, folate: Int? = nil, folicAcid: Int? = nil, vitaminB12: Int? = nil, biotin: Int? = nil, pantothenicAcid: Int? = nil, choline: Int? = nil) {
         self.vitaminD = vitaminD
         self.vitaminA = vitaminA
@@ -40,12 +44,6 @@ class Vitamins: Codable {
         self.biotin = biotin
         self.pantothenicAcid = pantothenicAcid
         self.choline = choline
-    }
-    
-    // MARK: - Codable
-    
-    private enum CodingKeys: String, CodingKey {
-        case vitaminD, vitaminA, vitaminC, vitaminE, vitaminK, thiamin, riboflavin, niacin, vitaminB6, folate, folicAcid, vitaminB12, biotin, pantothenicAcid, choline
     }
     
     required init(from decoder: Decoder) throws {

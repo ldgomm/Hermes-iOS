@@ -12,16 +12,16 @@ class Price: Codable {
     var affiliate: Double? = nil
     var creditCard: CreditCard? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case cash, affiliate, creditCard
+    }
+    
     init(cash: Double, affiliate: Double? = nil, creditCard: CreditCard? = nil) {
         self.cash = cash
         self.affiliate = affiliate
         self.creditCard = creditCard
     }
-    
-    private enum CodingKeys: String, CodingKey {
-        case cash, affiliate, creditCard
-    }
-    
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         cash = try container.decode(Double.self, forKey: .cash)

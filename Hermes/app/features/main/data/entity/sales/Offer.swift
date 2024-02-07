@@ -12,16 +12,16 @@ class Offer: Codable {
     var discountPercentage: Int? = nil
     var time: OfferTime? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case isActive, discountPercentage, time
+    }
+    
     init(isActive: Bool, discountPercentage: Int? = nil, time: OfferTime? = nil) {
         self.isActive = isActive
         self.discountPercentage = discountPercentage
         self.time = time
     }
-    
-    private enum CodingKeys: String, CodingKey {
-        case isActive, discountPercentage, time
-    }
-    
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         isActive = try container.decode(Bool.self, forKey: .isActive)
@@ -41,15 +41,15 @@ class OfferTime: Codable {
     var timeInterval: Interval? = nil
     var day: Int? = nil
     
-    init(timeInterval: Interval? = nil, day: Int? = nil) {
-        self.timeInterval = timeInterval
-        self.day = day
-    }
-    
     private enum CodingKeys: String, CodingKey {
         case timeInterval, day
     }
     
+    init(timeInterval: Interval? = nil, day: Int? = nil) {
+        self.timeInterval = timeInterval
+        self.day = day
+    }
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         timeInterval = try container.decodeIfPresent(Interval.self, forKey: .timeInterval)

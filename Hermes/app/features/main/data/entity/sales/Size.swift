@@ -14,10 +14,7 @@ class Size: Codable {
     var unit: String
     
     private enum CodingKeys: CodingKey {
-        case width
-        case height
-        case deep
-        case unit
+        case width, height, deep, unit
     }
     
     init(width: Double, height: Double, deep: Double? = nil, unit: String) {

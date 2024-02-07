@@ -13,17 +13,17 @@ class Information: Codable {
     var body: String
     var photo: Photo
     
+    private enum CodingKeys: String, CodingKey {
+        case title, subtitle, body, photo
+    }
+    
     init(title: String, subtitle: String, body: String, photo: Photo) {
         self.title = title
         self.subtitle = subtitle
         self.body = body
         self.photo = photo
     }
-    
-    private enum CodingKeys: String, CodingKey {
-        case title, subtitle, body, photo
-    }
-    
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         title = try container.decode(String.self, forKey: .title)

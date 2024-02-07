@@ -13,15 +13,15 @@ class Camera: Codable {
     var extraFeatures: [String]? = nil
     var videoRecording: [String]? = nil
    
+    private enum CodingKeys: String, CodingKey {
+        case system, features, extraFeatures, videoRecording
+    }
+    
     init(system: String, features: [String], extraFeatures: [String]? = nil, videoRecording: [String]? = nil) {
         self.system = system
         self.features = features
         self.extraFeatures = extraFeatures
         self.videoRecording = videoRecording
-    }
-        
-    private enum CodingKeys: String, CodingKey {
-        case system, features, extraFeatures, videoRecording
     }
     
     required init(from decoder: Decoder) throws {

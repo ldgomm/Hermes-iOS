@@ -9,13 +9,13 @@ import Foundation
 
 class Control: Codable {
     var externalButtons: [String]? = nil
-   
-    init(externalButtons: [String]? = nil) {
-        self.externalButtons = externalButtons
-    }
-        
+    
     private enum CodingKeys: String, CodingKey {
         case externalButtons
+    }
+    
+    init(externalButtons: [String]? = nil) {
+        self.externalButtons = externalButtons
     }
     
     required init(from decoder: Decoder) throws {

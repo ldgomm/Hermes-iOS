@@ -27,6 +27,10 @@ class Metal: Product {
     var storage: Storage? = nil
     var waterproof: Waterproof? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case accessories, applications, camera, computerFeature, control, coolingSystem, display, material, memory, places, playback, power, remoteControl, sensors, smartFeatures, softwareUpdates, storage, waterproof
+    }
+    
     init(id: String, codes: Codes? = nil, images: Images, name: String, overview: [Information], specifications: Specifications? = nil, offer: Offer, origin: String, price: Price, stock: Int, category: Category, keywords: [String], warranty: Warranty, accessories: [String]? = nil, applications: [String]? = nil, camera: Camera? = nil, computerFeature: ComputerFeature? = nil, control: Control? = nil, coolingSystem: [String]? = nil, display: Display? = nil, material: String? = nil, memory: [Int]? = nil, places: Int? = nil, playback: Playback? = nil, power: Power? = nil, remoteControl: RemoteControl? = nil, sensors: [String]? = nil, smartFeatures: SmartFeatures? = nil, softwareUpdates: Bool? = nil, storage: Storage? = nil, waterproof: Waterproof? = nil) {
         self.accessories = accessories
         self.applications = applications
@@ -48,10 +52,6 @@ class Metal: Product {
         self.waterproof = waterproof
         
         super.init(id: id, codes: codes, images: images, name: name, overview: overview, specifications: specifications, offer: offer, origin: origin, price: price, stock: stock, category: category, keywords: keywords, warranty: warranty)
-    }
-        
-    private enum CodingKeys: String, CodingKey {
-        case accessories, applications, camera, computerFeature, control, coolingSystem, display, material, memory, places, playback, power, remoteControl, sensors, smartFeatures, softwareUpdates, storage, waterproof
     }
     
     required init(from decoder: Decoder) throws {

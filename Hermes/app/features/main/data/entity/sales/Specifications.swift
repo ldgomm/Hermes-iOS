@@ -16,6 +16,10 @@ class Specifications: Codable {
     var kind: String? = nil
     var size: Size? = nil
     
+    private enum CodingKeys: String, CodingKey {
+        case models, colours, capacity, finished, inBox, kind, size
+    }
+    
     init(models: [String]? = nil, colours: [String]? = nil, capacity: Int? = nil, finished: String? = nil, inBox: [String]? = nil, kind: String? = nil, size: Size? = nil) {
         self.models = models
         self.colours = colours
@@ -25,11 +29,7 @@ class Specifications: Codable {
         self.kind = kind
         self.size = size
     }
-    
-    private enum CodingKeys: String, CodingKey {
-        case models, colours, capacity, finished, inBox, kind, size
-    }
-    
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         models = try container.decodeIfPresent([String].self, forKey: .models)

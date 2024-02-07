@@ -11,15 +11,15 @@ class Warranty: Codable {
     var hasWarranty: Bool
     var months: Int? = nil
     
-    init(hasWarranty: Bool, months: Int? = nil) {
-        self.hasWarranty = hasWarranty
-        self.months = months
-    }
-    
     private enum CodingKeys: String, CodingKey {
         case hasWarranty, months
     }
     
+    init(hasWarranty: Bool, months: Int? = nil) {
+        self.hasWarranty = hasWarranty
+        self.months = months
+    }
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         hasWarranty = try container.decode(Bool.self, forKey: .hasWarranty)

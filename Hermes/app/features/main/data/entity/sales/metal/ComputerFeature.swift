@@ -24,19 +24,7 @@ class ComputerFeature: Codable {
     var simCard: [String]? = nil
     
     private enum CodingKeys: String, CodingKey {
-        case accessibility
-        case authentication
-        case builtInApps
-        case calling
-        case carriers
-        case chip
-        case connectivity
-        case location
-        case os
-        case paymentMethod
-        case ram
-        case safety
-        case simCard
+        case accessibility, authentication, builtInApps, calling, carriers, chip, connectivity, location, os, paymentMethod, ram, safety, simCard
     }
     
     init(accessibility: [String]? = nil, authentication: [String]? = nil, builtInApps: [String]? = nil, calling: Calling? = nil, carriers: [String]? = nil, chip: Chip? = nil, connectivity: Connectivity? = nil, location: [String]? = nil, os: String? = nil, paymentMethod: String? = nil, ram: [String]? = nil, safety: [String]? = nil, simCard: [String]? = nil) {
