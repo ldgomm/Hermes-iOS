@@ -102,6 +102,3 @@ class Metal: Product {
         try super.encode(to: encoder)
     }
 }
-
-
-let iphone = Metal(id: <#T##String#>, images: <#T##Images#>, name: <#T##String#>, overview: <#T##[Information]#>, offer: <#T##Offer#>, origin: <#T##String#>, price: <#T##Price#>, stock: <#T##Int#>, category: <#T##Category#>, keywords: <#T##[String]#>, warranty: <#T##Warranty#>, )
