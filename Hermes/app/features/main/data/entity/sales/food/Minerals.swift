@@ -22,7 +22,7 @@ class Minerals: Codable {
     var molybdenum: Int? = nil
     var chloride: Int? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case calcium, iron, potassium, phosphorus, iodine, magnesium, zinc, selenium, copper, manganese, chromium, molybdenum, chloride
     }
     

@@ -19,7 +19,7 @@
 		AC5595302B698E5C0070B8EE /* Minerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55952F2B698E5C0070B8EE /* Minerals.swift */; };
 		AC5595322B698E700070B8EE /* Vitamins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595312B698E700070B8EE /* Vitamins.swift */; };
 		AC5595342B698E7D0070B8EE /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595332B698E7D0070B8EE /* Tuple.swift */; };
-		AC5595362B698E910070B8EE /* NutrientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595352B698E910070B8EE /* NutrientData.swift */; };
+		AC5595362B698E910070B8EE /* Nutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595352B698E910070B8EE /* Nutrients.swift */; };
 		AC5595382B698F940070B8EE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595372B698F940070B8EE /* Category.swift */; };
 		AC55953A2B698FA30070B8EE /* Warranty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595392B698FA30070B8EE /* Warranty.swift */; };
 		AC55953C2B698FB90070B8EE /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55953B2B698FB90070B8EE /* Code.swift */; };
@@ -42,6 +42,16 @@
 		ACB029832B462B360007372F /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029822B462B360007372F /* HermesTests.swift */; };
 		ACB0298D2B462B360007372F /* HermesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298C2B462B360007372F /* HermesUITests.swift */; };
 		ACB0298F2B462B360007372F /* HermesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */; };
+		ACFBC7B92B75672E00B73815 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7B82B75672E00B73815 /* Connectivity.swift */; };
+		ACFBC7BB2B75674100B73815 /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BA2B75674100B73815 /* Calling.swift */; };
+		ACFBC7BD2B75675700B73815 /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BC2B75675700B73815 /* GPU.swift */; };
+		ACFBC7BF2B75677000B73815 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BE2B75677000B73815 /* CPU.swift */; };
+		ACFBC7C12B75678100B73815 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7C02B75678100B73815 /* Chip.swift */; };
+		ACFBC7C32B7567B800B73815 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7C22B7567B800B73815 /* Bundle.swift */; };
+		ACFBC7C52B75696600B73815 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7C42B75696600B73815 /* Photo.swift */; };
+		ACFBC7C72B75698D00B73815 /* OfferTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7C62B75698D00B73815 /* OfferTime.swift */; };
+		ACFBC7C92B7569B100B73815 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7C82B7569B100B73815 /* Interval.swift */; };
+		ACFBC7CB2B7569CC00B73815 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7CA2B7569CC00B73815 /* CreditCard.swift */; };
 		ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD9A9F2B473F9100DC2CB1 /* Product.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +85,7 @@
 		AC55952F2B698E5C0070B8EE /* Minerals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minerals.swift; sourceTree = "<group>"; };
 		AC5595312B698E700070B8EE /* Vitamins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitamins.swift; sourceTree = "<group>"; };
 		AC5595332B698E7D0070B8EE /* Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
-		AC5595352B698E910070B8EE /* NutrientData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientData.swift; sourceTree = "<group>"; };
+		AC5595352B698E910070B8EE /* Nutrients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrients.swift; sourceTree = "<group>"; };
 		AC5595372B698F940070B8EE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		AC5595392B698FA30070B8EE /* Warranty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warranty.swift; sourceTree = "<group>"; };
 		AC55953B2B698FB90070B8EE /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
@@ -101,6 +111,16 @@
 		ACB029882B462B360007372F /* HermesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0298C2B462B360007372F /* HermesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITests.swift; sourceTree = "<group>"; };
 		ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACFBC7B82B75672E00B73815 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		ACFBC7BA2B75674100B73815 /* Calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
+		ACFBC7BC2B75675700B73815 /* GPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
+		ACFBC7BE2B75677000B73815 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
+		ACFBC7C02B75678100B73815 /* Chip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		ACFBC7C22B7567B800B73815 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		ACFBC7C42B75696600B73815 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		ACFBC7C62B75698D00B73815 /* OfferTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTime.swift; sourceTree = "<group>"; };
+		ACFBC7C82B7569B100B73815 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		ACFBC7CA2B7569CC00B73815 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		ACFD9A9F2B473F9100DC2CB1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +164,11 @@
 			children = (
 				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
 				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
+				ACFBC7C02B75678100B73815 /* Chip.swift */,
+				ACFBC7BE2B75677000B73815 /* CPU.swift */,
+				ACFBC7BC2B75675700B73815 /* GPU.swift */,
+				ACFBC7BA2B75674100B73815 /* Calling.swift */,
+				ACFBC7B82B75672E00B73815 /* Connectivity.swift */,
 				ACAC81242B488DCC00BE3D7C /* Control.swift */,
 				AC0D80232B694A8300EFB719 /* Display.swift */,
 				AC0D80272B694B9000EFB719 /* Metal.swift */,
@@ -162,7 +187,7 @@
 			children = (
 				AC0D80292B694BAA00EFB719 /* Food.swift */,
 				AC55952F2B698E5C0070B8EE /* Minerals.swift */,
-				AC5595352B698E910070B8EE /* NutrientData.swift */,
+				AC5595352B698E910070B8EE /* Nutrients.swift */,
 				AC5595332B698E7D0070B8EE /* Tuple.swift */,
 				AC5595312B698E700070B8EE /* Vitamins.swift */,
 			);
@@ -198,9 +223,13 @@
 			children = (
 				AC5595372B698F940070B8EE /* Category.swift */,
 				AC55953B2B698FB90070B8EE /* Code.swift */,
+				ACFBC7CA2B7569CC00B73815 /* CreditCard.swift */,
 				AC792DB62B48B3410079FBCD /* Images.swift */,
 				AC37381F2B49F16400B5193E /* Information.swift */,
+				ACFBC7C82B7569B100B73815 /* Interval.swift */,
 				AC792DB02B48B2950079FBCD /* Offer.swift */,
+				ACFBC7C62B75698D00B73815 /* OfferTime.swift */,
+				ACFBC7C42B75696600B73815 /* Photo.swift */,
 				AC37381D2B49DB8900B5193E /* Price.swift */,
 				ACFD9A9F2B473F9100DC2CB1 /* Product.swift */,
 				ACAC811F2B488D9A00BE3D7C /* Size.swift */,
@@ -292,6 +321,7 @@
 		ACCFE5662B59AC5A00431622 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				ACFBC7C22B7567B800B73815 /* Bundle.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -465,7 +495,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFBC7B92B75672E00B73815 /* Connectivity.swift in Sources */,
+				ACFBC7C52B75696600B73815 /* Photo.swift in Sources */,
+				ACFBC7C32B7567B800B73815 /* Bundle.swift in Sources */,
 				AC3738202B49F16400B5193E /* Information.swift in Sources */,
+				ACFBC7BB2B75674100B73815 /* Calling.swift in Sources */,
 				AC5595322B698E700070B8EE /* Vitamins.swift in Sources */,
 				ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */,
 				AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */,
@@ -476,14 +510,18 @@
 				ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */,
 				ACAC81332B48A12A00BE3D7C /* SmartFeatures.swift in Sources */,
 				AC4A62552B68447E002C91B1 /* Specifications.swift in Sources */,
+				ACFBC7C12B75678100B73815 /* Chip.swift in Sources */,
+				ACFBC7CB2B7569CC00B73815 /* CreditCard.swift in Sources */,
 				AC792DB12B48B2950079FBCD /* Offer.swift in Sources */,
+				ACFBC7C92B7569B100B73815 /* Interval.swift in Sources */,
 				AC792DB72B48B3410079FBCD /* Images.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
+				ACFBC7C72B75698D00B73815 /* OfferTime.swift in Sources */,
 				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,
 				ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */,
 				AC0D802A2B694BAA00EFB719 /* Food.swift in Sources */,
 				AC0D802C2B69693F00EFB719 /* Medicine.swift in Sources */,
-				AC5595362B698E910070B8EE /* NutrientData.swift in Sources */,
+				AC5595362B698E910070B8EE /* Nutrients.swift in Sources */,
 				AC55953A2B698FA30070B8EE /* Warranty.swift in Sources */,
 				AC37381E2B49DB8900B5193E /* Price.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
@@ -491,7 +529,9 @@
 				AC5595342B698E7D0070B8EE /* Tuple.swift in Sources */,
 				AC0D80262B694B2500EFB719 /* Waterprof.swift in Sources */,
 				AC5595302B698E5C0070B8EE /* Minerals.swift in Sources */,
+				ACFBC7BF2B75677000B73815 /* CPU.swift in Sources */,
 				AC0D80282B694B9000EFB719 /* Metal.swift in Sources */,
+				ACFBC7BD2B75675700B73815 /* GPU.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
 				AC5595382B698F940070B8EE /* Category.swift in Sources */,

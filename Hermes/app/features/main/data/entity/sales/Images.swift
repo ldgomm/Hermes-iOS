@@ -11,7 +11,7 @@ class Images: Codable {
     var product: [Photo]
     var box: [Photo]? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case product, box
     }
     
@@ -30,27 +30,5 @@ class Images: Codable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(product, forKey: .product)
         try container.encodeIfPresent(box, forKey: .box)
-    }
-}
-
-class Photo: Codable {
-    var url: String
-    
-    init(url: String) {
-        self.url = url
-    }
-    
-    private enum CodingKeys: String, CodingKey {
-        case url
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        url = try container.decode(String.self, forKey: .url)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(url, forKey: .url)
     }
 }

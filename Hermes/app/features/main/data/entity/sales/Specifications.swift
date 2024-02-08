@@ -16,7 +16,7 @@ class Specifications: Codable {
     var kind: String? = nil
     var size: Size? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case models, colours, capacity, finished, inBox, kind, size
     }
     

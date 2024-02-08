@@ -15,7 +15,7 @@ class Medicine: Product {
     var activeIngredientContent: String? = nil
     var laboratory: String? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case administration, dosage, sideEffects, contraindications, activeIngredientContent, laboratory
     }
     

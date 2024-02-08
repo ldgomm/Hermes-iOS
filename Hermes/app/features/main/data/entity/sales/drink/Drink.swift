@@ -10,7 +10,7 @@ import Foundation
 class Dink: Product {
     var degrees: Int? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case degrees
     }
     

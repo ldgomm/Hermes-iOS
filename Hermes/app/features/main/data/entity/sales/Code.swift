@@ -8,31 +8,32 @@
 import Foundation
 
 class Codes: Codable {
-    var store: String? = nil
     var bar: String? = nil
     var qr: String? = nil
-    
+    var store: String? = nil
+
     private enum CodingKeys: CodingKey {
-        case store, bar, qr
+        case bar, qr, store
     }
     
-    init(store: String? = nil, bar: String? = nil, qr: String? = nil) {
-        self.store = store
+    init(bar: String? = nil, qr: String? = nil, store: String? = nil) {
         self.bar = bar
         self.qr = qr
+        self.store = store
     }
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.store = try container.decodeIfPresent(String.self, forKey: .store)
         self.bar = try container.decodeIfPresent(String.self, forKey: .bar)
         self.qr = try container.decodeIfPresent(String.self, forKey: .qr)
+        self.store = try container.decodeIfPresent(String.self, forKey: .store)
+
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encodeIfPresent(self.store, forKey: .store)
         try container.encodeIfPresent(self.bar, forKey: .bar)
         try container.encodeIfPresent(self.qr, forKey: .qr)
+        try container.encodeIfPresent(self.store, forKey: .store)
     }
 }

@@ -13,7 +13,7 @@ class Information: Codable {
     var body: String
     var photo: Photo
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case title, subtitle, body, photo
     }
     

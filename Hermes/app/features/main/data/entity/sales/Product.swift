@@ -32,7 +32,7 @@ class Product: Codable, Hashable, Identifiable {
     var legal: String? = nil
     var warning: String? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case id, codes, images, name, overview, specifications, offer, origin, price, stock, category, keywords, warranty, legal, warning
     }
 

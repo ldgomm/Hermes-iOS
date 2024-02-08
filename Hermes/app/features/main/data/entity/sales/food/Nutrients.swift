@@ -20,8 +20,7 @@ class Nutrients: Codable {
     var addedSugars: Tuple? = nil
     var protein: Tuple? = nil
     
-    
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case calories, totalFat, saturatedFat, transFat, cholesterol, sodium, totalCarbohydrate, dietaryFiber, totalSugars, addedSugars, protein
     }
     

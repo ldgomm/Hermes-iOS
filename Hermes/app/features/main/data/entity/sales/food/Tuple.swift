@@ -11,7 +11,7 @@ class Tuple: Codable {
     var amount: Int? = nil
     var value: Int? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case amount, value
     }
     

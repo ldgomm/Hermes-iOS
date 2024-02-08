@@ -12,7 +12,7 @@ class Category: Codable {
     var ni: String
     var xi: String
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case mi, ni, xi
     }
     

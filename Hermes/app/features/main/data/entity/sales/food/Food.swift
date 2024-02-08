@@ -15,7 +15,7 @@ class Food: Product {
     var vitamins: Vitamins? = nil
     var minerals: Minerals? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case flavors, instructions, precautions, nutrients, vitamins, minerals
     }
     

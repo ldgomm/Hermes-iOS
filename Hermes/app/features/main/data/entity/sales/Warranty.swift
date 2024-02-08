@@ -11,7 +11,7 @@ class Warranty: Codable {
     var hasWarranty: Bool
     var months: Int? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case hasWarranty, months
     }
     

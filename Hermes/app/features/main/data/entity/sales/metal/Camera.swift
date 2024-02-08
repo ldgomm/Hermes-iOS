@@ -13,7 +13,7 @@ class Camera: Codable {
     var extraFeatures: [String]? = nil
     var videoRecording: [String]? = nil
    
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case system, features, extraFeatures, videoRecording
     }
     

@@ -24,7 +24,7 @@ class Vitamins: Codable {
     var pantothenicAcid: Int? = nil
     var choline: Int? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case vitaminD, vitaminA, vitaminC, vitaminE, vitaminK, thiamin, riboflavin, niacin, vitaminB6, folate, folicAcid, vitaminB12, biotin, pantothenicAcid, choline
     }
     
