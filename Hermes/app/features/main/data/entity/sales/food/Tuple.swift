@@ -7,28 +7,7 @@
 
 import Foundation
 
-class Tuple: Codable {
+struct Tuple: Codable {
     var amount: Int? = nil
     var value: Int? = nil
-    
-    private enum CodingKeys: CodingKey {
-        case amount, value
-    }
-    
-    init(amount: Int? = nil, value: Int? = nil) {
-        self.amount = amount
-        self.value = value
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        amount = try container.decodeIfPresent(Int.self, forKey: .amount)
-        value = try container.decodeIfPresent(Int.self, forKey: .value)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encodeIfPresent(amount, forKey: .amount)
-        try container.encodeIfPresent(value, forKey: .value)
-    }
 }
