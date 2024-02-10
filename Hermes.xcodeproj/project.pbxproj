@@ -7,45 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC3C7E622B8E3AE600D71284 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E312B8E3AE600D71284 /* Offer.swift */; };
-		AC3C7E632B8E3AE600D71284 /* Wood.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E332B8E3AE600D71284 /* Wood.swift */; };
-		AC3C7E642B8E3AE600D71284 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E342B8E3AE600D71284 /* CreditCard.swift */; };
-		AC3C7E652B8E3AE600D71284 /* SmartFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E362B8E3AE600D71284 /* SmartFeatures.swift */; };
-		AC3C7E662B8E3AE600D71284 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E372B8E3AE600D71284 /* Storage.swift */; };
-		AC3C7E672B8E3AE600D71284 /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E382B8E3AE600D71284 /* GPU.swift */; };
-		AC3C7E682B8E3AE600D71284 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E392B8E3AE600D71284 /* Control.swift */; };
-		AC3C7E692B8E3AE600D71284 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3A2B8E3AE600D71284 /* Power.swift */; };
-		AC3C7E6A2B8E3AE600D71284 /* RemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3B2B8E3AE600D71284 /* RemoteControl.swift */; };
-		AC3C7E6B2B8E3AE600D71284 /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3C2B8E3AE600D71284 /* Playback.swift */; };
-		AC3C7E6C2B8E3AE600D71284 /* ComputerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3D2B8E3AE600D71284 /* ComputerFeature.swift */; };
-		AC3C7E6D2B8E3AE600D71284 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3E2B8E3AE600D71284 /* Chip.swift */; };
-		AC3C7E6E2B8E3AE600D71284 /* Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3F2B8E3AE600D71284 /* Metal.swift */; };
-		AC3C7E6F2B8E3AE600D71284 /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E402B8E3AE600D71284 /* Calling.swift */; };
-		AC3C7E702B8E3AE600D71284 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E412B8E3AE600D71284 /* Battery.swift */; };
-		AC3C7E712B8E3AE600D71284 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E422B8E3AE600D71284 /* Display.swift */; };
-		AC3C7E722B8E3AE600D71284 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E432B8E3AE600D71284 /* Connectivity.swift */; };
-		AC3C7E732B8E3AE600D71284 /* Waterprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E442B8E3AE600D71284 /* Waterprof.swift */; };
-		AC3C7E742B8E3AE600D71284 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E452B8E3AE600D71284 /* CPU.swift */; };
-		AC3C7E752B8E3AE600D71284 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E462B8E3AE600D71284 /* Camera.swift */; };
-		AC3C7E762B8E3AE600D71284 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E472B8E3AE600D71284 /* Specifications.swift */; };
-		AC3C7E772B8E3AE600D71284 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E482B8E3AE600D71284 /* Price.swift */; };
-		AC3C7E782B8E3AE600D71284 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E492B8E3AE600D71284 /* Photo.swift */; };
-		AC3C7E792B8E3AE600D71284 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E4A2B8E3AE600D71284 /* Size.swift */; };
-		AC3C7E7A2B8E3AE600D71284 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E4B2B8E3AE600D71284 /* Code.swift */; };
-		AC3C7E7B2B8E3AE600D71284 /* Warranty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E4C2B8E3AE600D71284 /* Warranty.swift */; };
-		AC3C7E7C2B8E3AE600D71284 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E4E2B8E3AE600D71284 /* Medicine.swift */; };
-		AC3C7E7D2B8E3AE600D71284 /* Nutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E502B8E3AE600D71284 /* Nutrients.swift */; };
-		AC3C7E7E2B8E3AE600D71284 /* Minerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E512B8E3AE600D71284 /* Minerals.swift */; };
-		AC3C7E7F2B8E3AE600D71284 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E522B8E3AE600D71284 /* Tuple.swift */; };
-		AC3C7E802B8E3AE600D71284 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E532B8E3AE600D71284 /* Food.swift */; };
-		AC3C7E812B8E3AE600D71284 /* Vitamins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E542B8E3AE600D71284 /* Vitamins.swift */; };
-		AC3C7E822B8E3AE600D71284 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E552B8E3AE600D71284 /* Category.swift */; };
-		AC3C7E832B8E3AE600D71284 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E562B8E3AE600D71284 /* Product.swift */; };
-		AC3C7E842B8E3AE600D71284 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E572B8E3AE600D71284 /* Images.swift */; };
-		AC3C7E852B8E3AE600D71284 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E592B8E3AE600D71284 /* Drink.swift */; };
-		AC3C7E862B8E3AE600D71284 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E5A2B8E3AE600D71284 /* Information.swift */; };
-		AC3C7E872B8E3AE600D71284 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E5C2B8E3AE600D71284 /* Store.swift */; };
-		AC3C7E882B8E3AE600D71284 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E612B8E3AE600D71284 /* AddProductView.swift */; };
 		ACB029702B462B350007372F /* HermesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0296F2B462B350007372F /* HermesApp.swift */; };
 		ACB029722B462B350007372F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029712B462B350007372F /* ContentView.swift */; };
 		ACB029762B462B360007372F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB029752B462B360007372F /* Assets.xcassets */; };
@@ -53,7 +14,44 @@
 		ACB029832B462B360007372F /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029822B462B360007372F /* HermesTests.swift */; };
 		ACB0298D2B462B360007372F /* HermesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298C2B462B360007372F /* HermesUITests.swift */; };
 		ACB0298F2B462B360007372F /* HermesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */; };
-		ACFBC7C32B7567B800B73815 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7C22B7567B800B73815 /* Bundle.swift */; };
+		ACC1A1DC2B8E6132003119BA /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1A62B8E6132003119BA /* Offer.swift */; };
+		ACC1A1DD2B8E6132003119BA /* Wood.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1A82B8E6132003119BA /* Wood.swift */; };
+		ACC1A1DE2B8E6132003119BA /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1A92B8E6132003119BA /* CreditCard.swift */; };
+		ACC1A1DF2B8E6132003119BA /* SmartFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1AB2B8E6132003119BA /* SmartFeatures.swift */; };
+		ACC1A1E02B8E6132003119BA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1AC2B8E6132003119BA /* Storage.swift */; };
+		ACC1A1E12B8E6132003119BA /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1AD2B8E6132003119BA /* GPU.swift */; };
+		ACC1A1E22B8E6132003119BA /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1AE2B8E6132003119BA /* Control.swift */; };
+		ACC1A1E32B8E6132003119BA /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1AF2B8E6132003119BA /* Power.swift */; };
+		ACC1A1E42B8E6132003119BA /* RemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B02B8E6132003119BA /* RemoteControl.swift */; };
+		ACC1A1E52B8E6132003119BA /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B12B8E6132003119BA /* Playback.swift */; };
+		ACC1A1E62B8E6132003119BA /* ComputerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B22B8E6132003119BA /* ComputerFeature.swift */; };
+		ACC1A1E72B8E6132003119BA /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B32B8E6132003119BA /* Chip.swift */; };
+		ACC1A1E82B8E6132003119BA /* Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B42B8E6132003119BA /* Metal.swift */; };
+		ACC1A1E92B8E6132003119BA /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B52B8E6132003119BA /* Calling.swift */; };
+		ACC1A1EA2B8E6132003119BA /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B62B8E6132003119BA /* Battery.swift */; };
+		ACC1A1EB2B8E6132003119BA /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B72B8E6132003119BA /* Display.swift */; };
+		ACC1A1EC2B8E6132003119BA /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B82B8E6132003119BA /* Connectivity.swift */; };
+		ACC1A1ED2B8E6132003119BA /* Waterprof.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1B92B8E6132003119BA /* Waterprof.swift */; };
+		ACC1A1EE2B8E6132003119BA /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1BA2B8E6132003119BA /* CPU.swift */; };
+		ACC1A1EF2B8E6132003119BA /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1BB2B8E6132003119BA /* Camera.swift */; };
+		ACC1A1F02B8E6132003119BA /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1BC2B8E6132003119BA /* Specifications.swift */; };
+		ACC1A1F12B8E6132003119BA /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1BD2B8E6132003119BA /* Price.swift */; };
+		ACC1A1F22B8E6132003119BA /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1BE2B8E6132003119BA /* Photo.swift */; };
+		ACC1A1F32B8E6132003119BA /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1BF2B8E6132003119BA /* Size.swift */; };
+		ACC1A1F42B8E6132003119BA /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C02B8E6132003119BA /* Code.swift */; };
+		ACC1A1F52B8E6132003119BA /* Warranty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C12B8E6132003119BA /* Warranty.swift */; };
+		ACC1A1F62B8E6132003119BA /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C32B8E6132003119BA /* Medicine.swift */; };
+		ACC1A1F72B8E6132003119BA /* Nutrients.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C52B8E6132003119BA /* Nutrients.swift */; };
+		ACC1A1F82B8E6132003119BA /* Minerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C62B8E6132003119BA /* Minerals.swift */; };
+		ACC1A1F92B8E6132003119BA /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C72B8E6132003119BA /* Tuple.swift */; };
+		ACC1A1FA2B8E6132003119BA /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C82B8E6132003119BA /* Food.swift */; };
+		ACC1A1FB2B8E6132003119BA /* Vitamins.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1C92B8E6132003119BA /* Vitamins.swift */; };
+		ACC1A1FC2B8E6132003119BA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1CA2B8E6132003119BA /* Category.swift */; };
+		ACC1A1FD2B8E6132003119BA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1CB2B8E6132003119BA /* Product.swift */; };
+		ACC1A1FE2B8E6132003119BA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1CC2B8E6132003119BA /* Images.swift */; };
+		ACC1A1FF2B8E6132003119BA /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1CE2B8E6132003119BA /* Drink.swift */; };
+		ACC1A2002B8E6132003119BA /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1CF2B8E6132003119BA /* Information.swift */; };
+		ACC1A2012B8E6132003119BA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1A1D12B8E6132003119BA /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,45 +72,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC3C7E312B8E3AE600D71284 /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
-		AC3C7E332B8E3AE600D71284 /* Wood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wood.swift; sourceTree = "<group>"; };
-		AC3C7E342B8E3AE600D71284 /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
-		AC3C7E362B8E3AE600D71284 /* SmartFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartFeatures.swift; sourceTree = "<group>"; };
-		AC3C7E372B8E3AE600D71284 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		AC3C7E382B8E3AE600D71284 /* GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
-		AC3C7E392B8E3AE600D71284 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
-		AC3C7E3A2B8E3AE600D71284 /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
-		AC3C7E3B2B8E3AE600D71284 /* RemoteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControl.swift; sourceTree = "<group>"; };
-		AC3C7E3C2B8E3AE600D71284 /* Playback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playback.swift; sourceTree = "<group>"; };
-		AC3C7E3D2B8E3AE600D71284 /* ComputerFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerFeature.swift; sourceTree = "<group>"; };
-		AC3C7E3E2B8E3AE600D71284 /* Chip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
-		AC3C7E3F2B8E3AE600D71284 /* Metal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metal.swift; sourceTree = "<group>"; };
-		AC3C7E402B8E3AE600D71284 /* Calling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
-		AC3C7E412B8E3AE600D71284 /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
-		AC3C7E422B8E3AE600D71284 /* Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
-		AC3C7E432B8E3AE600D71284 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
-		AC3C7E442B8E3AE600D71284 /* Waterprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waterprof.swift; sourceTree = "<group>"; };
-		AC3C7E452B8E3AE600D71284 /* CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
-		AC3C7E462B8E3AE600D71284 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		AC3C7E472B8E3AE600D71284 /* Specifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
-		AC3C7E482B8E3AE600D71284 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
-		AC3C7E492B8E3AE600D71284 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		AC3C7E4A2B8E3AE600D71284 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
-		AC3C7E4B2B8E3AE600D71284 /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
-		AC3C7E4C2B8E3AE600D71284 /* Warranty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warranty.swift; sourceTree = "<group>"; };
-		AC3C7E4E2B8E3AE600D71284 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
-		AC3C7E502B8E3AE600D71284 /* Nutrients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutrients.swift; sourceTree = "<group>"; };
-		AC3C7E512B8E3AE600D71284 /* Minerals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minerals.swift; sourceTree = "<group>"; };
-		AC3C7E522B8E3AE600D71284 /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
-		AC3C7E532B8E3AE600D71284 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		AC3C7E542B8E3AE600D71284 /* Vitamins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vitamins.swift; sourceTree = "<group>"; };
-		AC3C7E552B8E3AE600D71284 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		AC3C7E562B8E3AE600D71284 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		AC3C7E572B8E3AE600D71284 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		AC3C7E592B8E3AE600D71284 /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
-		AC3C7E5A2B8E3AE600D71284 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
-		AC3C7E5C2B8E3AE600D71284 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		AC3C7E612B8E3AE600D71284 /* AddProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
 		ACB0296C2B462B350007372F /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0296F2B462B350007372F /* HermesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesApp.swift; sourceTree = "<group>"; };
 		ACB029712B462B350007372F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,7 +82,44 @@
 		ACB029882B462B360007372F /* HermesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0298C2B462B360007372F /* HermesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITests.swift; sourceTree = "<group>"; };
 		ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		ACFBC7C22B7567B800B73815 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		ACC1A1A62B8E6132003119BA /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		ACC1A1A82B8E6132003119BA /* Wood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wood.swift; sourceTree = "<group>"; };
+		ACC1A1A92B8E6132003119BA /* CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		ACC1A1AB2B8E6132003119BA /* SmartFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartFeatures.swift; sourceTree = "<group>"; };
+		ACC1A1AC2B8E6132003119BA /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		ACC1A1AD2B8E6132003119BA /* GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
+		ACC1A1AE2B8E6132003119BA /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		ACC1A1AF2B8E6132003119BA /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		ACC1A1B02B8E6132003119BA /* RemoteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteControl.swift; sourceTree = "<group>"; };
+		ACC1A1B12B8E6132003119BA /* Playback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playback.swift; sourceTree = "<group>"; };
+		ACC1A1B22B8E6132003119BA /* ComputerFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerFeature.swift; sourceTree = "<group>"; };
+		ACC1A1B32B8E6132003119BA /* Chip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chip.swift; sourceTree = "<group>"; };
+		ACC1A1B42B8E6132003119BA /* Metal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metal.swift; sourceTree = "<group>"; };
+		ACC1A1B52B8E6132003119BA /* Calling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
+		ACC1A1B62B8E6132003119BA /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
+		ACC1A1B72B8E6132003119BA /* Display.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		ACC1A1B82B8E6132003119BA /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		ACC1A1B92B8E6132003119BA /* Waterprof.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waterprof.swift; sourceTree = "<group>"; };
+		ACC1A1BA2B8E6132003119BA /* CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
+		ACC1A1BB2B8E6132003119BA /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		ACC1A1BC2B8E6132003119BA /* Specifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
+		ACC1A1BD2B8E6132003119BA /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		ACC1A1BE2B8E6132003119BA /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		ACC1A1BF2B8E6132003119BA /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		ACC1A1C02B8E6132003119BA /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		ACC1A1C12B8E6132003119BA /* Warranty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warranty.swift; sourceTree = "<group>"; };
+		ACC1A1C32B8E6132003119BA /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		ACC1A1C52B8E6132003119BA /* Nutrients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nutrients.swift; sourceTree = "<group>"; };
+		ACC1A1C62B8E6132003119BA /* Minerals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minerals.swift; sourceTree = "<group>"; };
+		ACC1A1C72B8E6132003119BA /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
+		ACC1A1C82B8E6132003119BA /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		ACC1A1C92B8E6132003119BA /* Vitamins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vitamins.swift; sourceTree = "<group>"; };
+		ACC1A1CA2B8E6132003119BA /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ACC1A1CB2B8E6132003119BA /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		ACC1A1CC2B8E6132003119BA /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		ACC1A1CE2B8E6132003119BA /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		ACC1A1CF2B8E6132003119BA /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		ACC1A1D12B8E6132003119BA /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,164 +147,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC3C7E2C2B8E3AE600D71284 /* features */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E2D2B8E3AE600D71284 /* main */,
-			);
-			path = features;
-			sourceTree = "<group>";
-		};
-		AC3C7E2D2B8E3AE600D71284 /* main */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E2E2B8E3AE600D71284 /* data */,
-				AC3C7E5F2B8E3AE600D71284 /* domain */,
-				AC3C7E602B8E3AE600D71284 /* presentation */,
-			);
-			path = main;
-			sourceTree = "<group>";
-		};
-		AC3C7E2E2B8E3AE600D71284 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E2F2B8E3AE600D71284 /* entity */,
-				AC3C7E5D2B8E3AE600D71284 /* model */,
-				AC3C7E5E2B8E3AE600D71284 /* service */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		AC3C7E2F2B8E3AE600D71284 /* entity */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E302B8E3AE600D71284 /* sales */,
-				AC3C7E5B2B8E3AE600D71284 /* store */,
-			);
-			path = entity;
-			sourceTree = "<group>";
-		};
-		AC3C7E302B8E3AE600D71284 /* sales */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E312B8E3AE600D71284 /* Offer.swift */,
-				AC3C7E322B8E3AE600D71284 /* wood */,
-				AC3C7E342B8E3AE600D71284 /* CreditCard.swift */,
-				AC3C7E352B8E3AE600D71284 /* metal */,
-				AC3C7E472B8E3AE600D71284 /* Specifications.swift */,
-				AC3C7E482B8E3AE600D71284 /* Price.swift */,
-				AC3C7E492B8E3AE600D71284 /* Photo.swift */,
-				AC3C7E4A2B8E3AE600D71284 /* Size.swift */,
-				AC3C7E4B2B8E3AE600D71284 /* Code.swift */,
-				AC3C7E4C2B8E3AE600D71284 /* Warranty.swift */,
-				AC3C7E4D2B8E3AE600D71284 /* medicine */,
-				AC3C7E4F2B8E3AE600D71284 /* food */,
-				AC3C7E552B8E3AE600D71284 /* Category.swift */,
-				AC3C7E562B8E3AE600D71284 /* Product.swift */,
-				AC3C7E572B8E3AE600D71284 /* Images.swift */,
-				AC3C7E582B8E3AE600D71284 /* drink */,
-				AC3C7E5A2B8E3AE600D71284 /* Information.swift */,
-			);
-			path = sales;
-			sourceTree = "<group>";
-		};
-		AC3C7E322B8E3AE600D71284 /* wood */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E332B8E3AE600D71284 /* Wood.swift */,
-			);
-			path = wood;
-			sourceTree = "<group>";
-		};
-		AC3C7E352B8E3AE600D71284 /* metal */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E362B8E3AE600D71284 /* SmartFeatures.swift */,
-				AC3C7E372B8E3AE600D71284 /* Storage.swift */,
-				AC3C7E382B8E3AE600D71284 /* GPU.swift */,
-				AC3C7E392B8E3AE600D71284 /* Control.swift */,
-				AC3C7E3A2B8E3AE600D71284 /* Power.swift */,
-				AC3C7E3B2B8E3AE600D71284 /* RemoteControl.swift */,
-				AC3C7E3C2B8E3AE600D71284 /* Playback.swift */,
-				AC3C7E3D2B8E3AE600D71284 /* ComputerFeature.swift */,
-				AC3C7E3E2B8E3AE600D71284 /* Chip.swift */,
-				AC3C7E3F2B8E3AE600D71284 /* Metal.swift */,
-				AC3C7E402B8E3AE600D71284 /* Calling.swift */,
-				AC3C7E412B8E3AE600D71284 /* Battery.swift */,
-				AC3C7E422B8E3AE600D71284 /* Display.swift */,
-				AC3C7E432B8E3AE600D71284 /* Connectivity.swift */,
-				AC3C7E442B8E3AE600D71284 /* Waterprof.swift */,
-				AC3C7E452B8E3AE600D71284 /* CPU.swift */,
-				AC3C7E462B8E3AE600D71284 /* Camera.swift */,
-			);
-			path = metal;
-			sourceTree = "<group>";
-		};
-		AC3C7E4D2B8E3AE600D71284 /* medicine */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E4E2B8E3AE600D71284 /* Medicine.swift */,
-			);
-			path = medicine;
-			sourceTree = "<group>";
-		};
-		AC3C7E4F2B8E3AE600D71284 /* food */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E502B8E3AE600D71284 /* Nutrients.swift */,
-				AC3C7E512B8E3AE600D71284 /* Minerals.swift */,
-				AC3C7E522B8E3AE600D71284 /* Tuple.swift */,
-				AC3C7E532B8E3AE600D71284 /* Food.swift */,
-				AC3C7E542B8E3AE600D71284 /* Vitamins.swift */,
-			);
-			path = food;
-			sourceTree = "<group>";
-		};
-		AC3C7E582B8E3AE600D71284 /* drink */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E592B8E3AE600D71284 /* Drink.swift */,
-			);
-			path = drink;
-			sourceTree = "<group>";
-		};
-		AC3C7E5B2B8E3AE600D71284 /* store */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E5C2B8E3AE600D71284 /* Store.swift */,
-			);
-			path = store;
-			sourceTree = "<group>";
-		};
-		AC3C7E5D2B8E3AE600D71284 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		AC3C7E5E2B8E3AE600D71284 /* service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = service;
-			sourceTree = "<group>";
-		};
-		AC3C7E5F2B8E3AE600D71284 /* domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = domain;
-			sourceTree = "<group>";
-		};
-		AC3C7E602B8E3AE600D71284 /* presentation */ = {
-			isa = PBXGroup;
-			children = (
-				AC3C7E612B8E3AE600D71284 /* AddProductView.swift */,
-			);
-			path = presentation;
-			sourceTree = "<group>";
-		};
 		ACB029632B462B350007372F = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +170,7 @@
 		ACB0296E2B462B350007372F /* Hermes */ = {
 			isa = PBXGroup;
 			children = (
-				ACCFE5642B59AC4300431622 /* app */,
+				ACC1A1952B8E6132003119BA /* app */,
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
 				ACB029712B462B350007372F /* ContentView.swift */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
@@ -366,21 +204,305 @@
 			path = HermesUITests;
 			sourceTree = "<group>";
 		};
-		ACCFE5642B59AC4300431622 /* app */ = {
+		ACC1A1952B8E6132003119BA /* app */ = {
 			isa = PBXGroup;
 			children = (
-				AC3C7E2C2B8E3AE600D71284 /* features */,
-				ACCFE5662B59AC5A00431622 /* util */,
+				ACC1A1962B8E6132003119BA /* ui */,
+				ACC1A1972B8E6132003119BA /* di */,
+				ACC1A1982B8E6132003119BA /* util */,
+				ACC1A1992B8E6132003119BA /* features */,
+				ACC1A1DB2B8E6132003119BA /* navigation */,
 			);
 			path = app;
 			sourceTree = "<group>";
 		};
-		ACCFE5662B59AC5A00431622 /* util */ = {
+		ACC1A1962B8E6132003119BA /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				ACFBC7C22B7567B800B73815 /* Bundle.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		ACC1A1972B8E6132003119BA /* di */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		ACC1A1982B8E6132003119BA /* util */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		ACC1A1992B8E6132003119BA /* features */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A19A2B8E6132003119BA /* sales */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		ACC1A19A2B8E6132003119BA /* sales */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A19B2B8E6132003119BA /* data */,
+				ACC1A1D32B8E6132003119BA /* domain */,
+				ACC1A1DA2B8E6132003119BA /* presentation */,
+			);
+			path = sales;
+			sourceTree = "<group>";
+		};
+		ACC1A19B2B8E6132003119BA /* data */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A19C2B8E6132003119BA /* repository */,
+				ACC1A19D2B8E6132003119BA /* local */,
+				ACC1A1A22B8E6132003119BA /* paging */,
+				ACC1A1A32B8E6132003119BA /* remote */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		ACC1A19C2B8E6132003119BA /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		ACC1A19D2B8E6132003119BA /* local */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A19E2B8E6132003119BA /* database */,
+				ACC1A19F2B8E6132003119BA /* dao */,
+				ACC1A1A02B8E6132003119BA /* mapper */,
+				ACC1A1A12B8E6132003119BA /* model */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		ACC1A19E2B8E6132003119BA /* database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		ACC1A19F2B8E6132003119BA /* dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		ACC1A1A02B8E6132003119BA /* mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mapper;
+			sourceTree = "<group>";
+		};
+		ACC1A1A12B8E6132003119BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC1A1A22B8E6132003119BA /* paging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = paging;
+			sourceTree = "<group>";
+		};
+		ACC1A1A32B8E6132003119BA /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1A42B8E6132003119BA /* model */,
+				ACC1A1D22B8E6132003119BA /* api */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+		ACC1A1A42B8E6132003119BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1A52B8E6132003119BA /* sales */,
+				ACC1A1D02B8E6132003119BA /* store */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC1A1A52B8E6132003119BA /* sales */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1A62B8E6132003119BA /* Offer.swift */,
+				ACC1A1A72B8E6132003119BA /* wood */,
+				ACC1A1A92B8E6132003119BA /* CreditCard.swift */,
+				ACC1A1AA2B8E6132003119BA /* metal */,
+				ACC1A1BC2B8E6132003119BA /* Specifications.swift */,
+				ACC1A1BD2B8E6132003119BA /* Price.swift */,
+				ACC1A1BE2B8E6132003119BA /* Photo.swift */,
+				ACC1A1BF2B8E6132003119BA /* Size.swift */,
+				ACC1A1C02B8E6132003119BA /* Code.swift */,
+				ACC1A1C12B8E6132003119BA /* Warranty.swift */,
+				ACC1A1C22B8E6132003119BA /* medicine */,
+				ACC1A1C42B8E6132003119BA /* food */,
+				ACC1A1CA2B8E6132003119BA /* Category.swift */,
+				ACC1A1CB2B8E6132003119BA /* Product.swift */,
+				ACC1A1CC2B8E6132003119BA /* Images.swift */,
+				ACC1A1CD2B8E6132003119BA /* drink */,
+				ACC1A1CF2B8E6132003119BA /* Information.swift */,
+			);
+			path = sales;
+			sourceTree = "<group>";
+		};
+		ACC1A1A72B8E6132003119BA /* wood */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1A82B8E6132003119BA /* Wood.swift */,
+			);
+			path = wood;
+			sourceTree = "<group>";
+		};
+		ACC1A1AA2B8E6132003119BA /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1AB2B8E6132003119BA /* SmartFeatures.swift */,
+				ACC1A1AC2B8E6132003119BA /* Storage.swift */,
+				ACC1A1AD2B8E6132003119BA /* GPU.swift */,
+				ACC1A1AE2B8E6132003119BA /* Control.swift */,
+				ACC1A1AF2B8E6132003119BA /* Power.swift */,
+				ACC1A1B02B8E6132003119BA /* RemoteControl.swift */,
+				ACC1A1B12B8E6132003119BA /* Playback.swift */,
+				ACC1A1B22B8E6132003119BA /* ComputerFeature.swift */,
+				ACC1A1B32B8E6132003119BA /* Chip.swift */,
+				ACC1A1B42B8E6132003119BA /* Metal.swift */,
+				ACC1A1B52B8E6132003119BA /* Calling.swift */,
+				ACC1A1B62B8E6132003119BA /* Battery.swift */,
+				ACC1A1B72B8E6132003119BA /* Display.swift */,
+				ACC1A1B82B8E6132003119BA /* Connectivity.swift */,
+				ACC1A1B92B8E6132003119BA /* Waterprof.swift */,
+				ACC1A1BA2B8E6132003119BA /* CPU.swift */,
+				ACC1A1BB2B8E6132003119BA /* Camera.swift */,
+			);
+			path = metal;
+			sourceTree = "<group>";
+		};
+		ACC1A1C22B8E6132003119BA /* medicine */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1C32B8E6132003119BA /* Medicine.swift */,
+			);
+			path = medicine;
+			sourceTree = "<group>";
+		};
+		ACC1A1C42B8E6132003119BA /* food */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1C52B8E6132003119BA /* Nutrients.swift */,
+				ACC1A1C62B8E6132003119BA /* Minerals.swift */,
+				ACC1A1C72B8E6132003119BA /* Tuple.swift */,
+				ACC1A1C82B8E6132003119BA /* Food.swift */,
+				ACC1A1C92B8E6132003119BA /* Vitamins.swift */,
+			);
+			path = food;
+			sourceTree = "<group>";
+		};
+		ACC1A1CD2B8E6132003119BA /* drink */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1CE2B8E6132003119BA /* Drink.swift */,
+			);
+			path = drink;
+			sourceTree = "<group>";
+		};
+		ACC1A1D02B8E6132003119BA /* store */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1D12B8E6132003119BA /* Store.swift */,
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		ACC1A1D22B8E6132003119BA /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		ACC1A1D32B8E6132003119BA /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1A1D42B8E6132003119BA /* viewmodel */,
+				ACC1A1D52B8E6132003119BA /* state */,
+				ACC1A1D62B8E6132003119BA /* repositoriable */,
+				ACC1A1D72B8E6132003119BA /* model */,
+				ACC1A1D82B8E6132003119BA /* usecase */,
+				ACC1A1D92B8E6132003119BA /* event */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		ACC1A1D42B8E6132003119BA /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		ACC1A1D52B8E6132003119BA /* state */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		ACC1A1D62B8E6132003119BA /* repositoriable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repositoriable;
+			sourceTree = "<group>";
+		};
+		ACC1A1D72B8E6132003119BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC1A1D82B8E6132003119BA /* usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = usecase;
+			sourceTree = "<group>";
+		};
+		ACC1A1D92B8E6132003119BA /* event */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		ACC1A1DA2B8E6132003119BA /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		ACC1A1DB2B8E6132003119BA /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,48 +635,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3C7E642B8E3AE600D71284 /* CreditCard.swift in Sources */,
-				AC3C7E6F2B8E3AE600D71284 /* Calling.swift in Sources */,
-				AC3C7E622B8E3AE600D71284 /* Offer.swift in Sources */,
-				AC3C7E772B8E3AE600D71284 /* Price.swift in Sources */,
-				AC3C7E7E2B8E3AE600D71284 /* Minerals.swift in Sources */,
-				AC3C7E792B8E3AE600D71284 /* Size.swift in Sources */,
-				AC3C7E762B8E3AE600D71284 /* Specifications.swift in Sources */,
-				AC3C7E852B8E3AE600D71284 /* Drink.swift in Sources */,
-				AC3C7E652B8E3AE600D71284 /* SmartFeatures.swift in Sources */,
-				AC3C7E7D2B8E3AE600D71284 /* Nutrients.swift in Sources */,
-				AC3C7E7C2B8E3AE600D71284 /* Medicine.swift in Sources */,
-				AC3C7E782B8E3AE600D71284 /* Photo.swift in Sources */,
-				AC3C7E842B8E3AE600D71284 /* Images.swift in Sources */,
-				AC3C7E802B8E3AE600D71284 /* Food.swift in Sources */,
-				ACFBC7C32B7567B800B73815 /* Bundle.swift in Sources */,
-				AC3C7E692B8E3AE600D71284 /* Power.swift in Sources */,
+				ACC1A1EF2B8E6132003119BA /* Camera.swift in Sources */,
+				ACC1A1F52B8E6132003119BA /* Warranty.swift in Sources */,
+				ACC1A1E12B8E6132003119BA /* GPU.swift in Sources */,
+				ACC1A1E42B8E6132003119BA /* RemoteControl.swift in Sources */,
+				ACC1A1F72B8E6132003119BA /* Nutrients.swift in Sources */,
+				ACC1A1EE2B8E6132003119BA /* CPU.swift in Sources */,
+				ACC1A1FC2B8E6132003119BA /* Category.swift in Sources */,
+				ACC1A1F62B8E6132003119BA /* Medicine.swift in Sources */,
+				ACC1A1EC2B8E6132003119BA /* Connectivity.swift in Sources */,
+				ACC1A1E92B8E6132003119BA /* Calling.swift in Sources */,
+				ACC1A1DC2B8E6132003119BA /* Offer.swift in Sources */,
+				ACC1A1F42B8E6132003119BA /* Code.swift in Sources */,
+				ACC1A1FA2B8E6132003119BA /* Food.swift in Sources */,
+				ACC1A1FE2B8E6132003119BA /* Images.swift in Sources */,
+				ACC1A1FB2B8E6132003119BA /* Vitamins.swift in Sources */,
+				ACC1A1EB2B8E6132003119BA /* Display.swift in Sources */,
+				ACC1A1EA2B8E6132003119BA /* Battery.swift in Sources */,
+				ACC1A1F22B8E6132003119BA /* Photo.swift in Sources */,
+				ACC1A2002B8E6132003119BA /* Information.swift in Sources */,
+				ACC1A1E02B8E6132003119BA /* Storage.swift in Sources */,
+				ACC1A1E52B8E6132003119BA /* Playback.swift in Sources */,
+				ACC1A1FF2B8E6132003119BA /* Drink.swift in Sources */,
+				ACC1A1F92B8E6132003119BA /* Tuple.swift in Sources */,
+				ACC1A1F32B8E6132003119BA /* Size.swift in Sources */,
+				ACC1A1DE2B8E6132003119BA /* CreditCard.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
-				AC3C7E662B8E3AE600D71284 /* Storage.swift in Sources */,
-				AC3C7E862B8E3AE600D71284 /* Information.swift in Sources */,
-				AC3C7E812B8E3AE600D71284 /* Vitamins.swift in Sources */,
-				AC3C7E7A2B8E3AE600D71284 /* Code.swift in Sources */,
-				AC3C7E632B8E3AE600D71284 /* Wood.swift in Sources */,
-				AC3C7E702B8E3AE600D71284 /* Battery.swift in Sources */,
-				AC3C7E682B8E3AE600D71284 /* Control.swift in Sources */,
-				AC3C7E6E2B8E3AE600D71284 /* Metal.swift in Sources */,
-				AC3C7E722B8E3AE600D71284 /* Connectivity.swift in Sources */,
-				AC3C7E822B8E3AE600D71284 /* Category.swift in Sources */,
-				AC3C7E7B2B8E3AE600D71284 /* Warranty.swift in Sources */,
+				ACC1A1E82B8E6132003119BA /* Metal.swift in Sources */,
+				ACC1A1ED2B8E6132003119BA /* Waterprof.swift in Sources */,
+				ACC1A1E22B8E6132003119BA /* Control.swift in Sources */,
+				ACC1A1DD2B8E6132003119BA /* Wood.swift in Sources */,
+				ACC1A1F12B8E6132003119BA /* Price.swift in Sources */,
+				ACC1A1E32B8E6132003119BA /* Power.swift in Sources */,
+				ACC1A1FD2B8E6132003119BA /* Product.swift in Sources */,
+				ACC1A1F82B8E6132003119BA /* Minerals.swift in Sources */,
+				ACC1A1E62B8E6132003119BA /* ComputerFeature.swift in Sources */,
+				ACC1A2012B8E6132003119BA /* Store.swift in Sources */,
+				ACC1A1F02B8E6132003119BA /* Specifications.swift in Sources */,
+				ACC1A1DF2B8E6132003119BA /* SmartFeatures.swift in Sources */,
 				ACB029702B462B350007372F /* HermesApp.swift in Sources */,
-				AC3C7E742B8E3AE600D71284 /* CPU.swift in Sources */,
-				AC3C7E882B8E3AE600D71284 /* AddProductView.swift in Sources */,
-				AC3C7E832B8E3AE600D71284 /* Product.swift in Sources */,
-				AC3C7E6B2B8E3AE600D71284 /* Playback.swift in Sources */,
-				AC3C7E6C2B8E3AE600D71284 /* ComputerFeature.swift in Sources */,
-				AC3C7E712B8E3AE600D71284 /* Display.swift in Sources */,
-				AC3C7E752B8E3AE600D71284 /* Camera.swift in Sources */,
-				AC3C7E7F2B8E3AE600D71284 /* Tuple.swift in Sources */,
-				AC3C7E672B8E3AE600D71284 /* GPU.swift in Sources */,
-				AC3C7E6D2B8E3AE600D71284 /* Chip.swift in Sources */,
-				AC3C7E872B8E3AE600D71284 /* Store.swift in Sources */,
-				AC3C7E6A2B8E3AE600D71284 /* RemoteControl.swift in Sources */,
-				AC3C7E732B8E3AE600D71284 /* Waterprof.swift in Sources */,
+				ACC1A1E72B8E6132003119BA /* Chip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
