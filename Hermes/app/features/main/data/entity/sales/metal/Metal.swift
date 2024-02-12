@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Metal: Product {
+class Metal: Codable {
     var accessories: [String]? = nil
     var applications: [String]? = nil
     var camera: Camera? = nil
@@ -50,8 +50,6 @@ class Metal: Product {
         self.softwareUpdates = softwareUpdates
         self.storage = storage
         self.waterproof = waterproof
-        
-        super.init(id: id, codes: codes, images: images, name: name, overview: overview, specifications: specifications, offer: offer, origin: origin, price: price, stock: stock, category: category, keywords: keywords, warranty: warranty)
     }
     
     required init(from decoder: Decoder) throws {
@@ -75,10 +73,9 @@ class Metal: Product {
         storage = try container.decodeIfPresent(Storage.self, forKey: .storage)
         waterproof = try container.decodeIfPresent(Waterproof.self, forKey: .waterproof)
         
-        try super.init(from: decoder)
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encodeIfPresent(accessories, forKey: .accessories)
         try container.encodeIfPresent(applications, forKey: .applications)
@@ -98,7 +95,5 @@ class Metal: Product {
         try container.encodeIfPresent(softwareUpdates, forKey: .softwareUpdates)
         try container.encodeIfPresent(storage, forKey: .storage)
         try container.encodeIfPresent(waterproof, forKey: .waterproof)
-        
-        try super.encode(to: encoder)
     }
 }
