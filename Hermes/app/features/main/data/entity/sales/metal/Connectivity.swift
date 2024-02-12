@@ -8,11 +8,11 @@
 import Foundation
 
 class Connectivity: Codable {
-    var ports: [String]
     var cellular: [String]? = nil
+    var ports: [String]
     var wireless: [String]? = nil
     
-    init(ports: [String], cellular: [String]? = nil, wireless: [String]? = nil) {
+    init(cellular: [String]? = nil, ports: [String], wireless: [String]? = nil) {
         self.ports = ports
         self.cellular = cellular
         self.wireless = wireless
@@ -24,15 +24,15 @@ class Connectivity: Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        ports = try container.decode([String].self, forKey: .ports)
-        cellular = try container.decodeIfPresent([String].self, forKey: .cellular)
-        wireless = try container.decodeIfPresent([String].self, forKey: .wireless)
+        self.ports = try container.decode([String].self, forKey: .ports)
+        self.cellular = try container.decodeIfPresent([String].self, forKey: .cellular)
+        self.wireless = try container.decodeIfPresent([String].self, forKey: .wireless)
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(ports, forKey: .ports)
-        try container.encodeIfPresent(cellular, forKey: .cellular)
-        try container.encodeIfPresent(wireless, forKey: .wireless)
+        try container.encode(self.ports, forKey: .ports)
+        try container.encodeIfPresent(self.cellular, forKey: .cellular)
+        try container.encodeIfPresent(self.wireless, forKey: .wireless)
     }
 }

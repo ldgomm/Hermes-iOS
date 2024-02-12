@@ -8,10 +8,10 @@
 import Foundation
 
 class Calling: Codable {
-    var videoCalling: [String]? = nil
     var audioCalling: [String]
+    var videoCalling: [String]? = nil
   
-    init(videoCalling: [String]? = nil, audioCalling: [String]) {
+    init(audioCalling: [String], videoCalling: [String]? = nil) {
         self.videoCalling = videoCalling
         self.audioCalling = audioCalling
     }
@@ -22,13 +22,13 @@ class Calling: Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        videoCalling = try container.decodeIfPresent([String].self, forKey: .videoCalling)
-        audioCalling = try container.decode([String].self, forKey: .audioCalling)
+        self.videoCalling = try container.decodeIfPresent([String].self, forKey: .videoCalling)
+        self.audioCalling = try container.decode([String].self, forKey: .audioCalling)
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encodeIfPresent(videoCalling, forKey: .videoCalling)
-        try container.encode(audioCalling, forKey: .audioCalling)
+        try container.encodeIfPresent(self.videoCalling, forKey: .videoCalling)
+        try container.encode(self.audioCalling, forKey: .audioCalling)
     }
 }

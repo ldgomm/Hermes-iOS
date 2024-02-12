@@ -76,4 +76,3 @@ class Minerals: Codable {
         try container.encodeIfPresent(chloride, forKey: .chloride)
     }
 }
-

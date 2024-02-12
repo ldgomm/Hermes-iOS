@@ -42,6 +42,7 @@
 		ACB0298D2B462B360007372F /* HermesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298C2B462B360007372F /* HermesUITests.swift */; };
 		ACB0298F2B462B360007372F /* HermesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */; };
 		ACCF0A782B7A7EA900C33677 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF0A772B7A7EA900C33677 /* AddProductView.swift */; };
+		ACCF0A7A2B7A84A200C33677 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF0A792B7A84A200C33677 /* Battery.swift */; };
 		ACFBC7B92B75672E00B73815 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7B82B75672E00B73815 /* Connectivity.swift */; };
 		ACFBC7BB2B75674100B73815 /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BA2B75674100B73815 /* Calling.swift */; };
 		ACFBC7BD2B75675700B73815 /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BC2B75675700B73815 /* GPU.swift */; };
@@ -111,6 +112,7 @@
 		ACB0298C2B462B360007372F /* HermesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITests.swift; sourceTree = "<group>"; };
 		ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ACCF0A772B7A7EA900C33677 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		ACCF0A792B7A84A200C33677 /* Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
 		ACFBC7B82B75672E00B73815 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		ACFBC7BA2B75674100B73815 /* Calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
 		ACFBC7BC2B75675700B73815 /* GPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
@@ -162,15 +164,16 @@
 		AC0D80302B696DE200EFB719 /* metal */ = {
 			isa = PBXGroup;
 			children = (
-				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
-				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
-				ACFBC7C02B75678100B73815 /* Chip.swift */,
-				ACFBC7BE2B75677000B73815 /* CPU.swift */,
-				ACFBC7BC2B75675700B73815 /* GPU.swift */,
+				ACCF0A792B7A84A200C33677 /* Battery.swift */,
 				ACFBC7BA2B75674100B73815 /* Calling.swift */,
+				ACAC812C2B488E4400BE3D7C /* Camera.swift */,
+				ACFBC7C02B75678100B73815 /* Chip.swift */,
+				ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */,
 				ACFBC7B82B75672E00B73815 /* Connectivity.swift */,
 				ACAC81242B488DCC00BE3D7C /* Control.swift */,
+				ACFBC7BE2B75677000B73815 /* CPU.swift */,
 				AC0D80232B694A8300EFB719 /* Display.swift */,
+				ACFBC7BC2B75675700B73815 /* GPU.swift */,
 				AC0D80272B694B9000EFB719 /* Metal.swift */,
 				ACAC81262B488DDC00BE3D7C /* Playback.swift */,
 				ACAC81302B488E6800BE3D7C /* Power.swift */,
@@ -515,6 +518,7 @@
 				AC792DB12B48B2950079FBCD /* Offer.swift in Sources */,
 				ACFBC7C92B7569B100B73815 /* Interval.swift in Sources */,
 				AC792DB72B48B3410079FBCD /* Images.swift in Sources */,
+				ACCF0A7A2B7A84A200C33677 /* Battery.swift in Sources */,
 				ACB029722B462B350007372F /* ContentView.swift in Sources */,
 				ACFBC7C72B75698D00B73815 /* OfferTime.swift in Sources */,
 				ACAC81312B488E6800BE3D7C /* Power.swift in Sources */,

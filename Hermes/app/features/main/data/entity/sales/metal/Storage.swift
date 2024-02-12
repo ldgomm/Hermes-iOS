@@ -8,31 +8,31 @@
 import Foundation
 
 class Storage: Codable {
-    var internalCapacity: [Int]
-    var hasExternalCapacity: Bool? = nil
     var externalCapacity: [Int]? = nil
+    var hasExternalCapacity: Bool? = nil
+    var internalCapacity: [Int]
     
     private enum CodingKeys: String, CodingKey {
         case internalCapacity, hasExternalCapacity, externalCapacity
     }
     
-    init(internalCapacity: [Int], hasExternalCapacity: Bool? = nil, externalCapacity: [Int]? = nil) {
-        self.internalCapacity = internalCapacity
-        self.hasExternalCapacity = hasExternalCapacity
+    init(externalCapacity: [Int]? = nil, hasExternalCapacity: Bool? = nil, internalCapacity: [Int]) {
         self.externalCapacity = externalCapacity
+        self.hasExternalCapacity = hasExternalCapacity
+        self.internalCapacity = internalCapacity
     }
 
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        internalCapacity = try container.decode([Int].self, forKey: .internalCapacity)
-        hasExternalCapacity = try container.decodeIfPresent(Bool.self, forKey: .hasExternalCapacity)
-        externalCapacity = try container.decodeIfPresent([Int].self, forKey: .externalCapacity)
+        self.internalCapacity = try container.decode([Int].self, forKey: .internalCapacity)
+        self.hasExternalCapacity = try container.decodeIfPresent(Bool.self, forKey: .hasExternalCapacity)
+        self.externalCapacity = try container.decodeIfPresent([Int].self, forKey: .externalCapacity)
     }
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(internalCapacity, forKey: .internalCapacity)
-        try container.encodeIfPresent(hasExternalCapacity, forKey: .hasExternalCapacity)
-        try container.encodeIfPresent(externalCapacity, forKey: .externalCapacity)
+        try container.encode(self.internalCapacity, forKey: .internalCapacity)
+        try container.encodeIfPresent(self.hasExternalCapacity, forKey: .hasExternalCapacity)
+        try container.encodeIfPresent(self.externalCapacity, forKey: .externalCapacity)
     }
 }
