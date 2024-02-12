@@ -26,9 +26,9 @@ class Product: Codable, Hashable, Identifiable {
     var origin: String
     var overview: [Information]
     var price: Price
-    var specifications: Specifications? = nil
+    var specifications: Specifications
     var stock: Int
-    var warranty: Warranty? = nil
+    var warranty: Warranty
 
     var legal: String? = nil
     var warning: String? = nil
@@ -38,7 +38,7 @@ class Product: Codable, Hashable, Identifiable {
     var medicineFeature: Medicine? = nil
     var metalFeature: Metal? = nil
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: CodingKey {
         case id
         case category
         case codes
@@ -60,7 +60,7 @@ class Product: Codable, Hashable, Identifiable {
         case metalFeature
     }
     
-    init(id: String, category: Category, codes: Codes? = nil, images: Images, keywords: [String], name: String, offer: Offer, origin: String, overview: [Information], price: Price, specifications: Specifications? = nil, stock: Int, warranty: Warranty? = nil, legal: String? = nil, warning: String? = nil, drinkFeature: Drink? = nil, foodFeature: Food? = nil, medicineFeature: Medicine? = nil, metalFeature: Metal? = nil) {
+    init(id: String, category: Category, codes: Codes? = nil, images: Images, keywords: [String], name: String, offer: Offer, origin: String, overview: [Information], price: Price, specifications: Specifications, stock: Int, warranty: Warranty, legal: String? = nil, warning: String? = nil, drinkFeature: Drink? = nil, foodFeature: Food? = nil, medicineFeature: Medicine? = nil, metalFeature: Metal? = nil) {
         self.id = id
         self.category = category
         self.codes = codes
@@ -94,9 +94,9 @@ class Product: Codable, Hashable, Identifiable {
         origin = try container.decode(String.self, forKey: .origin)
         overview = try container.decode([Information].self, forKey: .overview)
         price = try container.decode(Price.self, forKey: .price)
-        specifications = try container.decodeIfPresent(Specifications.self, forKey: .specifications)
+        specifications = try container.decode(Specifications.self, forKey: .specifications)
         stock = try container.decode(Int.self, forKey: .stock)
-        warranty = try container.decodeIfPresent(Warranty.self, forKey: .warranty)
+        warranty = try container.decode(Warranty.self, forKey: .warranty)
         legal = try container.decodeIfPresent(String.self, forKey: .legal)
         warning = try container.decodeIfPresent(String.self, forKey: .warning)
         drinkFeature = try container.decodeIfPresent(Drink.self, forKey: .drinkFeature)
@@ -117,9 +117,9 @@ class Product: Codable, Hashable, Identifiable {
         try container.encode(origin, forKey: .origin)
         try container.encode(overview, forKey: .overview)
         try container.encode(price, forKey: .price)
-        try container.encodeIfPresent(specifications, forKey: .specifications)
+        try container.encode(specifications, forKey: .specifications)
         try container.encode(stock, forKey: .stock)
-        try container.encodeIfPresent(warranty, forKey: .warranty)
+        try container.encode(warranty, forKey: .warranty)
         try container.encodeIfPresent(legal, forKey: .legal)
         try container.encodeIfPresent(warning, forKey: .warning)
         try container.encodeIfPresent(drinkFeature, forKey: .drinkFeature)

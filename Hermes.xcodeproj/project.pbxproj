@@ -26,7 +26,6 @@
 		AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AA1F72B48EBB000704F7C /* Storage.swift */; };
 		AC792DB12B48B2950079FBCD /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB02B48B2950079FBCD /* Offer.swift */; };
 		AC792DB72B48B3410079FBCD /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC792DB62B48B3410079FBCD /* Images.swift */; };
-		AC792DB92B48B4E50079FBCD /* computers.json in Resources */ = {isa = PBXBuildFile; fileRef = AC792DB82B48B4E50079FBCD /* computers.json */; };
 		ACAC81182B485F6500BE3D7C /* ComputerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */; };
 		ACAC81202B488D9A00BE3D7C /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC811F2B488D9A00BE3D7C /* Size.swift */; };
 		ACAC81252B488DCC00BE3D7C /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAC81242B488DCC00BE3D7C /* Control.swift */; };
@@ -42,6 +41,7 @@
 		ACB029832B462B360007372F /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB029822B462B360007372F /* HermesTests.swift */; };
 		ACB0298D2B462B360007372F /* HermesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298C2B462B360007372F /* HermesUITests.swift */; };
 		ACB0298F2B462B360007372F /* HermesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */; };
+		ACCF0A782B7A7EA900C33677 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF0A772B7A7EA900C33677 /* AddProductView.swift */; };
 		ACFBC7B92B75672E00B73815 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7B82B75672E00B73815 /* Connectivity.swift */; };
 		ACFBC7BB2B75674100B73815 /* Calling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BA2B75674100B73815 /* Calling.swift */; };
 		ACFBC7BD2B75675700B73815 /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFBC7BC2B75675700B73815 /* GPU.swift */; };
@@ -92,7 +92,6 @@
 		AC5AA1F72B48EBB000704F7C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AC792DB02B48B2950079FBCD /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		AC792DB62B48B3410079FBCD /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		AC792DB82B48B4E50079FBCD /* computers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = computers.json; sourceTree = "<group>"; };
 		ACAC81172B485F6500BE3D7C /* ComputerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerFeature.swift; sourceTree = "<group>"; };
 		ACAC811F2B488D9A00BE3D7C /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		ACAC81242B488DCC00BE3D7C /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		ACB029882B462B360007372F /* HermesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB0298C2B462B360007372F /* HermesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITests.swift; sourceTree = "<group>"; };
 		ACB0298E2B462B360007372F /* HermesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACCF0A772B7A7EA900C33677 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
 		ACFBC7B82B75672E00B73815 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		ACFBC7BA2B75674100B73815 /* Calling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calling.swift; sourceTree = "<group>"; };
 		ACFBC7BC2B75675700B73815 /* GPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
@@ -268,7 +268,6 @@
 			children = (
 				ACCFE5642B59AC4300431622 /* app */,
 				ACB0296F2B462B350007372F /* HermesApp.swift */,
-				AC792DB82B48B4E50079FBCD /* computers.json */,
 				ACB029712B462B350007372F /* ContentView.swift */,
 				ACB029752B462B360007372F /* Assets.xcassets */,
 				ACB029772B462B360007372F /* Preview Content */,
@@ -360,6 +359,7 @@
 		ACCFE56C2B59AC7E00431622 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				ACCF0A772B7A7EA900C33677 /* AddProductView.swift */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -470,7 +470,6 @@
 			files = (
 				ACB029792B462B360007372F /* Preview Assets.xcassets in Resources */,
 				ACB029762B462B360007372F /* Assets.xcassets in Resources */,
-				AC792DB92B48B4E50079FBCD /* computers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +500,7 @@
 				AC3738202B49F16400B5193E /* Information.swift in Sources */,
 				ACFBC7BB2B75674100B73815 /* Calling.swift in Sources */,
 				AC5595322B698E700070B8EE /* Vitamins.swift in Sources */,
+				ACCF0A782B7A7EA900C33677 /* AddProductView.swift in Sources */,
 				ACAC81352B48A13B00BE3D7C /* RemoteControl.swift in Sources */,
 				AC5AA1F82B48EBB000704F7C /* Storage.swift in Sources */,
 				AC55953C2B698FB90070B8EE /* Code.swift in Sources */,
