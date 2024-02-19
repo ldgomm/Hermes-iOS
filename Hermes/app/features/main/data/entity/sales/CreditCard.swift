@@ -9,14 +9,14 @@ import Foundation
 
 class CreditCard: Codable {
     var card: [String: Double]
-    var withinterest: [Int: Double]? = nil
+    var withinterest: Int? = nil
     var withoutinterest: Int? = nil
     
     private enum CodingKeys: CodingKey {
         case card, withinterest, withoutinterest, withinterestChangePrice
     }
     
-    init(card: [String: Double], withinterest: [Int: Double]? = nil, withoutinterest: Int? = nil) {
+    init(card: [String: Double], withinterest: Int? = nil, withoutinterest: Int? = nil) {
         self.card = card
         self.withinterest = withinterest
         self.withoutinterest = withoutinterest
@@ -25,7 +25,7 @@ class CreditCard: Codable {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         card = try container.decode([String: Double].self, forKey: .card)
-        withinterest = try container.decodeIfPresent([Int: Double].self, forKey: .withinterest)
+        withinterest = try container.decodeIfPresent(Int.self, forKey: .withinterest)
         withoutinterest = try container.decodeIfPresent(Int.self, forKey: .withoutinterest)
     }
     
