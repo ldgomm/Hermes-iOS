@@ -15,6 +15,7 @@
 		AC0D802E2B696AA000EFB719 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D802D2B696AA000EFB719 /* Drink.swift */; };
 		AC37381E2B49DB8900B5193E /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381D2B49DB8900B5193E /* Price.swift */; };
 		AC3738202B49F16400B5193E /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37381F2B49F16400B5193E /* Information.swift */; };
+		AC3C7DCC2B8E3AE600D71284 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DCB2B8E3AE600D71284 /* Store.swift */; };
 		AC4A62552B68447E002C91B1 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A62542B68447E002C91B1 /* Specifications.swift */; };
 		AC5595302B698E5C0070B8EE /* Minerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55952F2B698E5C0070B8EE /* Minerals.swift */; };
 		AC5595322B698E700070B8EE /* Vitamins.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5595312B698E700070B8EE /* Vitamins.swift */; };
@@ -83,6 +84,7 @@
 		AC0D802D2B696AA000EFB719 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		AC37381D2B49DB8900B5193E /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		AC37381F2B49F16400B5193E /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		AC3C7DCB2B8E3AE600D71284 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		AC4A62542B68447E002C91B1 /* Specifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
 		AC55952F2B698E5C0070B8EE /* Minerals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minerals.swift; sourceTree = "<group>"; };
 		AC5595312B698E700070B8EE /* Vitamins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitamins.swift; sourceTree = "<group>"; };
@@ -215,6 +217,14 @@
 			path = medicine;
 			sourceTree = "<group>";
 		};
+		AC3C7DCA2B8E3ADD00D71284 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7DCB2B8E3AE600D71284 /* Store.swift */,
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
 		AC912F512B837F0600DF2CE4 /* wood */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 		ACAC81142B484D4800BE3D7C /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				AC3C7DCA2B8E3ADD00D71284 /* store */,
 				ACAC81192B488D2800BE3D7C /* sales */,
 			);
 			path = entity;
@@ -547,6 +558,7 @@
 				ACFBC7BF2B75677000B73815 /* CPU.swift in Sources */,
 				AC912F532B837F1400DF2CE4 /* Wood.swift in Sources */,
 				AC0D80282B694B9000EFB719 /* Metal.swift in Sources */,
+				AC3C7DCC2B8E3AE600D71284 /* Store.swift in Sources */,
 				ACFBC7BD2B75675700B73815 /* GPU.swift in Sources */,
 				ACAC812D2B488E4400BE3D7C /* Camera.swift in Sources */,
 				ACFD9AA02B473F9100DC2CB1 /* Product.swift in Sources */,
